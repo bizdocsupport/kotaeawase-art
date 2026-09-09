@@ -1,4 +1,4 @@
-name: Update exhibition candidates
+name: Update exhibition data
 
 "on":
   schedule:
@@ -39,27 +39,43 @@ jobs:
       - name: Scan official museum sites
         run: python updater.py
 
-      - name: Confirm Phase 2A does not modify production site
-        shell: bash
-        run: |
-          set -euo pipefail
-          if ! git diff --quiet -- docs/; then
-            echo "ERROR: Phase 2A must not change docs/."
-            git diff -- docs/
-            exit 1
-          fi
-          echo "docs/ unchanged: OK"
+      - name: Build site auto exhibition data
+        run: python tools/build_exhibitions_auto_js.py
 
-      - name: Commit data changes when needed
+      - name: Validate generated JavaScript
+        run: node --check docs/assets/js/exhibitions-auto.js
+
+      - name: Confirm only generated site file may change
         shell: bash
         run: |
           set -euo pipefail
-          git add data/exhibitions-auto.json data/exhibitions-source-status.json data/exhibitions-review.md
+          changed="$(git diff --name-only -- docs/ || true)"
+          if [ -n "$changed" ]; then
+            bad="$(printf '%s\n' "$changed" | grep -v '^docs/assets/js/exhibitions-auto\.js$' || true)"
+            if [ -n "$bad" ]; then
+              echo "ERROR: exhibition automation changed unexpected production files:"
+              printf '%s\n' "$bad"
+              exit 1
+            fi
+          fi
+          echo "Production diff guard: OK"
+
+      - name: Commit exhibition data changes when needed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add \
+            data/exhibitions-auto.json \
+            data/exhibitions-source-status.json \
+            data/exhibitions-review.md \
+            docs/assets/js/exhibitions-auto.js
+
           if git diff --cached --quiet; then
             echo "No exhibition-data changes. Nothing to commit."
             exit 0
           fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update exhibition candidates"
+          git commit -m "Update exhibition data"
           git push
