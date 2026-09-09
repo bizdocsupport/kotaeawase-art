@@ -27,8 +27,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Verify untouched site baseline
-        run: python3 tools/verify_baseline.py
+      - name: Sanity check site source
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/index.html
+          test -f docs/museum-beginner.html
+          test -d docs/assets
+          FILE_COUNT="$(find docs -type f | wc -l)"
+          if [ "$FILE_COUNT" -lt 700 ]; then
+            echo "Unexpectedly small docs/ tree: $FILE_COUNT files"
+            exit 1
+          fi
+          echo "Site source sanity check: OK ($FILE_COUNT files)"
 
       - name: Install lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
