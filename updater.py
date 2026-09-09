@@ -157,11 +157,22 @@ def key(item: dict) -> tuple[str, str, str, str]:
     )
 
 
-def preserve_failed_sources(previous: list[dict], fresh: list[dict], statuses: list[dict]) -> list[dict]:
+def preserve_failed_sources(previous: list[dict], fresh: list[dict], statuses: list[dict], today: date) -> list[dict]:
+    """取得失敗館だけ前回値を保持。ただし終了済みは持ち越さない。"""
     failed = {s["key"] for s in statuses if not s.get("ok")}
     if not failed:
         return fresh
-    return fresh + [x for x in previous if x.get("source_key") in failed]
+    kept = []
+    for x in previous:
+        if x.get("source_key") not in failed:
+            continue
+        try:
+            if date.fromisoformat(x.get("end", "")) < today:
+                continue
+        except Exception:
+            continue
+        kept.append(x)
+    return fresh + kept
 
 
 def dedupe(items: list[dict]) -> list[dict]:
@@ -182,7 +193,7 @@ def review_markdown(items: list[dict], previous: list[dict], statuses: list[dict
     lines = [
         "# 展覧会自動取得レビュー",
         "",
-        "> Phase 2A。ここに出た内容はまだ本番サイトには反映されません。",
+        "> Phase 2A.2。ここに出た内容はまだ本番サイトには反映されません。",
         "",
         f"- 自動候補: **{len(items)}件**",
         f"- 今回の新規候補: **{len(new_items)}件**",
@@ -190,12 +201,18 @@ def review_markdown(items: list[dict], previous: list[dict], statuses: list[dict
         "",
         "## 取得状況",
         "",
-        "| 美術館 | 状態 | 候補数 |",
-        "|---|---:|---:|",
+        "| 美術館 | 状態 | 取得方式 | 候補数 |",
+        "|---|---:|---:|---:|",
     ]
     for s in statuses:
         state = "OK" if s.get("ok") else "ERROR"
-        lines.append(f"| {s['venue']} | {state} | {s.get('candidateCount', 0)} |")
+        lines.append(f"| {s['venue']} | {state} | {s.get('fetchMethod', '-')} | {s.get('candidateCount', 0)} |")
+    warnings = [s for s in statuses if s.get("warning")]
+    if warnings:
+        lines += ["", "### 取得警告（フォールバック等）", ""]
+        for s in warnings:
+            lines.append(f"- **{s['venue']}**: `{s.get('warning', '')}`")
+
     failed = [s for s in statuses if not s.get("ok")]
     if failed:
         lines += ["", "### 取得エラー", ""]
@@ -226,7 +243,7 @@ def review_markdown(items: list[dict], previous: list[dict], statuses: list[dict
     lines += [
         "",
         "---",
-        "本番へ反映する処理は Phase 2B で追加します。現時点では `docs/` を変更しません。",
+        "Phase 2A.2では終了済み候補を除外し、必要な館のみブラウザ取得へフォールバックします。`docs/` は変更しません。",
         "",
     ]
     return "\n".join(lines)
@@ -244,8 +261,10 @@ def main() -> int:
     catalog = parse_manual_catalog()
 
     fresh, statuses = scrape_all(MUSEUM_SOURCES, today)
-    fresh = preserve_failed_sources(previous, fresh, statuses)
+    fresh = preserve_failed_sources(previous, fresh, statuses, today)
     fresh = dedupe(fresh)
+    # 既存データに終了済みが残っていても、Phase 2A.2以降は自動候補から除外。
+    fresh = [x for x in fresh if date.fromisoformat(x.get("end", "1900-01-01")) >= today]
     items = [x for x in fresh if not is_manual_duplicate(x, catalog)]
 
     changed = items != previous
