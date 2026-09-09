@@ -1,6 +1,14 @@
 import unittest
+from bs4 import BeautifulSoup
 
-from scraper import normalize_text, parse_date_range
+from scraper import (
+    find_date_block,
+    link_allowed,
+    normalize_text,
+    parse_date_range,
+    pick_title,
+    title_is_generic,
+)
 from updater import title_similar
 
 
@@ -49,6 +57,27 @@ class ExhibitionToolsTest(unittest.TestCase):
                 manual,
             )
         )
+
+    def test_anchor_itself_can_be_date_block(self):
+        soup = BeautifulSoup(
+            '<a href="/exhibition/2026_orsay.html">特別展 オルセー美術館所蔵 いまを生きる歓び 2026年11月14日(土)～2027年3月28日(日)</a>',
+            "html.parser",
+        )
+        a = soup.a
+        self.assertIs(find_date_block(a), a)
+        self.assertEqual(pick_title(a, a), "オルセー美術館所蔵 いまを生きる歓び")
+
+    def test_generic_navigation_title_is_rejected(self):
+        self.assertTrue(title_is_generic("過去の展覧会"))
+        self.assertTrue(title_is_generic("展覧会スケジュール"))
+
+    def test_detail_url_regex_blocks_archive_nav(self):
+        source = {
+            "url": "https://nakka-art.jp/exhibition/held/",
+            "detail_url_regex": r"/exhibition-post/[^/?#]+/?$",
+        }
+        self.assertTrue(link_allowed("/exhibition-post/karlwalser-2026/", source, source["url"]))
+        self.assertFalse(link_allowed("/exhibition/past/", source, source["url"]))
 
 
 if __name__ == "__main__":
