@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-09-09T16:52:16+09:00",
+  "updatedAt": "2026-09-09T17:12:19+09:00",
   "items": [
-    {
-      "id": "auto-aham-d1abb0eb8d",
-      "title": "ã«ã¼ã·ã¼ã»ãªã¼å±ãï¼æ±è¥¿ãã¤ãªãåªç¾ã®ãã¤ãï¼",
-      "venue": "あべのハルカス美術館",
-      "area": "大阪",
-      "start": "2026-01-01",
-      "end": "2026-12-26",
-      "official": "https://www.aham.jp/exhibition/future/lucie_rie",
-      "source_key": "aham"
-    },
     {
       "id": "auto-artizon-c2cb08142a",
       "title": "瀧口修造 書くことと描くこと",
@@ -172,23 +162,13 @@
       "source_key": "nakka"
     },
     {
-      "id": "auto-aham-b5f1855bbe",
-      "title": "HOKUSAI âåæããåæãã ã£ãæä»£â",
+      "id": "auto-aham-d1abb0eb8d",
+      "title": "ルーシー・リー展 －東西をつなぐ優美のうつわ－",
       "venue": "あべのハルカス美術館",
       "area": "大阪",
-      "start": "2027-01-01",
-      "end": "2027-05-22",
-      "official": "https://www.aham.jp/exhibition/future/hokusai2027",
-      "source_key": "aham"
-    },
-    {
-      "id": "auto-aham-362536b9d9",
-      "title": "ã¨ãªãã¯ã»ã«ã¼ã«å±ãã¯ãã¾ãã¯ãã¯ããºããããã",
-      "venue": "あべのハルカス美術館",
-      "area": "大阪",
-      "start": "2027-01-01",
-      "end": "2027-03-20",
-      "official": "https://www.aham.jp/exhibition/future/ericcarle",
+      "start": "2026-12-26",
+      "end": "2027-03-07",
+      "official": "https://www.aham.jp/exhibition/future/lucie_rie",
       "source_key": "aham"
     },
     {
@@ -272,6 +252,16 @@
       "source_key": "sompo"
     },
     {
+      "id": "auto-aham-362536b9d9",
+      "title": "エリック・カール展 はじまりは、はらぺこあおむし",
+      "venue": "あべのハルカス美術館",
+      "area": "大阪",
+      "start": "2027-03-20",
+      "end": "2027-05-09",
+      "official": "https://www.aham.jp/exhibition/future/ericcarle",
+      "source_key": "aham"
+    },
+    {
       "id": "auto-tobikan-13731f99dc",
       "title": "デュフィ展",
       "venue": "東京都美術館",
@@ -280,6 +270,16 @@
       "end": "2027-08-22",
       "official": "https://www.tobikan.jp/exhibition/2027_dufy.html",
       "source_key": "tobikan"
+    },
+    {
+      "id": "auto-aham-b5f1855bbe",
+      "title": "HOKUSAI ―北斎が「北斎」だった時代―",
+      "venue": "あべのハルカス美術館",
+      "area": "大阪",
+      "start": "2027-05-22",
+      "end": "2027-07-19",
+      "official": "https://www.aham.jp/exhibition/future/hokusai2027",
+      "source_key": "aham"
     },
     {
       "id": "auto-kyocera-9998aae2f5",

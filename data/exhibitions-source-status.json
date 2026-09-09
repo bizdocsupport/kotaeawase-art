@@ -18,7 +18,7 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 7,
-      "fetchMethod": "HTTP+BROWSER",
+      "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
     },
@@ -128,7 +128,7 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 4,
-      "fetchMethod": "HTTP+BROWSER",
+      "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
     }
