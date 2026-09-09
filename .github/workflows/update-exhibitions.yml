@@ -1,0 +1,62 @@
+name: Update exhibition candidates
+
+"on":
+  schedule:
+    # 毎朝 06:15 JST = 前日 21:15 UTC
+    - cron: "15 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: art-exhibition-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Scan official museum sites
+        run: python updater.py
+
+      - name: Confirm Phase 2A does not modify production site
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- docs/; then
+            echo "ERROR: Phase 2A must not change docs/."
+            git diff -- docs/
+            exit 1
+          fi
+          echo "docs/ unchanged: OK"
+
+      - name: Commit data changes when needed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add data/exhibitions-auto.json data/exhibitions-source-status.json data/exhibitions-review.md
+          if git diff --cached --quiet; then
+            echo "No exhibition-data changes. Nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update exhibition candidates"
+          git push
