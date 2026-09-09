@@ -7,6 +7,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 1,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -15,7 +17,9 @@
       "url": "https://www.tobikan.jp/exhibition/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 0,
+      "candidateCount": 7,
+      "fetchMethod": "HTTP+BROWSER",
+      "warning": "",
       "error": ""
     },
     {
@@ -25,6 +29,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 3,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -33,7 +39,9 @@
       "url": "https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 0,
+      "candidateCount": 3,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -43,7 +51,9 @@
       "ok": false,
       "httpStatus": null,
       "candidateCount": 0,
-      "error": "https://www.mot-art-museum.jp/exhibitions/: HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/"
+      "fetchMethod": "-",
+      "warning": "",
+      "error": "https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403"
     },
     {
       "key": "sompo",
@@ -52,6 +62,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 3,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -61,7 +73,9 @@
       "ok": false,
       "httpStatus": null,
       "candidateCount": 0,
-      "error": "https://mimt.jp/exhibition/: HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/"
+      "fetchMethod": "-",
+      "warning": "",
+      "error": "https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403"
     },
     {
       "key": "artizon",
@@ -70,6 +84,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 4,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -79,6 +95,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 7,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -88,6 +106,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 12,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -96,7 +116,9 @@
       "url": "https://www.osaka-art-museum.jp/special_exhibition",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 4,
+      "candidateCount": 2,
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -105,7 +127,9 @@
       "url": "https://www.aham.jp/exhibition/future/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 0,
+      "candidateCount": 4,
+      "fetchMethod": "HTTP+BROWSER",
+      "warning": "",
       "error": ""
     }
   ],
@@ -113,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 10,
     "errorCount": 2,
-    "candidateCountBeforeManualFilter": 34,
-    "candidateCountAfterManualFilter": 22
+    "candidateCountBeforeManualFilter": 46,
+    "candidateCountAfterManualFilter": 32
   }
 }
