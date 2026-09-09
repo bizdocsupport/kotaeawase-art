@@ -1,6 +1,6 @@
 """答え合わせ美術部｜展覧会自動取得の設定。
 
-Phase 2A.2:
+Phase 2A.3:
 - 403 / JavaScript描画の館だけChromiumフォールバック
 - 終了済み展覧会は候補から除外
 - 本番 docs/ には書き込まない
@@ -45,12 +45,17 @@ MUSEUM_SOURCES = [
         # 一覧は r_exhibition だが、実際の詳細ページは r_free_page/index.php?id=xxxx。
         "detail_url_regex": r"/modules/r_free_page/index\.php\?id=\d+$",
         "exclude_title": ["総合文化展", "過去の特別展"],
+        "detail_enrich": True,
+        "detail_title_selectors": ["h1", 'meta[property="og:title"]', "title"],
     },
     {
         "key": "mot",
         "venue": "東京都現代美術館",
         "area": "東京",
-        "url": "https://www.mot-art-museum.jp/exhibitions/",
+        "urls": [
+            "https://www.mot-art-museum.jp/exhibitions/",
+            "https://www.mot-art-museum.jp/calendar/",
+        ],
         "include_url": "/exhibitions/",
         # 近年は数字IDだけでなく /Constellation/ /mot-annual-2026/ 等のslug形式もある。
         "detail_url_regex": r"/exhibitions/(?!past(?:/|$))[^/?#]+/?$",
@@ -71,7 +76,10 @@ MUSEUM_SOURCES = [
         "key": "mimt",
         "venue": "三菱一号館美術館",
         "area": "東京",
-        "url": "https://mimt.jp/exhibition/",
+        "urls": [
+            "https://mimt.jp/exhibition/",
+            "https://mimt.jp/",
+        ],
         "detail_url_regex": r"/(?:ex_sp|exhibition)/[^?#]+/?$",
         "exclude_url_regex": r"/exhibition/?$|/exhibition/(?:schedule|past)/?",
         "exclude_title": ["小企画展", "展覧会スケジュール", "小企画展スケジュール"],
@@ -116,6 +124,8 @@ MUSEUM_SOURCES = [
         "include_url": "/exhibition/future/",
         "detail_url_regex": r"/exhibition/future/[^/?#]+/?$",
         "browser_fallback": True,
+        "detail_enrich": True,
+        "detail_title_selectors": ["h1", "h2", 'meta[property="og:title"]', "title"],
     },
 ]
 

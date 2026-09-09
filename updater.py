@@ -193,7 +193,7 @@ def review_markdown(items: list[dict], previous: list[dict], statuses: list[dict
     lines = [
         "# 展覧会自動取得レビュー",
         "",
-        "> Phase 2A.2。ここに出た内容はまだ本番サイトには反映されません。",
+        "> Phase 2A.3。ここに出た内容はまだ本番サイトには反映されません。",
         "",
         f"- 自動候補: **{len(items)}件**",
         f"- 今回の新規候補: **{len(new_items)}件**",
@@ -243,7 +243,7 @@ def review_markdown(items: list[dict], previous: list[dict], statuses: list[dict
     lines += [
         "",
         "---",
-        "Phase 2A.2では終了済み候補を除外し、必要な館のみブラウザ取得へフォールバックします。`docs/` は変更しません。",
+        "Phase 2A.3では終了済み候補を除外し、東博・あべのハルカスは詳細ページでタイトル/会期を補正し、必要な館のみブラウザ取得へフォールバックします。`docs/` は変更しません。",
         "",
     ]
     return "\n".join(lines)

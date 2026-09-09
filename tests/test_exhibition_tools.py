@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from scraper import candidate_in_window, link_allowed, normalize_text, parse_date_range
+from scraper import candidate_in_window, extract_detail_fields, link_allowed, normalize_text, parse_date_range
 from updater import title_similar
 
 
@@ -82,6 +82,20 @@ class ExhibitionToolsTest(unittest.TestCase):
                 "https://www.mot-art-museum.jp/exhibitions/",
             )
         )
+
+    def test_detail_enrichment_aham(self):
+        html = """<html><head><title>ルーシー・リー展 －東西をつなぐ優美のうつわ－ | あべのハルカス美術館</title></head>
+        <body><main><h1>ルーシー・リー展 －東西をつなぐ優美のうつわ－</h1><p>2026年12月26日（土）～ 2027年3月7日（日）</p></main></body></html>"""
+        title, dr = extract_detail_fields(html, {"venue": "あべのハルカス美術館"})
+        self.assertEqual(title, "ルーシー・リー展 －東西をつなぐ優美のうつわ－")
+        self.assertEqual(dr, ("2026-12-26", "2027-03-07"))
+
+    def test_detail_enrichment_tnm(self):
+        html = """<html><body><main><h1>特別展 内山晋コレクション受贈記念「歌川広重 江戸のベストアングル」</h1>
+        <p>2026年9月29日（火）～2026年12月20日（日）</p></main></body></html>"""
+        title, dr = extract_detail_fields(html, {"venue": "東京国立博物館"})
+        self.assertIn("歌川広重", title)
+        self.assertEqual(dr, ("2026-09-29", "2026-12-20"))
 
 
 if __name__ == "__main__":

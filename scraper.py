@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """公式美術館ページから展覧会候補を抽出する。
 
-Phase 2A.2:
+Phase 2A.3:
 - 通常は requests で高速取得
 - 403 / 0件になりやすい館だけ Playwright(Chromium) でフォールバック
+- 東博・あべのハルカスは詳細ページからタイトル/会期を再取得
 - 終了済み展覧会は候補に残さない
 - docs/ は変更しない
 """
@@ -40,7 +41,7 @@ RANGE_SEP_RE = re.compile(
 )
 
 GENERIC_LINK_TEXT = {
-    "詳細", "詳細へ", "詳しくはこちら", "詳しくみる", "more", "read more",
+    "詳細", "詳細へ", "詳細ページへ", "詳しくはこちら", "詳しくみる", "more", "read more",
     "チケット購入", "展覧会公式ウェブサイト", "公式サイト", "開催概要", "view more",
 }
 GLOBAL_EXCLUDES = [
@@ -204,6 +205,91 @@ def pick_title(anchor, block) -> str:
         if 4 <= len(normalize_text(title)) <= 180 and not title_is_generic(title):
             return title
     return ""
+
+
+
+
+def detail_title_is_bad(title: str, source: dict) -> bool:
+    n = normalize_text(title)
+    if not n:
+        return True
+    if title_is_generic(title):
+        return True
+    if n in {normalize_text(x) for x in GENERIC_LINK_TEXT}:
+        return True
+    venue = normalize_text(source.get("venue", ""))
+    if venue and n.startswith(venue) and any(token in title for token in ("住所", "大阪市", "阿倍野区")):
+        return True
+    return False
+
+
+def extract_detail_fields(html: str, source: dict) -> tuple[str, tuple[str, str] | None]:
+    """詳細ページからタイトルと会期を取り直す。
+
+    一覧ページのカード周辺にカレンダー等が混ざる館向け。
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    title_candidates: list[str] = []
+
+    selectors = source.get("detail_title_selectors") or ["h1", "h2", 'meta[property="og:title"]', "title"]
+    for selector in selectors:
+        tag = soup.select_one(selector)
+        if not tag:
+            continue
+        if tag.name == "meta":
+            raw = tag.get("content", "")
+        else:
+            raw = tag.get_text(" ", strip=True)
+        raw = clean_space(raw)
+        # titleタグのサイト名サフィックスを軽く落とす。
+        raw = re.split(r"\s+[|｜]\s+", raw, maxsplit=1)[0].strip()
+        if raw:
+            title_candidates.append(raw)
+
+    title = ""
+    for raw in title_candidates:
+        cleaned = LEADING_STATUS_RE.sub("", raw).strip(" -|｜:：")
+        if 4 <= len(normalize_text(cleaned)) <= 220 and not detail_title_is_bad(cleaned, source):
+            title = cleaned
+            break
+
+    date_selectors = source.get("detail_date_selectors") or ["main", "article", "body"]
+    dr = None
+    for selector in date_selectors:
+        tag = soup.select_one(selector)
+        if not tag:
+            continue
+        dr = parse_date_range(clean_space(tag.get_text(" ", strip=True)))
+        if dr:
+            break
+    return title, dr
+
+
+def enrich_candidates_from_details(
+    session: requests.Session,
+    source: dict,
+    candidates: dict[str, Candidate],
+    today: date,
+) -> tuple[dict[str, Candidate], list[str]]:
+    if not source.get("detail_enrich") or not candidates:
+        return candidates, []
+
+    warnings: list[str] = []
+    enriched: dict[str, Candidate] = {}
+    for url, item in candidates.items():
+        try:
+            response = _fetch_page(session, url)
+            title, dr = extract_detail_fields(response.text, source)
+            start, end = (item.start, item.end)
+            if dr and candidate_in_window(dr[0], dr[1], today):
+                start, end = dr
+            if title:
+                item.title = title
+            item.start, item.end = start, end
+        except Exception as exc:
+            warnings.append(f"詳細ページ補正失敗: {url}: {type(exc).__name__}: {exc}")
+        enriched[url] = item
+    return enriched, warnings
 
 
 def candidate_in_window(start: str, end: str, today: date) -> bool:
@@ -386,6 +472,10 @@ def scrape_source(
                     warnings.append(f"ブラウザ再取得失敗（HTTP自体は成功）: {source_url}: {type(browser_exc).__name__}: {browser_exc}")
         elif http_error is not None:
             hard_errors.append(f"{source_url}: {type(http_error).__name__}: {http_error}")
+
+        if page_items and source.get("detail_enrich"):
+            page_items, detail_warnings = enrich_candidates_from_details(session, source, page_items, today)
+            warnings.extend(detail_warnings)
 
         by_url.update(page_items)
 
