@@ -1,6 +1,16 @@
 {
-  "updatedAt": "2026-09-09T15:54:36+09:00",
+  "updatedAt": "2026-09-09T16:18:54+09:00",
   "items": [
+    {
+      "id": "auto-osaka-art-f1784e2e47",
+      "title": "開館90周年記念特別展 全力！名宝物語 ―大阪市美とたどる美のエピソード",
+      "venue": "大阪市立美術館",
+      "area": "大阪",
+      "start": "2026-04-25",
+      "end": "2026-06-21",
+      "official": "https://www.osaka-art-museum.jp/special_exhibition/8302",
+      "source_key": "osaka-art"
+    },
     {
       "id": "auto-artizon-c2cb08142a",
       "title": "瀧口修造 書くことと描くこと",
@@ -12,34 +22,14 @@
       "source_key": "artizon"
     },
     {
-      "id": "auto-nakka-0d1e3fec73",
-      "title": "の展覧会",
+      "id": "auto-nakka-5830e5188a",
+      "title": "スイス絵画の異才 カール・ヴァルザー",
       "venue": "大阪中之島美術館",
       "area": "大阪",
       "start": "2026-07-04",
       "end": "2026-09-27",
-      "official": "https://nakka-art.jp/exhibition/date-held",
+      "official": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
       "source_key": "nakka"
-    },
-    {
-      "id": "auto-nakka-30b7f3253d",
-      "title": "過去の展覧会",
-      "venue": "大阪中之島美術館",
-      "area": "大阪",
-      "start": "2026-07-04",
-      "end": "2026-09-27",
-      "official": "https://nakka-art.jp/exhibition/past",
-      "source_key": "nakka"
-    },
-    {
-      "id": "auto-kyocera-05d58d90da",
-      "title": "過去の展覧会",
-      "venue": "京都市京セラ美術館",
-      "area": "京都",
-      "start": "2026-07-18",
-      "end": "2026-09-23",
-      "official": "https://kyotocity-kyocera.museum/exhibition/?s=&select_year=2026&select_month=09",
-      "source_key": "kyocera"
     },
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -62,36 +52,6 @@
       "source_key": "kyocera"
     },
     {
-      "id": "auto-sompo-a8be5981da",
-      "title": "展覧会スケジュール",
-      "venue": "SOMPO美術館",
-      "area": "東京",
-      "start": "2026-09-22",
-      "end": "2026-12-13",
-      "official": "https://www.sompo-museum.org/exhibitions/schedule",
-      "source_key": "sompo"
-    },
-    {
-      "id": "auto-sompo-ab48c90cf3",
-      "title": "過去の展覧会",
-      "venue": "SOMPO美術館",
-      "area": "東京",
-      "start": "2026-09-22",
-      "end": "2026-12-13",
-      "official": "https://www.sompo-museum.org/exhibitions/past",
-      "source_key": "sompo"
-    },
-    {
-      "id": "auto-tnm-96138e2273",
-      "title": "過去の特別展",
-      "venue": "東京国立博物館",
-      "area": "東京",
-      "start": "2026-09-29",
-      "end": "2026-12-20",
-      "official": "https://www.tnm.jp/modules/r_exhibition/index.php?controller=past_list",
-      "source_key": "tnm"
-    },
-    {
       "id": "auto-kyocera-1005daf56b",
       "title": "［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」",
       "venue": "京都市京セラ美術館",
@@ -100,206 +60,6 @@
       "end": "2026-12-13",
       "official": "https://kyotocity-kyocera.museum/exhibition/20261009-20261213",
       "source_key": "kyocera"
-    },
-    {
-      "id": "auto-osaka-art-ee5c05adde",
-      "title": "ページ送り",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition?page=1",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-2121c6d2fd",
-      "title": "ページ送り",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition?page=2",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-ff3bb69b7e",
-      "title": "ページ送り",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition?page=6",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-4e095e5886",
-      "title": "円山応挙 リアルの先へ 空間革命",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/10344",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-87a3e39fb7",
-      "title": "終了 【中止】第67回全関西美術展",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8310",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-bb2295555f",
-      "title": "終了 【中止】豊臣の美術",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8315",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-17e53c9787",
-      "title": "終了 ドレスデン国立古典絵画館所蔵 【終了】フェルメールと17世紀オランダ絵画展",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/10375",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-738c31ba61",
-      "title": "終了 メトロポリタン美術館展 西洋絵画の500年【終了】",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/10374",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-597a0ffc56",
-      "title": "終了 リニューアルオープン記念特別展 What's New! 大阪市立美術館 名品珍品大公開!!",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8307",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-bb5738c67a",
-      "title": "終了 千四百年御聖忌記念特別展 聖徳太子 日出づる処の天子",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8313",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-bd920ae4c0",
-      "title": "終了 大阪･関西万博開催記念 大阪市立美術館リニューアル記念特別展 ゴッホ展 家族がつないだ画家の夢【終了】",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8305",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-bc8238844c",
-      "title": "終了 大阪･関西万博開催記念 大阪市立美術館リニューアル記念特別展 日本国宝展【終了】",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8306",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-7372e8a32d",
-      "title": "終了 天平礼賛",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8317",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-1e573da55b",
-      "title": "終了 揚州八怪",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8314",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-d6f0435a56",
-      "title": "終了 改組 新 第7回日展",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8316",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-0bdc4f8f1b",
-      "title": "終了 第8回日展大阪展",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8311",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-640e2b682c",
-      "title": "終了 興祖微妙大師六百五十年遠諱記念特別展 妙心寺 禅の継承",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8303",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-f8efe418d7",
-      "title": "終了 華風到来 チャイニーズアートセレクション",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8309",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-f1784e2e47",
-      "title": "終了 開館90周年記念特別展 全力！名宝物語 ―大阪市美とたどる美のエピソード",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8302",
-      "source_key": "osaka-art"
-    },
-    {
-      "id": "auto-osaka-art-73c69ae918",
-      "title": "終了 ＮＥＧＯＲＯ 根来 － 赤と黒のうるし",
-      "venue": "大阪市立美術館",
-      "area": "大阪",
-      "start": "2026-10-09",
-      "end": "2026-12-20",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8304",
-      "source_key": "osaka-art"
     },
     {
       "id": "auto-artizon-3538cc4973",
@@ -312,24 +72,34 @@
       "source_key": "artizon"
     },
     {
-      "id": "auto-artizon-0d4ff018fa",
-      "title": "過去の展覧会",
-      "venue": "アーティゾン美術館",
-      "area": "東京",
-      "start": "2026-10-24",
-      "end": "2027-01-31",
-      "official": "https://www.artizon.museum/exhibition/past",
-      "source_key": "artizon"
-    },
-    {
       "id": "auto-nact-4d6186b191",
-      "title": "企画展 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展",
+      "title": "少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展",
       "venue": "国立新美術館",
       "area": "東京",
       "start": "2026-10-28",
       "end": "2027-02-08",
       "official": "https://www.nact.jp/exhibition_special/2026/shojomanga",
       "source_key": "nact"
+    },
+    {
+      "id": "auto-nakka-23e5213bd6",
+      "title": "大英博物館日本美術コレクション 百花繚乱〜海を越えた江戸絵画",
+      "venue": "大阪中之島美術館",
+      "area": "大阪",
+      "start": "2026-10-31",
+      "end": "2027-01-31",
+      "official": "https://nakka-art.jp/exhibition-post/daiei-ten2026",
+      "source_key": "nakka"
+    },
+    {
+      "id": "auto-nakka-936b067f28",
+      "title": "Osaka Directory 13 Supported by RICHARD MILLE 橘 葉月",
+      "venue": "大阪中之島美術館",
+      "area": "大阪",
+      "start": "2026-11-14",
+      "end": "2026-12-13",
+      "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir13",
+      "source_key": "nakka"
     },
     {
       "id": "auto-kyocera-a39b6482bd",
@@ -352,6 +122,26 @@
       "source_key": "kyocera"
     },
     {
+      "id": "auto-nakka-8d9adf2eb0",
+      "title": "Osaka Directory 14 Supported by RICHARD MILLE 迫 鉄平",
+      "venue": "大阪中之島美術館",
+      "area": "大阪",
+      "start": "2026-12-19",
+      "end": "2027-01-17",
+      "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir14",
+      "source_key": "nakka"
+    },
+    {
+      "id": "auto-sompo-32cbb76acd",
+      "title": "生誕130年 東郷青児展",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2027-01-09",
+      "end": "2027-02-21",
+      "official": "https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary",
+      "source_key": "sompo"
+    },
+    {
       "id": "auto-kyocera-3631924a1d",
       "title": "藤野裕美子",
       "venue": "京都市京セラ美術館",
@@ -372,6 +162,16 @@
       "source_key": "kyocera"
     },
     {
+      "id": "auto-nakka-d3234d567d",
+      "title": "乾 真裕子",
+      "venue": "大阪中之島美術館",
+      "area": "大阪",
+      "start": "2027-01-23",
+      "end": "2027-02-21",
+      "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir15",
+      "source_key": "nakka"
+    },
+    {
       "id": "auto-kyocera-3fe4990d0d",
       "title": "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称）",
       "venue": "京都市京セラ美術館",
@@ -380,6 +180,26 @@
       "end": "2027-05-05",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
       "source_key": "kyocera"
+    },
+    {
+      "id": "auto-osaka-art-4e095e5886",
+      "title": "円山応挙 リアルの先へ 空間革命",
+      "venue": "大阪市立美術館",
+      "area": "大阪",
+      "start": "2027-02-06",
+      "end": "2027-04-04",
+      "official": "https://www.osaka-art-museum.jp/special_exhibition/10344",
+      "source_key": "osaka-art"
+    },
+    {
+      "id": "auto-sompo-e7ac3a8a46",
+      "title": "FACE展2027",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2027-03-06",
+      "end": "2027-03-28",
+      "official": "https://www.sompo-museum.org/exhibitions/2025/face2027",
+      "source_key": "sompo"
     },
     {
       "id": "auto-kyocera-9998aae2f5",
