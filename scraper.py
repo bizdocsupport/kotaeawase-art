@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """公式美術館ページから展覧会候補を抽出する。
 
-Phase 2A.3:
+Phase 2A.4:
 - 通常は requests で高速取得
 - 403 / 0件になりやすい館だけ Playwright(Chromium) でフォールバック
 - 東博・あべのハルカスは詳細ページからタイトル/会期を再取得
@@ -57,6 +57,65 @@ LEADING_STATUS_RE = re.compile(
     r"^(?:(?:開催中|開催予定|開催予定の展覧会|これから開催される展覧会|次回の展覧会|次々回の展覧会|予告|終了|入場自由|予約受付中|無料|企画展|特別展)\s*)+"
 )
 
+MOJIBAKE_MARKERS = ("ã", "â", "å", "æ", "ç", "ï", "ð", "¤", "¦", "©", "«", "¬")
+META_CHARSET_RE = re.compile(br"<meta[^>]+charset=[\"']?\s*([A-Za-z0-9._-]+)", re.I)
+HEADER_CHARSET_RE = re.compile(r"charset=([A-Za-z0-9._-]+)", re.I)
+
+
+def _mojibake_score(value: str) -> int:
+    return sum(value.count(x) for x in MOJIBAKE_MARKERS)
+
+
+def repair_mojibake(value: str) -> str:
+    """UTF-8 bytesをlatin-1として読んだ典型的な文字化けだけ安全に戻す。"""
+    if not value or _mojibake_score(value) == 0:
+        return value
+    for legacy in ("latin-1", "cp1252"):
+        try:
+            fixed = value.encode(legacy).decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            continue
+        if _mojibake_score(fixed) < _mojibake_score(value):
+            return fixed
+    return value
+
+
+def decode_response_html(response: requests.Response) -> str:
+    """requestsのlatin-1誤判定を避け、HTMLのcharset/UTF-8を優先して復号する。"""
+    raw = response.content
+    encodings: list[str] = []
+    content_type = response.headers.get("Content-Type", "")
+    m = HEADER_CHARSET_RE.search(content_type)
+    if m:
+        encodings.append(m.group(1))
+    m2 = META_CHARSET_RE.search(raw[:8192])
+    if m2:
+        try:
+            encodings.append(m2.group(1).decode("ascii", errors="ignore"))
+        except Exception:
+            pass
+    # 日本語サイトの多くはUTF-8。requests既定latin-1より先に試す。
+    encodings.append("utf-8")
+    if response.encoding and response.encoding.lower() not in {"iso-8859-1", "latin-1", "ascii"}:
+        encodings.append(response.encoding)
+    if response.apparent_encoding:
+        encodings.append(response.apparent_encoding)
+    encodings += ["cp932", "shift_jis"]
+
+    seen = set()
+    for enc in encodings:
+        if not enc:
+            continue
+        key = enc.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        try:
+            return repair_mojibake(raw.decode(enc))
+        except (LookupError, UnicodeDecodeError):
+            continue
+    return repair_mojibake(raw.decode("utf-8", errors="replace"))
+
 
 @dataclass
 class Candidate:
@@ -81,7 +140,8 @@ def normalize_text(value: str) -> str:
 
 
 def clean_space(value: str) -> str:
-    return re.sub(r"[\s\u3000]+", " ", value or "").strip()
+    value = repair_mojibake(value or "")
+    return re.sub(r"[\s\u3000]+", " ", value).strip()
 
 
 def _valid_date(y: int, m: int, d: int) -> str | None:
@@ -223,6 +283,40 @@ def detail_title_is_bad(title: str, source: dict) -> bool:
     return False
 
 
+def extract_labeled_date_range(soup: BeautifulSoup, labels: list[str]) -> tuple[str, str] | None:
+    """「開催期間」「会期」などのラベル近傍から会期を優先抽出する。
+
+    詳細ページ内のイベント日程・カレンダー・休館日を会期と誤認しないための処理。
+    """
+    if not labels:
+        return None
+    for label in labels:
+        pattern = re.compile(re.escape(label), re.I)
+        for string in soup.find_all(string=pattern):
+            node = getattr(string, "parent", None)
+            if node is None:
+                continue
+            # dt/th の次の dd/td に値がある典型形。
+            sib = node.find_next_sibling() if hasattr(node, "find_next_sibling") else None
+            if sib is not None:
+                text = clean_space(sib.get_text(" ", strip=True))
+                dr = parse_date_range(text)
+                if dr:
+                    return dr
+            # tr / dl / div 等のまとまりを最大4階層まで確認。
+            cur = node
+            for _ in range(4):
+                if cur is None:
+                    break
+                text = clean_space(cur.get_text(" ", strip=True))
+                if len(text) <= 1800:
+                    dr = parse_date_range(text)
+                    if dr:
+                        return dr
+                cur = getattr(cur, "parent", None)
+    return None
+
+
 def extract_detail_fields(html: str, source: dict) -> tuple[str, tuple[str, str] | None]:
     """詳細ページからタイトルと会期を取り直す。
 
@@ -240,7 +334,7 @@ def extract_detail_fields(html: str, source: dict) -> tuple[str, tuple[str, str]
             raw = tag.get("content", "")
         else:
             raw = tag.get_text(" ", strip=True)
-        raw = clean_space(raw)
+        raw = clean_space(repair_mojibake(raw))
         # titleタグのサイト名サフィックスを軽く落とす。
         raw = re.split(r"\s+[|｜]\s+", raw, maxsplit=1)[0].strip()
         if raw:
@@ -253,15 +347,16 @@ def extract_detail_fields(html: str, source: dict) -> tuple[str, tuple[str, str]
             title = cleaned
             break
 
-    date_selectors = source.get("detail_date_selectors") or ["main", "article", "body"]
-    dr = None
-    for selector in date_selectors:
-        tag = soup.select_one(selector)
-        if not tag:
-            continue
-        dr = parse_date_range(clean_space(tag.get_text(" ", strip=True)))
-        if dr:
-            break
+    dr = extract_labeled_date_range(soup, source.get("detail_date_labels") or [])
+    if dr is None:
+        date_selectors = source.get("detail_date_selectors") or ["main", "article", "body"]
+        for selector in date_selectors:
+            tag = soup.select_one(selector)
+            if not tag:
+                continue
+            dr = parse_date_range(clean_space(tag.get_text(" ", strip=True)))
+            if dr:
+                break
     return title, dr
 
 
@@ -279,7 +374,13 @@ def enrich_candidates_from_details(
     for url, item in candidates.items():
         try:
             response = _fetch_page(session, url)
-            title, dr = extract_detail_fields(response.text, source)
+            title, dr = extract_detail_fields(decode_response_html(response), source)
+            if source.get("detail_title_required") and not title:
+                warnings.append(f"詳細タイトル取得失敗のため候補除外: {url}")
+                continue
+            if source.get("detail_date_required") and not dr:
+                warnings.append(f"詳細会期取得失敗のため候補除外: {url}")
+                continue
             start, end = (item.start, item.end)
             if dr and candidate_in_window(dr[0], dr[1], today):
                 start, end = dr
@@ -441,7 +542,7 @@ def scrape_source(
         try:
             response = _fetch_page(session, source_url)
             http_statuses.append(response.status_code)
-            page_items = extract_candidates(response.text, source, source_url, today)
+            page_items = extract_candidates(decode_response_html(response), source, source_url, today)
             ok_pages += 1
             methods.append("HTTP")
         except Exception as exc:

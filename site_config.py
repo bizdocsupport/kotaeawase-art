@@ -1,6 +1,6 @@
 """答え合わせ美術部｜展覧会自動取得の設定。
 
-Phase 2A.3:
+Phase 2A.4:
 - 403 / JavaScript描画の館だけChromiumフォールバック
 - 終了済み展覧会は候補から除外
 - 本番 docs/ には書き込まない
@@ -47,6 +47,9 @@ MUSEUM_SOURCES = [
         "exclude_title": ["総合文化展", "過去の特別展"],
         "detail_enrich": True,
         "detail_title_selectors": ["h1", 'meta[property="og:title"]', "title"],
+        "detail_date_labels": ["会期"],
+        "detail_title_required": True,
+        "detail_date_required": True,
     },
     {
         "key": "mot",
@@ -126,6 +129,9 @@ MUSEUM_SOURCES = [
         "browser_fallback": True,
         "detail_enrich": True,
         "detail_title_selectors": ["h1", "h2", 'meta[property="og:title"]', "title"],
+        "detail_date_labels": ["開催期間"],
+        "detail_title_required": True,
+        "detail_date_required": True,
     },
 ]
 

@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from scraper import candidate_in_window, extract_detail_fields, link_allowed, normalize_text, parse_date_range
+from scraper import candidate_in_window, decode_response_html, extract_detail_fields, link_allowed, normalize_text, parse_date_range, repair_mojibake
 from updater import title_similar
 
 
@@ -96,6 +96,43 @@ class ExhibitionToolsTest(unittest.TestCase):
         title, dr = extract_detail_fields(html, {"venue": "東京国立博物館"})
         self.assertIn("歌川広重", title)
         self.assertEqual(dr, ("2026-09-29", "2026-12-20"))
+
+    def test_repair_utf8_latin1_mojibake(self):
+        original = "ルーシー・リー展 －東西をつなぐ優美のうつわ－"
+        broken = original.encode("utf-8").decode("latin-1")
+        self.assertEqual(repair_mojibake(broken), original)
+
+    def test_decode_response_prefers_utf8_over_latin1_default(self):
+        import requests
+        response = requests.Response()
+        response.status_code = 200
+        response._content = "<h1>エリック・カール展</h1>".encode("utf-8")
+        response.headers["Content-Type"] = "text/html"
+        response.encoding = "ISO-8859-1"
+        self.assertIn("エリック・カール展", decode_response_html(response))
+
+    def test_aham_labeled_period_beats_unrelated_dates(self):
+        html = """<html><body><main>
+        <p>前売券は2026年10月3日～2026年12月25日</p>
+        <h1>ルーシー・リー展 －東西をつなぐ優美のうつわ－</h1>
+        <table><tr><th>開催期間<span>Date</span></th><td>2026年12月26日（土）～ 2027年3月7日（日）</td></tr></table>
+        </main></body></html>"""
+        title, dr = extract_detail_fields(html, {
+            "venue": "あべのハルカス美術館",
+            "detail_date_labels": ["開催期間"],
+        })
+        self.assertEqual(title, "ルーシー・リー展 －東西をつなぐ優美のうつわ－")
+        self.assertEqual(dr, ("2026-12-26", "2027-03-07"))
+
+    def test_aham_hokusai_labeled_period(self):
+        html = """<html><body><h1>HOKUSAI ―北斎が「北斎」だった時代―</h1>
+        <dl><dt>開催期間Date</dt><dd>2027年5月22日（土）～ 7月19日（月・祝）</dd></dl></body></html>"""
+        title, dr = extract_detail_fields(html, {
+            "venue": "あべのハルカス美術館",
+            "detail_date_labels": ["開催期間"],
+        })
+        self.assertIn("HOKUSAI", title)
+        self.assertEqual(dr, ("2027-05-22", "2027-07-19"))
 
 
 if __name__ == "__main__":
