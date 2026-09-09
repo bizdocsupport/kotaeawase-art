@@ -53,7 +53,7 @@
       "candidateCount": 0,
       "fetchMethod": "-",
       "warning": "",
-      "error": "https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403"
+      "error": "https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403"
     },
     {
       "key": "sompo",
@@ -75,7 +75,7 @@
       "candidateCount": 0,
       "fetchMethod": "-",
       "warning": "",
-      "error": "https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403"
+      "error": "https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403 | https://mimt.jp/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 403"
     },
     {
       "key": "artizon",
@@ -138,6 +138,6 @@
     "okCount": 10,
     "errorCount": 2,
     "candidateCountBeforeManualFilter": 46,
-    "candidateCountAfterManualFilter": 32
+    "candidateCountAfterManualFilter": 31
   }
 }
