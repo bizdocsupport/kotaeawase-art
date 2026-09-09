@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-09T16:37:16+09:00",
+  "updatedAt": "2026-09-09T16:52:16+09:00",
   "items": [
     {
       "id": "auto-aham-d1abb0eb8d",
-      "title": "あべのハルカス美術館 大阪市 阿倍野区阿倍野筋",
+      "title": "ã«ã¼ã·ã¼ã»ãªã¼å±ãï¼æ±è¥¿ãã¤ãªãåªç¾ã®ãã¤ãï¼",
       "venue": "あべのハルカス美術館",
       "area": "大阪",
       "start": "2026-01-01",
@@ -62,16 +62,6 @@
       "source_key": "kyocera"
     },
     {
-      "id": "auto-tnm-ee8475cb50",
-      "title": "詳細ページへ",
-      "venue": "東京国立博物館",
-      "area": "東京",
-      "start": "2026-09-29",
-      "end": "2026-12-20",
-      "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2759",
-      "source_key": "tnm"
-    },
-    {
       "id": "auto-kyocera-1005daf56b",
       "title": "［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」",
       "venue": "京都市京セラ美術館",
@@ -83,7 +73,7 @@
     },
     {
       "id": "auto-tnm-57fdc4d7a9",
-      "title": "詳細ページへ",
+      "title": "開創700年記念 特別展「大徳寺 本朝無双之禅苑」",
       "venue": "東京国立博物館",
       "area": "東京",
       "start": "2026-10-14",
@@ -182,23 +172,23 @@
       "source_key": "nakka"
     },
     {
-      "id": "auto-aham-362536b9d9",
-      "title": "あべのハルカス美術館 大阪市 阿倍野区阿倍野筋",
-      "venue": "あべのハルカス美術館",
-      "area": "大阪",
-      "start": "2027-01-01",
-      "end": "2027-03-20",
-      "official": "https://www.aham.jp/exhibition/future/ericcarle",
-      "source_key": "aham"
-    },
-    {
       "id": "auto-aham-b5f1855bbe",
-      "title": "あべのハルカス美術館 大阪市 阿倍野区阿倍野筋",
+      "title": "HOKUSAI âåæããåæãã ã£ãæä»£â",
       "venue": "あべのハルカス美術館",
       "area": "大阪",
       "start": "2027-01-01",
       "end": "2027-05-22",
       "official": "https://www.aham.jp/exhibition/future/hokusai2027",
+      "source_key": "aham"
+    },
+    {
+      "id": "auto-aham-362536b9d9",
+      "title": "ã¨ãªãã¯ã»ã«ã¼ã«å±ãã¯ãã¾ãã¯ãã¯ããºããããã",
+      "venue": "あべのハルカス美術館",
+      "area": "大阪",
+      "start": "2027-01-01",
+      "end": "2027-03-20",
+      "official": "https://www.aham.jp/exhibition/future/ericcarle",
       "source_key": "aham"
     },
     {
@@ -233,7 +223,7 @@
     },
     {
       "id": "auto-tnm-758b4c33bc",
-      "title": "詳細ページへ",
+      "title": "「源氏物語 王朝のかがやき」",
       "venue": "東京国立博物館",
       "area": "東京",
       "start": "2027-01-19",
