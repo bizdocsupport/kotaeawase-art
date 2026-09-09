@@ -1,0 +1,2 @@
+# Preserve every byte under docs/ exactly as committed.
+docs/** -text

@@ -1,0 +1,177 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hillslife//Kotaeawase Art Club Major Exhibitions//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:答え合わせ美術部｜主要美術展
+X-WR-CALDESC:答え合わせ美術部が選ぶ主要美術展の会期カ
+ レンダー
+BEGIN:VEVENT
+UID:vermeer-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260928
+SUMMARY:フェルメール《真珠の耳飾りの少女》展
+LOCATION:大阪中之島美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://vermeer2026.exhibit.jp
+ /
+URL:https://vermeer2026.exhibit.jp/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:louvre-renaissance-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20261214
+SUMMARY:ルーヴル美術館展 ルネサンス
+LOCATION:国立新美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.nact.jp/exhibition
+ _special/2026/louvre2026/
+URL:https://www.nact.jp/exhibition_special/2026/louvre2026/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cincinnati-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20270111
+SUMMARY:シンシナティ美術館展
+LOCATION:上野の森美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.cincinnati-art2026
+ .jp/
+URL:https://www.cincinnati-art2026.jp/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:turner-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20270222
+SUMMARY:テート美術館 ターナー展
+LOCATION:国立西洋美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.nmwa.go.jp/jp/exhi
+ bitions/2026turner.html
+URL:https://www.nmwa.go.jp/jp/exhibitions/2026turner.html
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:orsay-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20270329
+SUMMARY:オルセー美術館所蔵 いまを生きる歓び
+LOCATION:東京都美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.tobikan.jp/exhibit
+ ion/2026_orsay.html
+URL:https://www.tobikan.jp/exhibition/2026_orsay.html
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vangogh-wallraf-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260704
+DTEND;VALUE=DATE:20260910
+SUMMARY:ゴッホの跳ね橋と印象派の画家たち
+LOCATION:あべのハルカス美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.aham.jp/sp/exhibit
+ ion/wallraf/
+URL:https://www.aham.jp/sp/exhibition/wallraf/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:picasso-paul-smith-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260922
+SUMMARY:ピカソmeetsポールスミス
+LOCATION:国立新美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.nact.jp/exhibition
+ _special/2026/picasso_paulsmith/
+URL:https://www.nact.jp/exhibition_special/2026/picasso_paulsmith/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kuniyoshi-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260718
+DTEND;VALUE=DATE:20260924
+SUMMARY:歌川国芳展
+LOCATION:京都市京セラ美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://kyotocity-kyocera.muse
+ um/exhibition/20260718-20260923
+URL:https://kyotocity-kyocera.museum/exhibition/20260718-20260923
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:suikoden-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260907
+SUMMARY:水滸伝展
+LOCATION:大阪市立美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.yomiuri-osaka.com/
+ lp/suikoden/
+URL:https://www.yomiuri-osaka.com/lp/suikoden/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tada-minami-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260829
+DTEND;VALUE=DATE:20261207
+SUMMARY:多田美波
+LOCATION:東京都現代美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.mot-art-museum.jp/
+ exhibitions/Tada-Minami/
+URL:https://www.mot-art-museum.jp/exhibitions/Tada-Minami/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hokusai-hiroshige-fuji-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260623
+DTEND;VALUE=DATE:20260831
+SUMMARY:北斎 広重　ふたりの富士、それぞれの富士
+LOCATION:すみだ北斎美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://hokusai-museum.jp/hoku
+ saihiroshige/
+URL:https://hokusai-museum.jp/hokusaihiroshige/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:leo-lionni-friends-2026@hillslife.tokyo
+DTSTAMP:20260820T110000Z
+DTSTART;VALUE=DATE:20260711
+DTEND;VALUE=DATE:20260831
+SUMMARY:レオ・レオーニと仲間たち
+LOCATION:長崎県美術館
+DESCRIPTION:休館日・入場方法・最新情報は来館前に公式サ
+ イトでご確認ください。\n公式：https://www.nagasaki-museum.jp
+ /archives/exhibition_post/30717
+URL:https://www.nagasaki-museum.jp/archives/exhibition_post/30717
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hillslife.tokyo/art/sitemap.xml

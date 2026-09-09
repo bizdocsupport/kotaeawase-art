@@ -1,0 +1,16 @@
+TOP + 展覧会 v4 validation / 2026-08-20
+
+HTML local asset/link existence: PASS
+HTML duplicate id check: PASS
+site-v4.js node --check: PASS
+exhibitions-curated-v4.js node --check: PASS
+exhibition-calendar.js node --check: PASS
+Dynamic home cards: 3: PASS
+Select museum cards: 12: PASS
+Responsive layout smoke test (390px / 1440px): PASS
+Browser JavaScript smoke test (TOP): PASS
+Major exhibition ICS VEVENT count: 12: PASS
+ICS physical line length <= 75 octets: PASS
+Ticket calendar: individual events only: PASS
+Major exhibitions calendar: subscription feed: PASS
+Existing past-exhibition archive hook preserved: PASS

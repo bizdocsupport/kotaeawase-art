@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>01/02/03 検品ページ｜答え合わせ美術部</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.04.8">
+  <link rel="stylesheet" href="assets/css/inspection.css?v=3.04.8">
+</head>
+<body class="inspection-body">
+<header class="inspection-header">
+  <div class="inspection-header-inner">
+    <a class="inspection-brand" href="index.html">
+      <img src="assets/images/web/brand-avatar-main.png?v=3.03" alt="" width="42" height="42">
+      <span><strong>答え合わせ美術部</strong><small>01 / 02 / 03 検品ページ</small></span>
+    </a>
+    <a class="inspection-back" href="index.html">サイトへ戻る →</a>
+  </div>
+</header>
+
+<main class="inspection-main" data-inspection-root>
+  <section class="inspection-intro">
+    <div>
+      <p class="inspection-eyebrow">VISUAL HINT INSPECTION</p>
+      <h1>全作品の 01 / 02 / 03 を<br>まとめて確認する。</h1>
+      <p>「囲みが対象に当たっていない」「矢印が違う場所を指している」など、<strong>明らかなズレだけ先に拾う</strong>ための検品ページです。</p>
+    </div>
+    <div class="inspection-help">
+      <strong>使い方</strong>
+      <ol>
+        <li>4枚を見比べる</li>
+        <li>ズレている 01 / 02 / 03 だけ「ズレを記録」</li>
+        <li>1作品見終えたら「確認済み」にする</li>
+      </ol>
+      <p>レビュー状態・メモは<strong>このブラウザ内だけ</strong>に保存されます。</p>
+    </div>
+  </section>
+
+  <section class="inspection-toolbar" aria-label="検品フィルター">
+    <div class="inspection-filter-group">
+      <label>範囲
+        <select data-filter-scope>
+          <option value="all">すべて</option>
+          <option value="overseas">海外</option>
+          <option value="japan">日本</option>
+        </select>
+      </label>
+      <label>状態
+        <select data-filter-review>
+          <option value="all">すべて</option>
+          <option value="unreviewed">未確認</option>
+          <option value="issue">ズレあり</option>
+          <option value="reviewed">確認済み</option>
+          <option value="incomplete">データ不足</option>
+        </select>
+      </label>
+      <label>表示件数
+        <select data-page-size>
+          <option value="12">12</option>
+          <option value="24" selected>24</option>
+          <option value="48">48</option>
+        </select>
+      </label>
+    </div>
+    <label class="inspection-search">
+      <span>検索</span>
+      <input type="search" data-search placeholder="例：ov-001 / モナ・リザ / レオナルド">
+    </label>
+    <div class="inspection-actions">
+      <button type="button" data-copy-issues>ズレ一覧をコピー</button>
+      <button type="button" data-export-csv>レビューCSV</button>
+    </div>
+  </section>
+
+  <section class="inspection-summary" aria-live="polite">
+    <div><strong data-stat-visible>0</strong><span>表示対象</span></div>
+    <div><strong data-stat-total>0</strong><span>全作品</span></div>
+    <div><strong data-stat-issue>0</strong><span>ズレあり</span></div>
+    <div><strong data-stat-reviewed>0</strong><span>確認済み</span></div>
+    <div><strong data-stat-incomplete>0</strong><span>データ不足</span></div>
+  </section>
+
+  <div class="inspection-pager inspection-pager-top" data-pager-top></div>
+  <section class="inspection-list" data-inspection-list></section>
+  <div class="inspection-pager" data-pager-bottom></div>
+</main>
+
+<div class="inspection-toast" data-toast role="status" aria-live="polite"></div>
+
+<dialog class="inspection-modal" data-inspection-modal>
+  <div class="inspection-modal-card">
+    <button type="button" class="inspection-modal-close" data-modal-close aria-label="閉じる">×</button>
+    <div class="inspection-modal-title" data-modal-title></div>
+    <div class="inspection-modal-stage" data-modal-stage></div>
+  </div>
+</dialog>
+
+<script src="assets/js/mustsee-data.js?v=3.04.15"></script>
+<script src="assets/js/mustsee-images.js?v=3.04.15"></script>
+<script src="assets/js/artwork-visual-hints.js?v=3.04.17"></script>
+<script src="assets/js/inspection.js?v=3.04.8"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+答え合わせ美術部｜展覧会マスタ v4.3.0 検品結果
+2026-08-21
+
+PASS
+
+マスタ件数: 16
+- 実展覧会: 15
+- 旅ガイド: 1
+
+旧ギャラリー「展示会」: 11 / 11 マスタ対応
+展覧会詳細記事: 11 / 11 マスタ対応
+来日予定作品: 13作品 / 展覧会名6種すべてマスタ対応
+セレクト美術館: 12館
+画像: 16 / 16 解決
+公式URL: 実展覧会15 / 15
+チケット日程あり: 4展
+- フェルメール
+- ルーヴル
+- シンシナティ
+- オルセー
+
+2026-08-21分類
+- 開催中: 8
+- 0〜45日: 2
+- 46〜180日: 3
+- 会期終了: 3
+- 180日超: 0
+
+確認項目
+[PASS] ID重複なし
+[PASS] start/end逆転なし
+[PASS] 必須項目不足なし
+[PASS] ローカル画像パス存在
+[PASS] imageIdはMUSTSEE_IMAGESで解決
+[PASS] 見どころ記事URL/slug解決
+[PASS] ticketEvents重複なし
+[PASS] exhibition-calendar.js内の独立チケット配列を撤去
+[PASS] site-v4.js / exhibitions-data.js / exhibition-calendar.js / exhibition-detail.js JS構文
+[PASS] 更新対象HTMLのscript参照先が存在

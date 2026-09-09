@@ -1,0 +1,17 @@
+/* Optional comparison section used by exhibition guides such as Hokusai × Hiroshige. */
+.exhibition-comparison-section[hidden]{display:none}
+.exhibition-comparison-shell{border:1px solid rgba(17,42,70,.14);border-radius:22px;background:#fffdf8;padding:clamp(18px,3vw,34px);box-shadow:0 18px 50px rgba(28,41,56,.05)}
+.exhibition-comparison-lead{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:22px}
+.exhibition-comparison-lead p{margin:0;padding:15px 18px;border-radius:14px;font-weight:700;line-height:1.75;background:#f3f0e9}
+.exhibition-comparison-lead p:first-child{color:#14385f;border-left:4px solid #14385f}
+.exhibition-comparison-lead p:last-child{color:#24553d;border-left:4px solid #24553d}
+.exhibition-comparison-table-wrap{overflow-x:auto}
+.exhibition-comparison-table{width:100%;border-collapse:collapse;min-width:650px;font-size:clamp(13px,1.3vw,15px)}
+.exhibition-comparison-table th,.exhibition-comparison-table td{border:1px solid #d9d7d0;padding:13px 15px;vertical-align:top;line-height:1.7;text-align:left}
+.exhibition-comparison-table thead th{background:#f1efe8;font-weight:800;text-align:center}
+.exhibition-comparison-table thead th:nth-child(2){background:#183f69;color:#fff}
+.exhibition-comparison-table thead th:nth-child(3){background:#365f49;color:#fff}
+.exhibition-comparison-table tbody th{width:18%;background:#f7f5ef;text-align:center}
+.exhibition-comparison-table tbody td:nth-child(2){background:rgba(24,63,105,.035)}
+.exhibition-comparison-table tbody td:nth-child(3){background:rgba(54,95,73,.04)}
+@media (max-width:720px){.exhibition-comparison-lead{grid-template-columns:1fr}.exhibition-comparison-shell{border-radius:16px;padding:16px}.exhibition-comparison-table th,.exhibition-comparison-table td{padding:10px 11px}}

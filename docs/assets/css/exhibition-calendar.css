@@ -1,0 +1,165 @@
+/* 答え合わせ美術部｜Google Calendar 連携 チケット日程 v2.6.0 */
+.ka-major-calendar{
+  max-width:1120px;
+  margin:24px auto 30px;
+  padding:22px 24px 18px;
+  border:1px solid rgba(20,33,48,.12);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 7px 26px rgba(18,34,51,.055);
+  color:#17212b;
+  font-family:inherit;
+}
+.ka-major-calendar__eyebrow{
+  margin-bottom:8px;
+  color:#7a8794;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.15em;
+}
+.ka-major-calendar__body{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.ka-major-calendar h2{
+  margin:0 0 7px;
+  font-size:clamp(18px,2vw,24px);
+  line-height:1.45;
+}
+.ka-major-calendar p{margin:0;color:#64717f;font-size:13px;line-height:1.8;}
+.ka-major-calendar__actions{display:flex;flex-wrap:wrap;gap:8px;flex:none;}
+.ka-major-calendar__primary,
+.ka-major-calendar__secondary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:42px;
+  padding:9px 14px;
+  border-radius:999px;
+  border:1px solid #17212b;
+  font:inherit;
+  font-size:12px;
+  font-weight:800;
+  line-height:1.3;
+  cursor:pointer;
+  text-decoration:none;
+}
+.ka-major-calendar__primary{background:#17212b;color:#fff;}
+.ka-major-calendar__primary:hover{background:#263548;border-color:#263548;}
+.ka-major-calendar__secondary{background:#fff;color:#17212b;border-color:rgba(20,33,48,.2);}
+.ka-major-calendar__secondary:hover{background:#f7f8f9;border-color:rgba(20,33,48,.36);}
+.ka-major-calendar svg,
+.ka-excal svg{
+  width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none;
+}
+.ka-major-calendar__steps{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:15px;
+  padding-top:13px;
+  border-top:1px solid rgba(20,33,48,.09);
+  color:#667484;
+  font-size:11px;
+  line-height:1.6;
+}
+.ka-major-calendar__steps strong{color:#17212b;white-space:nowrap;}
+.ka-major-calendar__url{margin-top:10px;padding:8px 10px;border-radius:9px;background:#f3f5f7;overflow:auto;}
+.ka-major-calendar__url code{font-size:10px;white-space:nowrap;}
+.ka-major-calendar__note{margin-top:9px!important;font-size:10px!important;color:#85909b!important;}
+.ka-major-calendar__toast{
+  position:fixed;left:50%;bottom:22px;z-index:99999;
+  transform:translate(-50%,12px);opacity:0;pointer-events:none;
+  max-width:calc(100vw - 32px);padding:10px 14px;border-radius:999px;
+  background:#17212b;color:#fff;font-size:11px;font-weight:700;
+  transition:opacity .18s ease,transform .18s ease;
+}
+.ka-major-calendar__toast.is-visible{opacity:1;transform:translate(-50%,0);}
+
+/* 各展覧会のチケット日程：1件ずつ追加 */
+.ka-excal{
+  position:relative;
+  z-index:3;
+  margin:11px 0 4px;
+  padding:0;
+  font-family:inherit;
+}
+.ka-excal__ticket-summary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:37px;
+  padding:7px 11px;
+  border:1px solid rgba(20,33,48,.17);
+  border-radius:999px;
+  background:#fff;
+  color:#17212b;
+  font:inherit;
+  font-size:11px;
+  font-weight:800;
+  line-height:1.3;
+  cursor:pointer;
+  user-select:none;
+  appearance:none;
+}
+.ka-excal__ticket-summary:hover{background:#f8f9fa;border-color:rgba(20,33,48,.34);color:#17212b;}
+.ka-excal__ticket-summary svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;flex:0 0 auto;}
+.ka-excal__chev{font-size:13px;line-height:1;margin-left:1px;transition:transform .15s ease;}
+.ka-excal.is-open .ka-excal__chev{transform:rotate(180deg);}
+
+/* v2.5: メニューはbody直下のportal。カードのoverflowに切られない。 */
+.ka-excal__menu{
+  position:fixed;
+  width:min(390px,calc(100vw - 40px));
+  max-height:min(380px,calc(100vh - 24px));
+  overflow:auto;
+  overscroll-behavior:contain;
+  padding:7px;
+  background:#fff;
+  border:1px solid rgba(20,33,48,.14);
+  border-radius:14px;
+  box-shadow:0 16px 42px rgba(20,33,48,.22);
+  z-index:2147483000;
+}
+.ka-excal__menu-link{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  padding:10px;
+  border-radius:9px;
+  color:#17212b;
+  text-decoration:none;
+}
+.ka-excal__menu-link:hover{background:#f3f6f8;color:#17212b;}
+.ka-excal__menu-link span{display:flex;flex-direction:column;gap:2px;min-width:0;}
+.ka-excal__menu-link strong{font-size:12px;font-weight:800;line-height:1.4;}
+.ka-excal__menu-link small{font-size:10px;color:#687585;}
+.ka-excal__menu-link em{font-size:10px;font-style:normal;font-weight:800;color:#526477;white-space:nowrap;}
+.ka-excal__menu-note{margin:5px 8px 3px;color:#7b8794;font-size:9px;line-height:1.5;}
+
+.ka-major-calendar__primary:focus-visible,
+.ka-major-calendar__secondary:focus-visible,
+.ka-excal__ticket-summary:focus-visible,
+.ka-excal__menu-link:focus-visible{outline:2px solid #2f6fed;outline-offset:2px;}
+
+@media (max-width:760px){
+  .ka-major-calendar{margin:18px 14px 24px;padding:18px 16px 15px;}
+  .ka-major-calendar__body{display:block;}
+  .ka-major-calendar__actions{margin-top:14px;}
+  .ka-major-calendar__primary,.ka-major-calendar__secondary{width:100%;}
+  .ka-major-calendar__steps{align-items:flex-start;flex-direction:column;gap:3px;}
+  .ka-excal__menu{left:12px!important;right:12px!important;top:auto!important;bottom:16px!important;width:auto;max-height:58vh;border-radius:16px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .ka-major-calendar__toast,.ka-excal__chev{transition:none;}
+}
+
+/* v2.4: v4カード内は専用スロットに1個だけ表示 */
+.v4-ticket-slot .ka-excal{width:100%;margin:0;}
+.v4-ticket-slot .ka-excal__ticket-summary{box-sizing:border-box;max-width:100%;width:100%;}
+.v4-ticket-slot .ka-excal__chev{margin-left:auto;}

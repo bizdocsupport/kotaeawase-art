@@ -1,0 +1,99 @@
+name: Manual deploy to Onamae.com
+
+"on":
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "First run: dry-run. Select deploy only after checking the log."
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - dry-run
+          - deploy
+
+permissions:
+  contents: read
+
+concurrency:
+  group: art-production-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify untouched site baseline
+        run: python3 tools/verify_baseline.py
+
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Check required FTP secrets
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: |
+          set -euo pipefail
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FTP_REMOTE_DIR; do
+            if [ -z "${!name:-}" ]; then
+              echo "Missing Repository Secret: $name"
+              exit 1
+            fi
+          done
+
+      - name: FTP dry-run / deploy
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_TLS: ${{ secrets.FTP_TLS }}
+          DEPLOY_MODE: ${{ inputs.mode }}
+        run: |
+          set -euo pipefail
+          set +x
+
+          PORT="${FTP_PORT:-21}"
+          TLS="${FTP_TLS:-false}"
+          REMOTE_DIR="${FTP_REMOTE_DIR}"
+
+          MIRROR_EXTRA=""
+          if [ "$DEPLOY_MODE" = "dry-run" ]; then
+            MIRROR_EXTRA="--dry-run"
+            echo "DRY-RUN only. No file will be uploaded."
+          else
+            echo "DEPLOY mode. Uploading docs/ to the configured remote directory."
+          fi
+
+          TLS_COMMANDS="set ftp:ssl-force false; set ftp:ssl-protect-data false;"
+          if [ "$TLS" = "true" ] || [ "$TLS" = "TRUE" ] || [ "$TLS" = "1" ]; then
+            TLS_COMMANDS="set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate true;"
+          fi
+
+          # Phase 1 intentionally does NOT use --delete.
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -p "$PORT" "$FTP_SERVER" -e "
+            set cmd:fail-exit true;
+            set net:max-retries 2;
+            set net:timeout 20;
+            set ftp:passive-mode true;
+            $TLS_COMMANDS
+            cd "$REMOTE_DIR";
+            mirror -R --verbose --parallel=4 $MIRROR_EXTRA docs/ ./;
+            bye
+          "
+
+      - name: Result
+        run: |
+          if [ "${{ inputs.mode }}" = "dry-run" ]; then
+            echo "Dry-run finished. Review the FTP mirror log. Nothing was uploaded."
+          else
+            echo "Manual deployment finished. Check https://hillslife.tokyo/art/ in a browser."
+          fi

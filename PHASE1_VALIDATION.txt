@@ -1,0 +1,18 @@
+Phase 1 validation result
+=========================
+Source: art(3).zip / art/
+Git publish folder: docs/
+
+Source ZIP SHA-256:
+592936e06a13f33e61ddd80bfb5e7b557edc43470f0b113cbba657e961c8ace8
+
+Original art/ files : 748
+Repository docs/ files: 748
+Original total bytes : 173173080
+Repository total bytes: 173173080
+
+File-content comparison: PASS
+SHA-256 baseline verification: PASS
+
+All files under docs/ contain exactly the same bytes as the corresponding files under art/ in the supplied source ZIP.
+No production-site HTML/CSS/JS/image content was modified.

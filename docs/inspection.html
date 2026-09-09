@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>01/02/03 検品ページ｜答え合わせ美術部</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3.04.8">
+  <link rel="stylesheet" href="assets/css/inspection.css?v=3.04.52">
+</head>
+<body class="inspection-body">
+<header class="inspection-header">
+  <div class="inspection-header-inner">
+    <a class="inspection-brand" href="index.html">
+      <img src="assets/images/web/brand-avatar-main.png?v=3.03" alt="" width="42" height="42">
+      <span><strong>答え合わせ美術部</strong><small>01 / 02 / 03 検品ページ</small></span>
+    </a>
+    <a class="inspection-back" href="index.html">サイトへ戻る →</a>
+  </div>
+</header>
+
+<main class="inspection-main" data-inspection-root>
+  <section class="inspection-intro">
+    <div>
+      <p class="inspection-eyebrow">VISUAL HINT INSPECTION</p>
+      <h1>全作品の 01 / 02 / 03 を<br>まとめて確認する。</h1>
+      <p>「囲みが対象に当たっていない」「矢印が違う場所を指している」など、<strong>明らかなズレだけ先に拾う</strong>ための検品ページです。</p>
+    </div>
+    <div class="inspection-help">
+      <strong>使い方</strong>
+      <ol>
+        <li>4枚を見比べる</li>
+        <li>ズレている 01 / 02 / 03 だけ「ズレを記録」</li>
+        <li>ズレを記録した 01 / 02 / 03 ごとにメモを残す</li>
+        <li>修正確認後は「確認済み」。ページ単位の一括処理もできます</li>
+      </ol>
+      <p>レビュー状態・メモは<strong>このブラウザ内だけ</strong>に保存されます。</p>
+    </div>
+  </section>
+
+  <section class="inspection-toolbar" aria-label="検品フィルター">
+    <div class="inspection-filter-group">
+      <label>範囲
+        <select data-filter-scope>
+          <option value="all">すべて</option>
+          <option value="overseas">海外</option>
+          <option value="japan">日本</option>
+        </select>
+      </label>
+      <label>状態
+        <select data-filter-review>
+          <option value="all">すべて</option>
+          <option value="unreviewed">未確認</option>
+          <option value="issue">ズレあり</option>
+          <option value="reviewed">確認済み</option>
+          <option value="incomplete">データ不足</option>
+        </select>
+      </label>
+      <label class="inspection-check-filter">
+        <span>表示</span>
+        <span class="inspection-check-control"><input type="checkbox" data-hide-reviewed> 確認済みを非表示</span>
+      </label>
+      <label>表示件数
+        <select data-page-size>
+          <option value="12">12</option>
+          <option value="24" selected>24</option>
+          <option value="48">48</option>
+        </select>
+      </label>
+    </div>
+    <label class="inspection-search">
+      <span>検索</span>
+      <input type="search" data-search placeholder="例：ov-001 / モナ・リザ / レオナルド">
+    </label>
+    <div class="inspection-actions">
+      <button type="button" class="inspection-bulk-reviewed" data-review-page>このページを一括確認済み</button>
+      <button type="button" class="inspection-export-page" data-export-page>このページをX用4枚出力（縦カード）</button>
+      <button type="button" data-copy-issues>ズレ一覧をコピー</button>
+      <button type="button" data-export-csv>レビューCSV</button>
+    </div>
+  </section>
+
+  <section class="inspection-summary" aria-live="polite">
+    <div><strong data-stat-visible>0</strong><span>表示対象</span></div>
+    <div><strong data-stat-total>0</strong><span>全作品</span></div>
+    <div><strong data-stat-issue>0</strong><span>ズレあり</span></div>
+    <div><strong data-stat-reviewed>0</strong><span>確認済み</span></div>
+    <div><strong data-stat-incomplete>0</strong><span>データ不足</span></div>
+  </section>
+
+  <section class="inspection-x-rpa" aria-label="X予約投稿RPA出力">
+    <div class="inspection-x-rpa-head">
+      <div><p class="inspection-eyebrow">X SCHEDULE / RPA</p><h2>検品済み作品から、予約投稿一式を作る。</h2></div>
+      <div class="inspection-x-rpa-stats"><span>出力可能 <strong data-x-eligible-count>0</strong></span><span>X出力済み <strong data-x-exported-count>0</strong></span></div>
+    </div>
+    <div class="inspection-x-rpa-grid">
+      <label>投稿開始日<input type="date" data-x-start-date></label>
+      <label>投稿時刻<input type="time" value="20:30" data-x-time></label>
+      <label>曜日①<select data-x-weekday1><option value="1">月</option><option value="2" selected>火</option><option value="3">水</option><option value="4">木</option><option value="5">金</option><option value="6">土</option><option value="0">日</option></select></label>
+      <label>曜日②<select data-x-weekday2><option value="1">月</option><option value="2">火</option><option value="3">水</option><option value="4" selected>木</option><option value="5">金</option><option value="6">土</option><option value="0">日</option></select></label>
+      <label>1回の出力件数<select data-x-batch-size><option value="4">4件（2週間）</option><option value="8" selected>8件（4週間）</option><option value="12">12件（6週間）</option><option value="16">16件（8週間）</option></select></label>
+      <label>開始PostNumber<input type="number" min="1" value="1" data-x-start-number></label>
+      <label class="inspection-x-path">画像フォルダ<input type="text" value="C:\RPA\art_guide\images" data-x-image-root></label>
+    </div>
+    <div class="inspection-x-rpa-actions">
+      <button type="button" class="inspection-x-export-batch" data-x-export-batch>次の8件を「縦4枚＋Excel」ZIP出力</button>
+      <button type="button" data-x-undo-last>直前バッチを未出力に戻す</button>
+      <button type="button" data-x-reset-exported>X出力済みを全件リセット</button>
+    </div>
+    <p class="inspection-x-note">対象は <strong>確認済み・ズレ記録なし・ローカル画像・01/02/03データあり</strong> の作品だけ。外部画像URLの作品はバッチでは自動スキップします。ZIPを <code>C:\RPA\art_guide\</code> に展開すると、従来RPA用Excel＋4枚画像が同じ構成で揃います。</p>
+  </section>
+
+  <div class="inspection-pager inspection-pager-top" data-pager-top></div>
+  <section class="inspection-list" data-inspection-list></section>
+  <div class="inspection-pager" data-pager-bottom></div>
+</main>
+
+<div class="inspection-toast" data-toast role="status" aria-live="polite"></div>
+
+<dialog class="inspection-modal" data-inspection-modal>
+  <div class="inspection-modal-card">
+    <button type="button" class="inspection-modal-close" data-modal-close aria-label="閉じる">×</button>
+    <div class="inspection-modal-title" data-modal-title></div>
+    <div class="inspection-modal-stage" data-modal-stage></div>
+  </div>
+</dialog>
+
+<script src="assets/js/mustsee-data.js?v=3.04.48"></script>
+<script src="assets/js/mustsee-images.js?v=3.04.48"></script>
+<script src="assets/js/artwork-visual-hints.js?v=3.04.51"></script>
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="assets/js/inspection.js?v=3.04.57"></script>
+</body>
+</html>
