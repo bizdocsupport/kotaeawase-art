@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-09-09T16:18:54+09:00",
+  "updatedAt": "2026-09-09T16:37:16+09:00",
   "items": [
     {
-      "id": "auto-osaka-art-f1784e2e47",
-      "title": "開館90周年記念特別展 全力！名宝物語 ―大阪市美とたどる美のエピソード",
-      "venue": "大阪市立美術館",
+      "id": "auto-aham-d1abb0eb8d",
+      "title": "あべのハルカス美術館 大阪市 阿倍野区阿倍野筋",
+      "venue": "あべのハルカス美術館",
       "area": "大阪",
-      "start": "2026-04-25",
-      "end": "2026-06-21",
-      "official": "https://www.osaka-art-museum.jp/special_exhibition/8302",
-      "source_key": "osaka-art"
+      "start": "2026-01-01",
+      "end": "2026-12-26",
+      "official": "https://www.aham.jp/exhibition/future/lucie_rie",
+      "source_key": "aham"
     },
     {
       "id": "auto-artizon-c2cb08142a",
@@ -32,6 +32,16 @@
       "source_key": "nakka"
     },
     {
+      "id": "auto-tobikan-4eb1af0a22",
+      "title": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
+      "venue": "東京都美術館",
+      "area": "東京",
+      "start": "2026-07-23",
+      "end": "2026-10-07",
+      "official": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
+      "source_key": "tobikan"
+    },
+    {
       "id": "auto-kyocera-5e5119c49b",
       "title": "松延総司：壁",
       "venue": "京都市京セラ美術館",
@@ -52,6 +62,16 @@
       "source_key": "kyocera"
     },
     {
+      "id": "auto-tnm-ee8475cb50",
+      "title": "詳細ページへ",
+      "venue": "東京国立博物館",
+      "area": "東京",
+      "start": "2026-09-29",
+      "end": "2026-12-20",
+      "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2759",
+      "source_key": "tnm"
+    },
+    {
       "id": "auto-kyocera-1005daf56b",
       "title": "［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」",
       "venue": "京都市京セラ美術館",
@@ -60,6 +80,16 @@
       "end": "2026-12-13",
       "official": "https://kyotocity-kyocera.museum/exhibition/20261009-20261213",
       "source_key": "kyocera"
+    },
+    {
+      "id": "auto-tnm-57fdc4d7a9",
+      "title": "詳細ページへ",
+      "venue": "東京国立博物館",
+      "area": "東京",
+      "start": "2026-10-14",
+      "end": "2026-12-06",
+      "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2770",
+      "source_key": "tnm"
     },
     {
       "id": "auto-artizon-3538cc4973",
@@ -102,6 +132,26 @@
       "source_key": "nakka"
     },
     {
+      "id": "auto-tobikan-40ce5d0143",
+      "title": "東京都美術館開館100周年記念 あなたが世界を読むために",
+      "venue": "東京都美術館",
+      "area": "東京",
+      "start": "2026-11-19",
+      "end": "2027-01-11",
+      "official": "https://www.tobikan.jp/exhibition/2026_waysofreading.html",
+      "source_key": "tobikan"
+    },
+    {
+      "id": "auto-tobikan-693884f571",
+      "title": "東京都美術館開館100周年記念 はじまりをひらく 東京都美術館の100年",
+      "venue": "東京都美術館",
+      "area": "東京",
+      "start": "2026-11-19",
+      "end": "2027-01-11",
+      "official": "https://www.tobikan.jp/exhibition/2026_archives.html",
+      "source_key": "tobikan"
+    },
+    {
       "id": "auto-kyocera-a39b6482bd",
       "title": "スタジオジブリ企画制作『白隠さんの禅』京都展",
       "venue": "京都市京セラ美術館",
@@ -132,6 +182,26 @@
       "source_key": "nakka"
     },
     {
+      "id": "auto-aham-362536b9d9",
+      "title": "あべのハルカス美術館 大阪市 阿倍野区阿倍野筋",
+      "venue": "あべのハルカス美術館",
+      "area": "大阪",
+      "start": "2027-01-01",
+      "end": "2027-03-20",
+      "official": "https://www.aham.jp/exhibition/future/ericcarle",
+      "source_key": "aham"
+    },
+    {
+      "id": "auto-aham-b5f1855bbe",
+      "title": "あべのハルカス美術館 大阪市 阿倍野区阿倍野筋",
+      "venue": "あべのハルカス美術館",
+      "area": "大阪",
+      "start": "2027-01-01",
+      "end": "2027-05-22",
+      "official": "https://www.aham.jp/exhibition/future/hokusai2027",
+      "source_key": "aham"
+    },
+    {
       "id": "auto-sompo-32cbb76acd",
       "title": "生誕130年 東郷青児展",
       "venue": "SOMPO美術館",
@@ -160,6 +230,16 @@
       "end": "2027-03-14",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270115-20270314",
       "source_key": "kyocera"
+    },
+    {
+      "id": "auto-tnm-758b4c33bc",
+      "title": "詳細ページへ",
+      "venue": "東京国立博物館",
+      "area": "東京",
+      "start": "2027-01-19",
+      "end": "2027-03-14",
+      "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2763",
+      "source_key": "tnm"
     },
     {
       "id": "auto-nakka-d3234d567d",
@@ -202,6 +282,16 @@
       "source_key": "sompo"
     },
     {
+      "id": "auto-tobikan-13731f99dc",
+      "title": "デュフィ展",
+      "venue": "東京都美術館",
+      "area": "東京",
+      "start": "2027-04-24",
+      "end": "2027-08-22",
+      "official": "https://www.tobikan.jp/exhibition/2027_dufy.html",
+      "source_key": "tobikan"
+    },
+    {
       "id": "auto-kyocera-9998aae2f5",
       "title": "ギルバート＆ジョージ展",
       "venue": "京都市京セラ美術館",
@@ -210,6 +300,16 @@
       "end": "2027-08-29",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270526-20270829",
       "source_key": "kyocera"
+    },
+    {
+      "id": "auto-tobikan-d75d78fe8c",
+      "title": "レンブラントからモネ、ゴッホ ハマー美術館展",
+      "venue": "東京都美術館",
+      "area": "東京",
+      "start": "2027-09-11",
+      "end": "2027-12-12",
+      "official": "https://www.tobikan.jp/exhibition/2027_hammer.html",
+      "source_key": "tobikan"
     },
     {
       "id": "auto-kyocera-2252cce9e4",
