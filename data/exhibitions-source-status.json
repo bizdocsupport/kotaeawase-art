@@ -1,10 +1,119 @@
 {
-  "sources": [],
+  "sources": [
+    {
+      "key": "nmwa",
+      "venue": "国立西洋美術館",
+      "url": "https://www.nmwa.go.jp/jp/exhibitions/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 0,
+      "error": ""
+    },
+    {
+      "key": "tobikan",
+      "venue": "東京都美術館",
+      "url": "https://www.tobikan.jp/exhibition/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 0,
+      "error": ""
+    },
+    {
+      "key": "nact",
+      "venue": "国立新美術館",
+      "url": "https://www.nact.jp/exhibition_special/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 3,
+      "error": ""
+    },
+    {
+      "key": "tnm",
+      "venue": "東京国立博物館",
+      "url": "https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 2,
+      "error": ""
+    },
+    {
+      "key": "mot",
+      "venue": "東京都現代美術館",
+      "url": "https://www.mot-art-museum.jp/exhibitions/",
+      "ok": false,
+      "httpStatus": 403,
+      "candidateCount": 0,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/"
+    },
+    {
+      "key": "sompo",
+      "venue": "SOMPO美術館",
+      "url": "https://www.sompo-museum.org/exhibitions/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 3,
+      "error": ""
+    },
+    {
+      "key": "mimt",
+      "venue": "三菱一号館美術館",
+      "url": "https://mimt.jp/",
+      "ok": false,
+      "httpStatus": 403,
+      "candidateCount": 0,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/"
+    },
+    {
+      "key": "artizon",
+      "venue": "アーティゾン美術館",
+      "url": "https://www.artizon.museum/exhibition/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 5,
+      "error": ""
+    },
+    {
+      "key": "nakka",
+      "venue": "大阪中之島美術館",
+      "url": "https://nakka-art.jp/exhibition/held/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 2,
+      "error": ""
+    },
+    {
+      "key": "kyocera",
+      "venue": "京都市京セラ美術館",
+      "url": "https://kyotocity-kyocera.museum/ja/exhibition",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 13,
+      "error": ""
+    },
+    {
+      "key": "osaka-art",
+      "venue": "大阪市立美術館",
+      "url": "https://www.osaka-art-museum.jp/special_exhibition",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 22,
+      "error": ""
+    },
+    {
+      "key": "aham",
+      "venue": "あべのハルカス美術館",
+      "url": "https://www.aham.jp/exhibition/future/",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 0,
+      "error": ""
+    }
+  ],
   "summary": {
-    "sourceCount": 0,
-    "okCount": 0,
-    "errorCount": 0,
-    "candidateCountBeforeManualFilter": 0,
-    "candidateCountAfterManualFilter": 0
+    "sourceCount": 12,
+    "okCount": 10,
+    "errorCount": 2,
+    "candidateCountBeforeManualFilter": 50,
+    "candidateCountAfterManualFilter": 40
   }
 }
