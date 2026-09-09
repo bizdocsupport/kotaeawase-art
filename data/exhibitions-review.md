@@ -3,7 +3,7 @@
 > Phase 2A。ここに出た内容はまだ本番サイトには反映されません。
 
 - 自動候補: **22件**
-- 今回の新規候補: **10件**
+- 今回の新規候補: **0件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -30,56 +30,7 @@
 
 ## 今回の新規候補
 
-### 開館90周年記念特別展 全力！名宝物語 ―大阪市美とたどる美のエピソード
-- 会場: 大阪市立美術館
-- 会期: 2026-04-25 ～ 2026-06-21
-- 公式: https://www.osaka-art-museum.jp/special_exhibition/8302
-
-### スイス絵画の異才 カール・ヴァルザー
-- 会場: 大阪中之島美術館
-- 会期: 2026-07-04 ～ 2026-09-27
-- 公式: https://nakka-art.jp/exhibition-post/karlwalser-2026
-
-### 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展
-- 会場: 国立新美術館
-- 会期: 2026-10-28 ～ 2027-02-08
-- 公式: https://www.nact.jp/exhibition_special/2026/shojomanga
-
-### 大英博物館日本美術コレクション 百花繚乱〜海を越えた江戸絵画
-- 会場: 大阪中之島美術館
-- 会期: 2026-10-31 ～ 2027-01-31
-- 公式: https://nakka-art.jp/exhibition-post/daiei-ten2026
-
-### Osaka Directory 13 Supported by RICHARD MILLE 橘 葉月
-- 会場: 大阪中之島美術館
-- 会期: 2026-11-14 ～ 2026-12-13
-- 公式: https://nakka-art.jp/exhibition-post/osaka-directory-dir13
-
-### Osaka Directory 14 Supported by RICHARD MILLE 迫 鉄平
-- 会場: 大阪中之島美術館
-- 会期: 2026-12-19 ～ 2027-01-17
-- 公式: https://nakka-art.jp/exhibition-post/osaka-directory-dir14
-
-### 生誕130年 東郷青児展
-- 会場: SOMPO美術館
-- 会期: 2027-01-09 ～ 2027-02-21
-- 公式: https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary
-
-### 乾 真裕子
-- 会場: 大阪中之島美術館
-- 会期: 2027-01-23 ～ 2027-02-21
-- 公式: https://nakka-art.jp/exhibition-post/osaka-directory-dir15
-
-### 円山応挙 リアルの先へ 空間革命
-- 会場: 大阪市立美術館
-- 会期: 2027-02-06 ～ 2027-04-04
-- 公式: https://www.osaka-art-museum.jp/special_exhibition/10344
-
-### FACE展2027
-- 会場: SOMPO美術館
-- 会期: 2027-03-06 ～ 2027-03-28
-- 公式: https://www.sompo-museum.org/exhibitions/2025/face2027
-
+新規候補はありません。
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
