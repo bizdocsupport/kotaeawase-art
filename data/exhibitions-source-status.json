@@ -59,12 +59,12 @@
       "key": "sompo",
       "venue": "SOMPO美術館",
       "url": "https://www.sompo-museum.org/exhibitions/",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 3,
-      "fetchMethod": "HTTP",
+      "ok": false,
+      "httpStatus": null,
+      "candidateCount": 0,
+      "fetchMethod": "-",
       "warning": "",
-      "error": ""
+      "error": "https://www.sompo-museum.org/exhibitions/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7efdaf2bea80>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)')) | https://www.sompo-museum.org/exhibitions/schedule/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/schedule/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7efdaf71fce0>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)'))"
     },
     {
       "key": "mimt",
@@ -92,12 +92,12 @@
       "key": "nakka",
       "venue": "大阪中之島美術館",
       "url": "https://nakka-art.jp/exhibition/held/",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 7,
-      "fetchMethod": "HTTP",
+      "ok": false,
+      "httpStatus": null,
+      "candidateCount": 0,
+      "fetchMethod": "-",
       "warning": "",
-      "error": ""
+      "error": "https://nakka-art.jp/exhibition/held/: ConnectTimeout: HTTPSConnectionPool(host='nakka-art.jp', port=443): Max retries exceeded with url: /exhibition/held/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='nakka-art.jp', port=443) at 0x7efdaebc1070>, 'Connection to nakka-art.jp timed out. (connect timeout=30)'))"
     },
     {
       "key": "kyocera",
@@ -135,9 +135,9 @@
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 10,
-    "errorCount": 2,
-    "candidateCountBeforeManualFilter": 46,
+    "okCount": 8,
+    "errorCount": 4,
+    "candidateCountBeforeManualFilter": 43,
     "candidateCountAfterManualFilter": 31
   }
 }

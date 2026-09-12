@@ -15,10 +15,10 @@
 | 国立新美術館 | OK | HTTP | 3 |
 | 東京国立博物館 | OK | HTTP | 3 |
 | 東京都現代美術館 | ERROR | - | 0 |
-| SOMPO美術館 | OK | HTTP | 3 |
+| SOMPO美術館 | ERROR | - | 0 |
 | 三菱一号館美術館 | ERROR | - | 0 |
 | アーティゾン美術館 | OK | HTTP | 4 |
-| 大阪中之島美術館 | OK | HTTP | 7 |
+| 大阪中之島美術館 | ERROR | - | 0 |
 | 京都市京セラ美術館 | OK | HTTP | 12 |
 | 大阪市立美術館 | OK | HTTP | 2 |
 | あべのハルカス美術館 | OK | HTTP | 4 |
@@ -26,7 +26,9 @@
 ### 取得エラー
 
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
+- **SOMPO美術館**: `https://www.sompo-museum.org/exhibitions/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7efdaf2bea80>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)')) | https://www.sompo-museum.org/exhibitions/schedule/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/schedule/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7efdaf71fce0>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)'))`
 - **三菱一号館美術館**: `https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403 | https://mimt.jp/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 403`
+- **大阪中之島美術館**: `https://nakka-art.jp/exhibition/held/: ConnectTimeout: HTTPSConnectionPool(host='nakka-art.jp', port=443): Max retries exceeded with url: /exhibition/held/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='nakka-art.jp', port=443) at 0x7efdaebc1070>, 'Connection to nakka-art.jp timed out. (connect timeout=30)'))`
 
 ## 今回の新規候補
 
