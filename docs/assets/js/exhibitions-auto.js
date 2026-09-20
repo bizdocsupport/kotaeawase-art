@@ -509,5 +509,27 @@ window.KA_EXHIBITIONS.push(...[
     "bigPick": false,
     "auto": true,
     "ticketEvents": []
+  },
+  {
+    "id": "auto-aham-362536b9d9",
+    "kind": "exhibition",
+    "title": "エリック・カール展 はじまりは、はらぺこあおむし",
+    "shortTitle": "エリック・カール展 はじまりは、はらぺこあおむし",
+    "aliases": [
+      "エリック・カール展 はじまりは、はらぺこあおむし"
+    ],
+    "venue": "あべのハルカス美術館",
+    "area": "大阪",
+    "start": "2027-03-20",
+    "end": "2027-05-09",
+    "image": "",
+    "guide": "",
+    "official": "https://www.aham.jp/exhibition/future/ericcarle",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
   }
 ]);
