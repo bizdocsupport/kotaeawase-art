@@ -28,7 +28,7 @@
       "url": "https://www.nact.jp/exhibition_special/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 3,
+      "candidateCount": 2,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 10,
     "errorCount": 2,
-    "candidateCountBeforeManualFilter": 46,
+    "candidateCountBeforeManualFilter": 45,
     "candidateCountAfterManualFilter": 31
   }
 }
