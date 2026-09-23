@@ -301,6 +301,16 @@ def merge_curated_images(items: list[dict], auto_overrides: dict, manual_overrid
             official = canonical_url(row.get('official',''))
             instruction = next((entry for entry in manual_overrides.values()
                                 if entry.get('official') and official == canonical_url(entry['official'])), None)
+        # Some museums expose the same exhibition through slightly different URLs
+        # between the listing page and the detail page.  Use exact normalized title
+        # + exact venue as a stable fallback, so a changed auto ID or URL variant
+        # does not drop a manually curated official image.
+        if not instruction:
+            title_norm = normalize_text(str(row.get('title','')))
+            venue = str(row.get('venue','')).strip()
+            instruction = next((entry for entry in manual_overrides.values()
+                                if normalize_text(str(entry.get('title',''))) == title_norm
+                                and str(entry.get('venue','') or '').strip() in ('', venue)), None)
         if instruction and (not row.get('image') or '/exhibition-card/' in row.get('image','')):
             official_match = selected_official_image(instruction.get('officialPage',''), instruction.get('matchText',''), fetch=fetch) if instruction.get('officialPage') else ''
             image = official_match or instruction.get('image','')
