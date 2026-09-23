@@ -159,7 +159,9 @@ def site_item(item: dict) -> dict:
         "area": str(item["area"]).strip(),
         "start": str(item["start"]).strip(),
         "end": str(item["end"]).strip(),
-        "image": "",
+        "image": str(item.get("image") or ""),
+        "imageAlt": f"{title} 公式サイト掲載画像" if item.get("image") else "",
+        "imageSource": str(item.get("imageSource") or item["official"]) if item.get("image") else "",
         "guide": "",
         "official": str(item["official"]).strip(),
         "note": "公式サイトから自動取得した開催情報です。",
@@ -198,21 +200,37 @@ def build_items(payload: dict, manual: list[dict], today: date, horizon_days: in
     return result
 
 
-def render_js(items: list[dict]) -> str:
+def render_js(items: list[dict], overrides: dict | None = None) -> str:
     payload = json.dumps(items, ensure_ascii=False, indent=2)
+    override_payload = json.dumps(overrides or {}, ensure_ascii=False, indent=2)
+    # 既存の画像（実作品・公式画像）は守り、テンプレート画像/無画像だけ差し替え。
+    override_js = (
+        f"const imageOverrides = {override_payload};\n"
+        "window.KA_EXHIBITIONS.forEach(item => {\n"
+        "  const found = imageOverrides[item.id];\n"
+        "  const placeholder = !item.image || item.image.includes('/exhibition-card/');\n"
+        "  if (found && found.image && placeholder && !item.imageId) {\n"
+        "    item.image = found.image;\n"
+        "    item.imageAlt = (item.shortTitle || item.title) + ' 公式サイト掲載画像';\n"
+        "    item.imageSource = found.sourcePage || item.official;\n"
+        "  }\n"
+        "});\n"
+    )
     return (
         "/* AUTO-GENERATED FILE. DO NOT EDIT.\n"
         " * Source: data/exhibitions-auto.json\n"
         " * Manual curated data remains in exhibitions-data.js.\n"
         " */\n"
         "window.KA_EXHIBITIONS = Array.isArray(window.KA_EXHIBITIONS) ? window.KA_EXHIBITIONS : [];\n"
-        f"window.KA_EXHIBITIONS.push(...{payload});\n"
+        + override_js
+        + f"window.KA_EXHIBITIONS.push(...{payload});\n"
     )
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--auto-json", type=Path, default=DEFAULT_AUTO_JSON)
+    parser.add_argument("--image-overrides", type=Path, default=ROOT / "data/exhibition-image-overrides.json")
     parser.add_argument("--manual-js", type=Path, default=DEFAULT_MANUAL_JS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_JS)
     parser.add_argument("--horizon-days", type=int, default=DEFAULT_HORIZON_DAYS)
@@ -226,7 +244,8 @@ def main() -> int:
     else:
         today = datetime.now(ZoneInfo("Asia/Tokyo")).date()
     items = build_items(payload, manual, today, args.horizon_days)
-    text = render_js(items)
+    overrides = json.loads(args.image_overrides.read_text(encoding="utf-8")) if args.image_overrides.exists() else {}
+    text = render_js(items, overrides)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     old = args.output.read_text(encoding="utf-8") if args.output.exists() else None
     if old != text:

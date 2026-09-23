@@ -262,6 +262,14 @@ def main() -> int:
 
     fresh, statuses = scrape_all(MUSEUM_SOURCES, today)
     fresh = preserve_failed_sources(previous, fresh, statuses, today)
+    # 取得済み画像は、毎朝の展覧会再取得で消さない。
+    old_images = {canonical_url(x.get("official", "")): x for x in previous if x.get("image")}
+    for item in fresh:
+        saved = old_images.get(canonical_url(item.get("official", "")))
+        if saved and not item.get("image"):
+            for field_name in ("image", "imageSource", "imageEvidence"):
+                if saved.get(field_name):
+                    item[field_name] = saved[field_name]
     fresh = dedupe(fresh)
     # 既存データに終了済みが残っていても、Phase 2A.2以降は自動候補から除外。
     fresh = [x for x in fresh if date.fromisoformat(x.get("end", "1900-01-01")) >= today]
