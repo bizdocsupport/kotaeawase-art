@@ -105,7 +105,7 @@
       "url": "https://kyotocity-kyocera.museum/ja/exhibition",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 12,
+      "candidateCount": 11,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 10,
     "errorCount": 2,
-    "candidateCountBeforeManualFilter": 45,
+    "candidateCountBeforeManualFilter": 44,
     "candidateCountAfterManualFilter": 31
   }
 }
