@@ -39,6 +39,9 @@ jobs:
       - name: Scan official museum sites
         run: python updater.py
 
+      - name: Collect official exhibition image candidates
+        run: python tools/exhibition_image_enricher.py
+
       - name: Build site auto exhibition data
         run: python tools/build_exhibitions_auto_js.py
 
@@ -68,6 +71,8 @@ jobs:
             data/exhibitions-auto.json \
             data/exhibitions-source-status.json \
             data/exhibitions-review.md \
+            data/exhibition-image-overrides.json \
+            data/exhibition-image-review.md \
             docs/assets/js/exhibitions-auto.js
 
           if git diff --cached --quiet; then
@@ -79,3 +84,41 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update exhibition data"
           git push
+
+      # Publish only the generated JavaScript, not the whole site. No mkdir:
+      # the production server already has assets/js/ (FTP 550 if recreated).
+      - name: Install lftp for exhibition JS publish
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Publish updated exhibition JS only
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_TLS: ${{ secrets.FTP_TLS }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +x
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FTP_REMOTE_DIR; do
+            if [ -z "${!name:-}" ]; then
+              echo "FTP secret missing: $name. JSON/JS committed, but site publish skipped."
+              exit 0
+            fi
+          done
+          TLS_COMMANDS="set ftp:ssl-force false; set ftp:ssl-protect-data false;"
+          if [ "${FTP_TLS:-false}" = "true" ] || [ "${FTP_TLS:-false}" = "1" ]; then
+            TLS_COMMANDS="set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate true;"
+          fi
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -p "${FTP_PORT:-21}" "$FTP_SERVER" -e "
+            set cmd:fail-exit true;
+            set net:max-retries 2;
+            set net:timeout 20;
+            set ftp:passive-mode true;
+            $TLS_COMMANDS
+            cd \"$FTP_REMOTE_DIR\";
+            put docs/assets/js/exhibitions-auto.js -o assets/js/exhibitions-auto.js;
+            bye
+          "
