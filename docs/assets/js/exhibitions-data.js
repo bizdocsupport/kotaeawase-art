@@ -151,7 +151,7 @@ window.KA_EXHIBITIONS = [
     id:'cincinnati-2026', kind:'exhibition',
     title:'シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～', shortTitle:'シンシナティ美術館展', aliases:['シンシナティ美術館展','シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～'],
     venue:'上野の森美術館', area:'東京', start:'2026-10-10', end:'2027-01-10',
-    image:'assets/images/exhibition-card/cincinnati-2026.webp', imageAlt:'シンシナティ美術館展',
+    image:'https://www.cincinnati-art2026.jp/img/main0408.jpg', imageAlt:'シンシナティ美術館展 公式ビジュアル', imagePosition:'50% 25%',
     guide:'', official:'https://www.cincinnati-art2026.jp/', ticketUrl:'https://www.cincinnati-art2026.jp/ticket.html',
     note:'アメリカの美術館コレクションを通して、西洋美術を横断して見る。', homePriority:70, large:true, bigPick:true,
     ticketEvents:[
@@ -163,7 +163,7 @@ window.KA_EXHIBITIONS = [
     id:'turner-2026', kind:'exhibition',
     title:'テート美術館　ターナー展――崇高の絵画、現代美術との対話', shortTitle:'テート美術館 ターナー展', aliases:['テート美術館 ターナー展','ターナー展――崇高の絵画','ターナー展'],
     venue:'国立西洋美術館', area:'東京', start:'2026-10-24', end:'2027-02-21',
-    imageId:'jpvisit-007', imageAlt:'J.M.W.ターナー《新月》', imagePosition:'50% 45%',
+    image:'assets/images/exhibition-official/turner-2026-official.png', imageAlt:'ターナー展 公式ポスター', imagePosition:'center top',
     guide:'', official:'https://www.nmwa.go.jp/jp/exhibitions/2026turner.html',
     note:'光と大気をどう絵にするか。ターナーの変化をまとめて見る。', homePriority:91, large:true, bigPick:true,
     ticketEvents:[]
@@ -173,7 +173,7 @@ window.KA_EXHIBITIONS = [
     title:'東京都美術館開館100周年記念　オルセー美術館所蔵　いまを生きる歓び', shortTitle:'オルセー美術館所蔵 いまを生きる歓び',
     aliases:['オルセー美術館所蔵 いまを生きる歓び','いまを生きる歓び','オルセー美術館','東京都美術館開館100周年記念 オルセー美術館所蔵 いまを生きる歓び'],
     venue:'東京都美術館', area:'東京', start:'2026-11-14', end:'2027-03-28',
-    imageId:'jpvisit-011', imageAlt:'フィンセント・ファン・ゴッホ《ローヌ川の星月夜》', imagePosition:'50% 48%',
+    image:'https://www.tobikan.jp/media/img/poster/2026_orsay_l.jpg?r1=', imageAlt:'オルセー美術館所蔵 いまを生きる歓び 公式ポスター', imagePosition:'center top',
     guide:'', official:'https://www.tobikan.jp/exhibition/2026_orsay.html',
     note:'19世紀末の「現代」を、オルセーの作品群から見直す。', homePriority:89, large:true, bigPick:true,
     ticketEvents:[
@@ -185,7 +185,7 @@ window.KA_EXHIBITIONS = [
     id:'rembrandt-etcher-2026', kind:'exhibition',
     title:'版画家レンブラント　挑戦、継承、インパクト', shortTitle:'版画家レンブラント', aliases:['版画家レンブラント','版画家レンブラント 挑戦、継承、インパクト'],
     venue:'国立西洋美術館', area:'東京', start:'2026-07-07', end:'2026-09-23',
-    image:'assets/images/exhibition-card/rembrandt-etcher-2026.webp',
+    image:'assets/images/exhibition-official/rembrandt-etcher-2026-official.png', imageAlt:'版画家レンブラント 公式ポスター', imagePosition:'50% 15%',
     guide:'', official:'https://www.nmwa.go.jp/jp/exhibitions/2026rembrandt.html',
     note:'油彩の「光の画家」だけではない。線と黒の濃淡でどこまで空気を作れるかを見る。', homePriority:78,
     ticketEvents:[]
@@ -194,7 +194,7 @@ window.KA_EXHIBITIONS = [
     id:'british-museum-edo-2026', kind:'exhibition',
     title:'東京都美術館開館100周年記念　大英博物館日本美術コレクション　百花繚乱～海を越えた江戸絵画', shortTitle:'大英博物館日本美術コレクション 百花繚乱', aliases:['大英博物館日本美術コレクション 百花繚乱','百花繚乱 海を越えた江戸絵画'],
     venue:'東京都美術館', area:'東京', start:'2026-07-25', end:'2026-10-18',
-    image:'assets/images/exhibition-card/british-museum-edo-2026.webp',
+    image:'assets/images/exhibition-official/british-museum-edo-2026-official.png', imageAlt:'大英博物館日本美術コレクション 百花繚乱 公式ポスター', imagePosition:'50% 18%',
     guide:'', official:'https://www.tobikan.jp/exhibition/2026_britishmuseum.html',
     note:'歌麿・写楽・北斎・広重。海外に渡った江戸絵画を「何が残されたか」から見る。', homePriority:93, large:true, bigPick:true,
     ticketEvents:[]
@@ -221,7 +221,7 @@ window.KA_EXHIBITIONS = [
     id:'cafe-artists-2026', kind:'exhibition',
     title:'“カフェ”に集う芸術家―印象派からゴッホ、ロートレック、ピカソまで', shortTitle:'“カフェ”に集う芸術家', aliases:['カフェに集う芸術家','“カフェ”に集う芸術家'],
     venue:'三菱一号館美術館', area:'東京', start:'2026-06-13', end:'2026-09-23',
-    image:'assets/images/exhibition-card/cafe-artists-2026.webp',
+    image:'assets/images/exhibition-official/cafe-artists-2026-official.png', imageAlt:'“カフェ”に集う芸術家 公式ビジュアル', imagePosition:'50% 30%',
     guide:'', official:'https://mimt.jp/ex_sp/cafe/', ticketUrl:'https://mimt.jp/ex_sp/cafe/ticket/',
     note:'カフェを背景ではなく「芸術家が出会い、議論し、描いた場所」として見る。', homePriority:87, large:true,
     ticketEvents:[]
@@ -262,7 +262,7 @@ window.KA_EXHIBITIONS = [
     id:'fontanesi-2026', kind:'exhibition',
     title:'フォンタネージ――イタリアの光・心の風景', shortTitle:'フォンタネージ', aliases:['フォンタネージ','フォンタネージ イタリアの光・心の風景'],
     venue:'三菱一号館美術館', area:'東京', start:'2026-10-17', end:'2027-01-24',
-    image:'assets/images/exhibition-card/fontanesi-2026.webp',
+    image:'https://mimt.jp/wp-content/themes/mimt/assets/ex_sp/img/fontanesi/common/fixed-bg-slide_01.webp', imageAlt:'フォンタネージ 公式ビジュアル', imagePosition:'center top',
     guide:'', official:'https://mimt.jp/ex_sp/fontanesi/teaser/',
     note:'日本近代洋画につながる、少し暗く詩的な風景の「光」を見る。', homePriority:72,
     ticketEvents:[]
@@ -271,7 +271,7 @@ window.KA_EXHIBITIONS = [
     id:'artizon-fujii-light-2026', kind:'exhibition',
     title:'ジャム・セッション　石橋財団コレクション×藤井光　WHOSE LIGHT? —だれのひかりか', shortTitle:'WHOSE LIGHT? —だれのひかりか', aliases:['WHOSE LIGHT?','だれのひかりか','ジャム・セッション 石橋財団コレクション×藤井光'],
     venue:'アーティゾン美術館', area:'東京', start:'2026-10-24', end:'2027-01-31',
-    image:'assets/images/exhibition-card/artizon-fujii-light-2026.webp',
+    image:'https://atz-image.s3.ap-northeast-1.amazonaws.com/8767492946a28ca8b92aae4.83254116.jpg', imageAlt:'WHOSE LIGHT? 公式作品ビジュアル', imagePosition:'center 40%',
     guide:'', official:'https://www.artizon.museum/exhibition/detail/608',
     note:'「光＝真理」を誰が照らしているのか。作品を見る自分の立場まで含めて考える。', homePriority:69,
     ticketEvents:[]
@@ -289,7 +289,7 @@ window.KA_EXHIBITIONS = [
     id:'zen-ghibli-2026', kind:'exhibition',
     title:'禅とジブリ', shortTitle:'禅とジブリ', aliases:['禅とジブリ'],
     venue:'京都市京セラ美術館', area:'京都', start:'2026-10-03', end:'2026-12-06',
-    image:'assets/images/exhibition-card/zen-ghibli-2026.webp',
+    image:'https://kyotocity-kyocera.museum/wp-content/uploads/ZENghibli_A4ol-scaled.jpg', imageAlt:'禅とジブリ 公式ビジュアル', imagePosition:'center top',
     guide:'', official:'https://kyotocity-kyocera.museum/exhibition/20261003-20261206',
     note:'答えを急がない、分けない、ありのまま観る。ジブリを「見方」から読み直す。', homePriority:73, large:true,
     ticketEvents:[
@@ -300,7 +300,7 @@ window.KA_EXHIBITIONS = [
     id:'ming-calligraphy-2026', kind:'exhibition',
     title:'躍動する明代の書－台北・何創時コレクションの至宝', shortTitle:'躍動する明代の書', aliases:['躍動する明代の書','台北・何創時コレクションの至宝'],
     venue:'大阪市立美術館', area:'大阪', start:'2026-10-09', end:'2026-12-20',
-    image:'assets/images/exhibition-card/ming-calligraphy-2026.webp',
+    image:'https://www.osaka-art-museum.jp/sites/default/files/2026-08/kasoji_web_banner0805.jpg', imageAlt:'躍動する明代の書 公式バナー', imagePosition:'center top',
     guide:'', official:'https://www.osaka-art-museum.jp/special_exhibition/mindai', ticketUrl:'https://www.osaka-art-museum.jp/special_exhibition/mindai',
     note:'文字を読む前に、線の速度・太さ・余白を「絵」と同じように見る。', homePriority:65,
     ticketEvents:[
@@ -312,7 +312,7 @@ window.KA_EXHIBITIONS = [
     id:'wyeth-2026', kind:'exhibition',
     title:'アンドリュー・ワイエス展', shortTitle:'アンドリュー・ワイエス展', aliases:['アンドリュー・ワイエス展','ワイエス展'],
     venue:'あべのハルカス美術館', area:'大阪', start:'2026-10-03', end:'2026-12-06',
-    image:'assets/images/exhibition-card/wyeth-2026.webp',
+    image:'https://www.aham.jp/exhibition/future/wyeth/images/img_wyeth.jpg', imageAlt:'アンドリュー・ワイエス展 公式ビジュアル', imagePosition:'center 38%',
     guide:'', official:'https://www.aham.jp/exhibition/future/wyeth/', ticketUrl:'https://www.aham.jp/exhibition/future/wyeth/',
     note:'乾いた草、古い家、人物の気配。派手さのない画面に残る「時間」を見る。', homePriority:77, large:true,
     ticketEvents:[
