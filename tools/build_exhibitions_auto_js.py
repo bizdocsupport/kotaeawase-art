@@ -14,6 +14,10 @@ import argparse
 import json
 import re
 import unicodedata
+from urllib.parse import urljoin
+
+import requests
+from bs4 import BeautifulSoup
 from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
@@ -25,6 +29,7 @@ DEFAULT_AUTO_JSON = ROOT / "data/exhibitions-auto.json"
 DEFAULT_MANUAL_JS = ROOT / "docs/assets/js/exhibitions-data.js"
 DEFAULT_OUTPUT_JS = ROOT / "docs/assets/js/exhibitions-auto.js"
 DEFAULT_HORIZON_DAYS = 180
+CURATED_OVERRIDES = ROOT / "data/exhibition-image-curated-overrides.json"
 
 
 def normalize_text(value: str) -> str:
@@ -227,10 +232,95 @@ def render_js(items: list[dict], overrides: dict | None = None) -> str:
     )
 
 
+
+def selected_official_image(url: str, caption: str, *, fetch=None) -> str:
+    """Individual handling for organizer pages whose OGP is generic or missing.
+
+    Pick only a matching work/title in the public organizer page; do not fall
+    back to the unrelated museum-wide hero image. Any failure is nonfatal.
+    """
+    if not url or not caption:
+        return ""
+    if fetch is None:
+        fetch = requests.get
+    try:
+        resp = fetch(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; kotaeawase-art/1.0)'}, timeout=9)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, 'html.parser')
+        candidates = []
+        for img in soup.find_all('img'):
+            alt = str(img.get('alt') or '')
+            title = str(img.get('title') or '')
+            parent = img.find_parent('figure') or img.parent
+            surrounding = parent.get_text(' ', strip=True)[:500] if parent else ''
+            # srcset may point to very large artwork; prefer normal src.
+            source = img.get('data-src') or img.get('data-original') or img.get('src') or ''
+            if not source:
+                picture = img.find_parent('picture')
+                source_el = picture.find('source') if picture else None
+                if source_el:
+                    source = (source_el.get('data-srcset') or source_el.get('srcset') or '').split(',')[0].strip().split(' ')[0]
+            if not source or source.startswith(('data:', 'blob:')):
+                continue
+            image = urljoin(resp.url, source)
+            path = image.split('?')[0].lower()
+            if not path.endswith(('.jpg', '.jpeg', '.webp', '.png', '.avif')):
+                continue
+            if any(x in path for x in ('logo','icon','avatar','spacer','blank','noimage')):
+                continue
+            score = 0
+            if caption in alt or caption in title: score += 100
+            if caption in surrounding: score += 55
+            if score == 0: continue
+            # Exclude tiny sprites if dimensions are advertised.
+            try:
+                width = int(img.get('width') or 0)
+                if 0 < width < 150: continue
+            except ValueError:
+                pass
+            candidates.append((score, image))
+        candidates.sort(key=lambda row: row[0], reverse=True)
+        return candidates[0][1] if candidates else ''
+    except requests.RequestException:
+        return ''
+
+
+def merge_curated_images(items: list[dict], auto_overrides: dict, manual_overrides: dict, *, fetch=None) -> tuple[list[dict], dict]:
+    """Merge add-only individual URLs without replacing already matched auto pictures.
+
+    Existing generated picture URLs are kept if their organizer site is down.
+    """
+    image_overrides = dict(auto_overrides)
+    result = []
+    for x in items:
+        row = dict(x)
+        instruction = manual_overrides.get(row.get('id',''))
+        # The updater's generated auto ID may change if exhibition title normalization changes.
+        # Match the organizer's exact URL as a stable fallback; never use partial title alone.
+        if not instruction:
+            official = canonical_url(row.get('official',''))
+            instruction = next((entry for entry in manual_overrides.values()
+                                if entry.get('official') and official == canonical_url(entry['official'])), None)
+        if instruction and (not row.get('image') or '/exhibition-card/' in row.get('image','')):
+            official_match = selected_official_image(instruction.get('officialPage',''), instruction.get('matchText',''), fetch=fetch) if instruction.get('officialPage') else ''
+            image = official_match or instruction.get('image','')
+            if image:
+                row['image'] = image
+                row['imageSource'] = (instruction.get('officialPage') if official_match else instruction.get('sourcePage')) or row.get('official','')
+                row['imageAlt'] = instruction.get('imageAlt') or row['title']+'（公式掲載画像）'
+                row['imagePosition'] = instruction.get('imagePosition','center')
+        result.append(row)
+    # The normal override list still handles curated master entries (if relevant).
+    for key, entry in manual_overrides.items():
+        if key not in image_overrides and entry.get('image'):
+            image_overrides[key] = {'image': entry['image'], 'sourcePage':entry.get('sourcePage','')}
+    return result, image_overrides
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--auto-json", type=Path, default=DEFAULT_AUTO_JSON)
     parser.add_argument("--image-overrides", type=Path, default=ROOT / "data/exhibition-image-overrides.json")
+    parser.add_argument("--curated-image-overrides", type=Path, default=CURATED_OVERRIDES)
     parser.add_argument("--manual-js", type=Path, default=DEFAULT_MANUAL_JS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_JS)
     parser.add_argument("--horizon-days", type=int, default=DEFAULT_HORIZON_DAYS)
@@ -245,6 +335,8 @@ def main() -> int:
         today = datetime.now(ZoneInfo("Asia/Tokyo")).date()
     items = build_items(payload, manual, today, args.horizon_days)
     overrides = json.loads(args.image_overrides.read_text(encoding="utf-8")) if args.image_overrides.exists() else {}
+    curated = json.loads(args.curated_image_overrides.read_text(encoding="utf-8")) if args.curated_image_overrides.exists() else {}
+    items, overrides = merge_curated_images(items, overrides, curated)
     text = render_js(items, overrides)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     old = args.output.read_text(encoding="utf-8") if args.output.exists() else None
