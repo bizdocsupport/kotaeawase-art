@@ -71,6 +71,51 @@ class NoteFeedTests(unittest.TestCase):
                     MOD.main()
             self.assertEqual(dest.read_text(encoding='utf-8'), old_data)
 
+    def test_extracts_og_image_even_with_reversed_attributes_and_ampersands(self):
+        html = '''<html><head>
+          <meta content="https://assets.st-note.com/production/uploads/images/123/rectangle_large_type_2_A.png?fit=bounds&amp;width=1280"
+                property="og:image">
+        </head><body></body></html>'''
+        self.assertEqual(
+            MOD.parse_article_og_image(html),
+            'https://assets.st-note.com/production/uploads/images/123/rectangle_large_type_2_A.png?fit=bounds&width=1280',
+        )
+
+    def test_rejects_external_og_image_and_prefers_valid_twitter_image(self):
+        html = '''<meta property="og:image" content="https://example.com/tracking.png">
+        <meta name="twitter:image" content="https://assets.st-note.com/thumb.jpg">'''
+        self.assertEqual(MOD.parse_article_og_image(html), 'https://assets.st-note.com/thumb.jpg')
+
+    def test_rss_missing_image_fetches_article_metadata(self):
+        items = [{'url': 'https://note.com/kotaeawase_art/n/n1234', 'image': '', 'title': 'test'}]
+        with patch.object(MOD, 'fetch_article_og_image', return_value='https://assets.st-note.com/header.jpg') as fetch:
+            MOD.fill_missing_images(items)
+        fetch.assert_called_once_with(items[0]['url'])
+        self.assertEqual(items[0]['image'], 'https://assets.st-note.com/header.jpg')
+
+    def test_previous_image_survives_empty_rss_without_extra_requests(self):
+        items = [{'url': 'https://note.com/kotaeawase_art/n/n1234', 'image': ''}]
+        previous = [{'url': items[0]['url'], 'image': 'https://assets.st-note.com/previous.jpg'}]
+        with patch.object(MOD, 'fetch_article_og_image') as fetch:
+            MOD.fill_missing_images(items, previous)
+        fetch.assert_not_called()
+        self.assertEqual(items[0]['image'], previous[0]['image'])
+
+    def test_rss_image_has_priority_over_og_and_previous(self):
+        items = [{'url': 'https://note.com/kotaeawase_art/n/n1234', 'image': 'https://assets.st-note.com/rss.jpg'}]
+        previous = [{'url': items[0]['url'], 'image': 'https://assets.st-note.com/previous.jpg'}]
+        with patch.object(MOD, 'fetch_article_og_image') as fetch:
+            MOD.fill_missing_images(items, previous)
+        fetch.assert_not_called()
+        self.assertEqual(items[0]['image'], 'https://assets.st-note.com/rss.jpg')
+
+    def test_bad_article_image_fetch_does_not_discard_other_data(self):
+        items = [{'url': 'https://note.com/kotaeawase_art/n/n1234', 'image': '', 'title': 'remain'}]
+        with patch.object(MOD, 'fetch_article_og_image', return_value=''):
+            MOD.fill_missing_images(items)
+        self.assertEqual(items[0]['image'], '')
+        self.assertEqual(items[0]['title'], 'remain')
+
     def test_output_defaults_to_uploaded_repository_docs(self):
         self.assertEqual(MOD.output_path(), BASE / 'docs/assets/data/note-latest.json')
 

@@ -14,6 +14,7 @@ import json
 from pathlib import Path
 import re
 import sys
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
@@ -22,6 +23,7 @@ FEED_URL = "https://note.com/kotaeawase_art/rss"
 AUTHOR = "kotaeawase_art"
 MAX_ITEMS = 12
 MAX_FEED_BYTES = 2_000_000
+MAX_ARTICLE_HTML_BYTES = 750_000
 
 
 class PlainText(HTMLParser):
@@ -102,6 +104,82 @@ def pick_image(item: ET.Element, raw_description: str) -> str:
     return safe_image_url(finder.src)
 
 
+class OpenGraphImage(HTMLParser):
+    """Read image metadata from a public note article, not from its body."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.found: dict[str, str] = {}
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() != "meta":
+            return
+        attrs = {k.lower(): v for k, v in attrs if k and v}
+        key = (attrs.get("property") or attrs.get("name") or "").lower()
+        if key not in ("og:image:secure_url", "og:image", "twitter:image"):
+            return
+        url = safe_image_url(attrs.get("content", ""))
+        if url:
+            self.found.setdefault(key, url)
+
+
+def parse_article_og_image(html: str) -> str:
+    """Accept only HTTPS image links from note's own image CDN."""
+    parser = OpenGraphImage()
+    parser.feed(html)
+    for key in ("og:image:secure_url", "og:image", "twitter:image"):
+        if parser.found.get(key):
+            return parser.found[key]
+    return ""
+
+
+def fetch_article_og_image(url: str) -> str:
+    """Server-side lookup; browsers cannot reliably fetch note page HTML (CORS)."""
+    url = safe_article_url(url)
+    if not url:
+        return ""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (compatible; KotaeawaseArtClub/1.0; +https://hillslife.tokyo/art/)",
+        "Accept": "text/html,application/xhtml+xml;q=0.9,*/*;q=0.5",
+        "Accept-Language": "ja,en;q=0.8",
+    }
+    try:
+        with urlopen(Request(url, headers=headers), timeout=12) as response:
+            raw = response.read(MAX_ARTICLE_HTML_BYTES)
+        return parse_article_og_image(raw.decode("utf-8", errors="replace"))
+    except (HTTPError, URLError, OSError, TimeoutError, ValueError) as exc:
+        # One inaccessible article must never stop RSS publishing or erase a
+        # previously saved thumbnail.
+        print(f"note article image fetch failed ({url}): {exc}", file=sys.stderr)
+        return ""
+
+
+def fill_missing_images(items: list[dict], old_items: list[dict] | None = None) -> list[dict]:
+    """RSS -> previous successful image -> article OGP (in that order).
+
+    Most requests are made only on the first run or for newly published posts;
+    images obtained once survive transient note.com HTTP failures.
+    """
+    previously = {
+        old.get("url"): safe_image_url(old.get("image", ""))
+        for old in (old_items or []) if isinstance(old, dict)
+    }
+    for item in items:
+        if item.get("image"):
+            continue
+        cached = previously.get(item["url"], "")
+        if cached:
+            item["image"] = cached
+            continue
+        fetched = fetch_article_og_image(item["url"])
+        if fetched:
+            item["image"] = fetched
+            print(f"note thumbnail found: {item['url']}")
+        else:
+            print(f"No note thumbnail available (using visual fallback): {item['url']}")
+    return items
+
+
 def iso_date(value: str) -> str:
     try:
         dt = parsedate_to_datetime(value)
@@ -169,6 +247,11 @@ def main():
             current = json.loads(dest.read_text("utf-8"))
         except (ValueError, OSError):
             pass
+    # note RSS sometimes omits a thumbnail even when the article has a
+    # manually configured header image. Reuse previously retrieved images,
+    # then check the missing articles' public Open Graph metadata.
+    previous_items = current.get("articles", []) if isinstance(current, dict) else []
+    items = fill_missing_images(items, previous_items)
     if current and current.get("articles") == items and current.get("updatedAt"):
         print(f"Unchanged ({len(items)} articles): {dest}")
         return
