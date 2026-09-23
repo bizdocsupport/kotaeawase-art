@@ -1,0 +1,120 @@
+name: Sync note latest articles
+
+# The site in this repository is docs/, not art/.
+"on":
+  workflow_dispatch:
+  # 07:15 and 19:15 JST; GitHub schedules may run later.
+  schedule:
+    - cron: "15 10,22 * * *"
+
+permissions:
+  contents: write
+
+# Prevent overlapping FTP operations with the existing manual deploy workflow.
+concurrency:
+  group: art-production-deploy
+  cancel-in-progress: false
+
+jobs:
+  note_sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Test note RSS parser
+        run: python -m unittest discover -s tests -p test_note_feed.py -v
+
+      - name: Fetch note RSS
+        run: python scripts/update_note_feed.py
+
+      - name: Commit updated JSON to this repository (if changed)
+        shell: bash
+        run: |
+          set -euo pipefail
+          json="docs/assets/data/note-latest.json"
+          git add -- "$json"
+          if git diff --cached --quiet; then
+            echo "Same article list; repository cache unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update note article feed"
+            branch="${GITHUB_REF_NAME:-main}"
+            # Another workflow can push exhibition updates concurrently.
+            for attempt in 1 2 3; do
+              git fetch origin "$branch"
+              git rebase "origin/$branch"
+              if git push origin "HEAD:$branch"; then
+                echo "Updated note JSON committed."
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "Could not push after three attempts" >&2
+                exit 1
+              fi
+              sleep 3
+            done
+          fi
+
+      # The current site's manual deploy uses FTP_SERVER, FTP_USERNAME,
+      # FTP_PASSWORD, FTP_REMOTE_DIR, FTP_PORT and FTP_TLS. Reuse them here.
+      # Publish the tiny JSON directly on EVERY successful run, not just on
+      # content changes: an interrupted previous FTP upload can self-recover.
+      - name: Check existing FTP settings
+        shell: bash
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+        run: |
+          set -euo pipefail
+          for name in FTP_SERVER FTP_USERNAME FTP_PASSWORD FTP_REMOTE_DIR; do
+            if [ -z "${!name:-}" ]; then
+              echo "Missing existing repository secret: $name" >&2
+              exit 1
+            fi
+          done
+
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Publish note JSON only (no full-site deploy)
+        shell: bash
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_TLS: ${{ secrets.FTP_TLS }}
+        run: |
+          set -euo pipefail
+          set +x
+          port="${FTP_PORT:-21}"
+          tls="${FTP_TLS:-false}"
+          tls_commands="set ftp:ssl-force false; set ftp:ssl-protect-data false;"
+          if [ "$tls" = "true" ] || [ "$tls" = "TRUE" ] || [ "$tls" = "1" ]; then
+            tls_commands="set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate true;"
+          fi
+          lftp -u "$FTP_USERNAME","$FTP_PASSWORD" -p "$port" "$FTP_SERVER" -e "
+            set cmd:fail-exit true;
+            set net:max-retries 2;
+            set net:timeout 20;
+            set ftp:passive-mode true;
+            $tls_commands
+            cd "$FTP_REMOTE_DIR";
+            mkdir -p assets/data;
+            put docs/assets/data/note-latest.json -o assets/data/note-latest.json;
+            bye
+          "
+          echo "Published: /art/assets/data/note-latest.json"
