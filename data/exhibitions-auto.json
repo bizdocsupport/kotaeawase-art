@@ -19,7 +19,10 @@
       "start": "2026-07-04",
       "end": "2026-09-27",
       "official": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
-      "source_key": "nakka"
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/04/banner_960・80px.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-tobikan-4eb1af0a22",
@@ -29,7 +32,10 @@
       "start": "2026-07-23",
       "end": "2026-10-07",
       "official": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
-      "source_key": "tobikan"
+      "source_key": "tobikan",
+      "image": "https://tobikan.jp/media/img/poster/2026_viewsofthisplace_l.jpg",
+      "imageSource": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -39,7 +45,10 @@
       "start": "2026-09-12",
       "end": "2026-12-20",
       "official": "https://kyotocity-kyocera.museum/exhibition/20260912-20261220",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/matsunobesoshi_thumb.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20260912-20261220",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-bb644c0019",
@@ -179,7 +188,10 @@
       "start": "2027-01-09",
       "end": "2027-02-21",
       "official": "https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary",
-      "source_key": "sompo"
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/wp-content/uploads/2025/10/togoseiji-130th-anniversary_thumbnail_pc_750.jpg",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-3631924a1d",
@@ -189,7 +201,10 @@
       "start": "2027-01-15",
       "end": "2027-04-18",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270115-20270418",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/fujinoyumiko.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270115-20270418",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-3a6c39b2fb",
@@ -199,7 +214,10 @@
       "start": "2027-01-15",
       "end": "2027-03-14",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270115-20270314",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/kamisakasekka_jinbutsusairei.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270115-20270314",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-tnm-758b4c33bc",
@@ -209,7 +227,10 @@
       "start": "2027-01-19",
       "end": "2027-03-14",
       "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2763",
-      "source_key": "tnm"
+      "source_key": "tnm",
+      "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+      "imageSource": "https://www.tnm.jp/modules/r_free_page/index.php?id=2763",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-nakka-d3234d567d",
@@ -219,7 +240,10 @@
       "start": "2027-01-23",
       "end": "2027-02-21",
       "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir15",
-      "source_key": "nakka"
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD15_MV_0904-scaled.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/osaka-directory-dir15",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-kyocera-3fe4990d0d",
@@ -229,7 +253,10 @@
       "start": "2027-02-06",
       "end": "2027-05-05",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/ZARKA_HERMES.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-osaka-art-4e095e5886",
@@ -239,7 +266,10 @@
       "start": "2027-02-06",
       "end": "2027-04-04",
       "official": "https://www.osaka-art-museum.jp/special_exhibition/10344",
-      "source_key": "osaka-art"
+      "source_key": "osaka-art",
+      "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
+      "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/10344",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-sompo-e7ac3a8a46",
@@ -269,7 +299,10 @@
       "start": "2027-04-24",
       "end": "2027-08-22",
       "official": "https://www.tobikan.jp/exhibition/2027_dufy.html",
-      "source_key": "tobikan"
+      "source_key": "tobikan",
+      "image": "https://tobikan.jp/media/img/poster/2027_dufy_l.jpg",
+      "imageSource": "https://www.tobikan.jp/exhibition/2027_dufy.html",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-aham-b5f1855bbe",
@@ -289,7 +322,10 @@
       "start": "2027-05-26",
       "end": "2027-08-29",
       "official": "https://kyotocity-kyocera.museum/exhibition/20270526-20270829",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/GG_KV_kansai_1s.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270526-20270829",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-tobikan-d75d78fe8c",
@@ -299,7 +335,10 @@
       "start": "2027-09-11",
       "end": "2027-12-12",
       "official": "https://www.tobikan.jp/exhibition/2027_hammer.html",
-      "source_key": "tobikan"
+      "source_key": "tobikan",
+      "image": "https://tobikan.jp/media/img/poster/2027_dufy_l.jpg",
+      "imageSource": "https://www.tobikan.jp/exhibition/2027_hammer.html",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-2252cce9e4",
@@ -309,7 +348,10 @@
       "start": "2027-10-02",
       "end": "2027-12-12",
       "official": "https://kyotocity-kyocera.museum/exhibition/20271002-20271212",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/oukoku_pre_B2_2026.4.15-2_kyoto_nyuko_B2.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20271002-20271212",
+      "imageEvidence": "meta [property=\"og:image\"]"
     }
   ]
 }

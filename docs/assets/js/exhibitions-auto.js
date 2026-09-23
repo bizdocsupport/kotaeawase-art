@@ -3,7 +3,38 @@
  * Manual curated data remains in exhibitions-data.js.
  */
 window.KA_EXHIBITIONS = Array.isArray(window.KA_EXHIBITIONS) ? window.KA_EXHIBITIONS : [];
-const imageOverrides = {};
+const imageOverrides = {
+  "kukai-shingon-2026": {
+    "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+    "sourcePage": "https://www.tnm.jp/modules/r_free_page/index.php?id=2760&lang=ja",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "yamaguchi-kayo-2026": {
+    "image": "https://www.sompo-museum.org/wp-content/uploads/2026/04/img_ex_past_kayo_yamaguchi_mainvisual_sp-scaled.jpg",
+    "sourcePage": "https://www.sompo-museum.org/exhibitions/2025/yamaguchikayo/",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "sottsass-2026": {
+    "image": "https://www.artizon.museum/exhibition_sp/sottsass2026/assets/images/og/shere_ja.png",
+    "sourcePage": "https://www.artizon.museum/exhibition_sp/sottsass2026/",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "marquet-2026": {
+    "image": "https://www.sompo-museum.org/wp-content/uploads/2026/06/img_ex_index_marquet_mainvisual_pc.jpg",
+    "sourcePage": "https://www.sompo-museum.org/exhibitions/2025/albertmarquet/",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "hiroshige-best-angle-2026": {
+    "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+    "sourcePage": "https://www.tnm.jp/modules/r_exhibition/index.php?controller=hall&hid=12",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "nhk-nichibi50-2026": {
+    "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/07/日曜美術館展_WEBバナー_白背景_920_552.jpg",
+    "sourcePage": "https://nakka-art.jp/exhibition-post/nichibiten50/",
+    "evidence": "meta [property=\"og:image:secure_url\"]"
+  }
+};
 window.KA_EXHIBITIONS.forEach(item => {
   const found = imageOverrides[item.id];
   const placeholder = !item.image || item.image.includes('/exhibition-card/');
@@ -50,9 +81,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "大阪",
     "start": "2026-07-04",
     "end": "2026-09-27",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/04/banner_960・80px.jpg",
+    "imageAlt": "スイス絵画の異才 カール・ヴァルザー 公式サイト掲載画像",
+    "imageSource": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
     "guide": "",
     "official": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -74,9 +105,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2026-07-23",
     "end": "2026-10-07",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://tobikan.jp/media/img/poster/2026_viewsofthisplace_l.jpg",
+    "imageAlt": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス 公式サイト掲載画像",
+    "imageSource": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
     "guide": "",
     "official": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -98,9 +129,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "京都",
     "start": "2026-09-12",
     "end": "2026-12-20",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://kyotocity-kyocera.museum/wp-content/uploads/matsunobesoshi_thumb.jpg",
+    "imageAlt": "松延総司：壁 公式サイト掲載画像",
+    "imageSource": "https://kyotocity-kyocera.museum/exhibition/20260912-20261220",
     "guide": "",
     "official": "https://kyotocity-kyocera.museum/exhibition/20260912-20261220",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -410,9 +441,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2027-01-09",
     "end": "2027-02-21",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://www.sompo-museum.org/wp-content/uploads/2025/10/togoseiji-130th-anniversary_thumbnail_pc_750.jpg",
+    "imageAlt": "生誕130年 東郷青児展 公式サイト掲載画像",
+    "imageSource": "https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary",
     "guide": "",
     "official": "https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -434,9 +465,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "京都",
     "start": "2027-01-15",
     "end": "2027-03-14",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://kyotocity-kyocera.museum/wp-content/uploads/kamisakasekka_jinbutsusairei.jpg",
+    "imageAlt": "［2026冬期］コレクションルーム 特集「時を塗る－京都のうるしが映した近代」 公式サイト掲載画像",
+    "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270115-20270314",
     "guide": "",
     "official": "https://kyotocity-kyocera.museum/exhibition/20270115-20270314",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -458,9 +489,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "京都",
     "start": "2027-01-15",
     "end": "2027-04-18",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://kyotocity-kyocera.museum/wp-content/uploads/fujinoyumiko.jpg",
+    "imageAlt": "藤野裕美子 公式サイト掲載画像",
+    "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270115-20270418",
     "guide": "",
     "official": "https://kyotocity-kyocera.museum/exhibition/20270115-20270418",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -482,9 +513,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "大阪",
     "start": "2027-01-23",
     "end": "2027-02-21",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD15_MV_0904-scaled.jpg",
+    "imageAlt": "乾 真裕子 公式サイト掲載画像",
+    "imageSource": "https://nakka-art.jp/exhibition-post/osaka-directory-dir15",
     "guide": "",
     "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir15",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -506,9 +537,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "大阪",
     "start": "2027-02-06",
     "end": "2027-04-04",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
+    "imageAlt": "円山応挙 リアルの先へ 空間革命 公式サイト掲載画像",
+    "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/10344",
     "guide": "",
     "official": "https://www.osaka-art-museum.jp/special_exhibition/10344",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -530,9 +561,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "京都",
     "start": "2027-02-06",
     "end": "2027-05-05",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://kyotocity-kyocera.museum/wp-content/uploads/ZARKA_HERMES.jpg",
+    "imageAlt": "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称） 公式サイト掲載画像",
+    "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
     "guide": "",
     "official": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
     "note": "公式サイトから自動取得した開催情報です。",

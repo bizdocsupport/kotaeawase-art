@@ -1,1 +1,32 @@
-{}
+{
+  "kukai-shingon-2026": {
+    "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+    "sourcePage": "https://www.tnm.jp/modules/r_free_page/index.php?id=2760&lang=ja",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "yamaguchi-kayo-2026": {
+    "image": "https://www.sompo-museum.org/wp-content/uploads/2026/04/img_ex_past_kayo_yamaguchi_mainvisual_sp-scaled.jpg",
+    "sourcePage": "https://www.sompo-museum.org/exhibitions/2025/yamaguchikayo/",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "sottsass-2026": {
+    "image": "https://www.artizon.museum/exhibition_sp/sottsass2026/assets/images/og/shere_ja.png",
+    "sourcePage": "https://www.artizon.museum/exhibition_sp/sottsass2026/",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "marquet-2026": {
+    "image": "https://www.sompo-museum.org/wp-content/uploads/2026/06/img_ex_index_marquet_mainvisual_pc.jpg",
+    "sourcePage": "https://www.sompo-museum.org/exhibitions/2025/albertmarquet/",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "hiroshige-best-angle-2026": {
+    "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+    "sourcePage": "https://www.tnm.jp/modules/r_exhibition/index.php?controller=hall&hid=12",
+    "evidence": "meta [property=\"og:image\"]"
+  },
+  "nhk-nichibi50-2026": {
+    "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/07/日曜美術館展_WEBバナー_白背景_920_552.jpg",
+    "sourcePage": "https://nakka-art.jp/exhibition-post/nichibiten50/",
+    "evidence": "meta [property=\"og:image:secure_url\"]"
+  }
+}
