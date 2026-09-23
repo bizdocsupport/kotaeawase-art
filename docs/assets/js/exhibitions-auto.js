@@ -33,6 +33,26 @@ const imageOverrides = {
     "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/07/日曜美術館展_WEBバナー_白背景_920_552.jpg",
     "sourcePage": "https://nakka-art.jp/exhibition-post/nichibiten50/",
     "evidence": "meta [property=\"og:image:secure_url\"]"
+  },
+  "auto-artizon-c2cb08142a": {
+    "image": "https://www.gotokyo.org/en/spot/ex1011/images/ex1011.jpg",
+    "sourcePage": "https://www.gotokyo.org/en/spot/ex1011/"
+  },
+  "auto-tobikan-4eb1af0a22": {
+    "image": "https://prcdn.freetls.fastly.net/release_image/38211/1045/38211-1045-5d8f8dc641e538aa76f3a02fead17520-1910x2700.jpg?auto=webp&bg-color=fff&fit=bounds&format=jpeg&height=1350&quality=85%2C65&width=1950",
+    "sourcePage": "https://prtimes.jp/main/html/rd/p/000001045.000038211.html"
+  },
+  "auto-kyocera-5e5119c49b": {
+    "image": "https://kyotocity-kyocera.museum/wp-content/uploads/matsunobesoshi.jpg",
+    "sourcePage": "https://kyotocity-kyocera.museum/exhibition/20260912-20261220"
+  },
+  "auto-artizon-3538cc4973": {
+    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/13778802196a28c6a8597cc5.91497464.jpg",
+    "sourcePage": "https://www.artizon.museum/exhibition/detail/610"
+  },
+  "auto-nact-4d6186b191": {
+    "image": "https://ac.nact.jp/english/exhibition_special/media/15a66151022bea46ffa1cbdca2eed71d.jpg",
+    "sourcePage": "https://www.nact.jp/exhibition_special/2026/shojomanga/"
   }
 };
 window.KA_EXHIBITIONS.forEach(item => {
@@ -57,9 +77,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2026-06-23",
     "end": "2026-10-04",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://www.gotokyo.org/en/spot/ex1011/images/ex1011.jpg",
+    "imageAlt": "瀧口修造 書くことと描くこと 展覧会ポスター（東京観光公式サイト掲載）",
+    "imageSource": "https://www.gotokyo.org/en/spot/ex1011/",
     "guide": "",
     "official": "https://www.artizon.museum/exhibition/detail/604",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -67,7 +87,8 @@ window.KA_EXHIBITIONS.push(...[
     "large": false,
     "bigPick": false,
     "auto": true,
-    "ticketEvents": []
+    "ticketEvents": [],
+    "imagePosition": "center 18%"
   },
   {
     "id": "auto-nakka-5830e5188a",
@@ -201,9 +222,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2026-10-24",
     "end": "2027-01-31",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/122943516068d366433d8758.09223433.jpg",
+    "imageAlt": "エトランゼたち 美術館公式サイト掲載ビジュアル（黒田清輝《針仕事》ほか）",
+    "imageSource": "https://www.artizon.museum/exhibition/detail/610",
     "guide": "",
     "official": "https://www.artizon.museum/exhibition/detail/610",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -211,7 +232,8 @@ window.KA_EXHIBITIONS.push(...[
     "large": false,
     "bigPick": false,
     "auto": true,
-    "ticketEvents": []
+    "ticketEvents": [],
+    "imagePosition": "center 30%"
   },
   {
     "id": "auto-nact-4d6186b191",
@@ -225,9 +247,9 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2026-10-28",
     "end": "2027-02-08",
-    "image": "",
-    "imageAlt": "",
-    "imageSource": "",
+    "image": "https://ac.nact.jp/english/exhibition_special/media/15a66151022bea46ffa1cbdca2eed71d.jpg",
+    "imageAlt": "少女漫画・インフィニティ 国立新美術館公式ビジュアル ©萩尾望都／小学館 ©山岸凉子 ©大和和紀／講談社",
+    "imageSource": "https://www.nact.jp/exhibition_special/2026/shojomanga/",
     "guide": "",
     "official": "https://www.nact.jp/exhibition_special/2026/shojomanga",
     "note": "公式サイトから自動取得した開催情報です。",
@@ -235,7 +257,8 @@ window.KA_EXHIBITIONS.push(...[
     "large": false,
     "bigPick": false,
     "auto": true,
-    "ticketEvents": []
+    "ticketEvents": [],
+    "imagePosition": "center 30%"
   },
   {
     "id": "auto-nakka-23e5213bd6",
