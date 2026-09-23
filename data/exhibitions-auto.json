@@ -58,7 +58,10 @@
       "start": "2026-09-19",
       "end": "2026-12-20",
       "official": "https://kyotocity-kyocera.museum/exhibition/20260919-20261220",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/1_yamaga_A4_260609_ol_omote.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20260919-20261220",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-1005daf56b",
@@ -68,7 +71,10 @@
       "start": "2026-10-09",
       "end": "2026-12-13",
       "official": "https://kyotocity-kyocera.museum/exhibition/20261009-20261213",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/KCKM-CR2026_fall_A4_web.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20261009-20261213",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-tnm-57fdc4d7a9",
@@ -78,7 +84,10 @@
       "start": "2026-10-14",
       "end": "2026-12-06",
       "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2770",
-      "source_key": "tnm"
+      "source_key": "tnm",
+      "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+      "imageSource": "https://www.tnm.jp/modules/r_free_page/index.php?id=2770",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-artizon-3538cc4973",
@@ -108,7 +117,10 @@
       "start": "2026-10-31",
       "end": "2027-01-31",
       "official": "https://nakka-art.jp/exhibition-post/daiei-ten2026",
-      "source_key": "nakka"
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/06/920_552.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/daiei-ten2026",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-nakka-936b067f28",
@@ -118,7 +130,10 @@
       "start": "2026-11-14",
       "end": "2026-12-13",
       "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir13",
-      "source_key": "nakka"
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD13_MV_0824.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/osaka-directory-dir13",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-tobikan-40ce5d0143",
@@ -128,7 +143,10 @@
       "start": "2026-11-19",
       "end": "2027-01-11",
       "official": "https://www.tobikan.jp/exhibition/2026_waysofreading.html",
-      "source_key": "tobikan"
+      "source_key": "tobikan",
+      "image": "https://tobikan.jp/media/img/poster/2026_waysofreading_l.jpg?r1",
+      "imageSource": "https://www.tobikan.jp/exhibition/2026_waysofreading.html",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-tobikan-693884f571",
@@ -138,7 +156,10 @@
       "start": "2026-11-19",
       "end": "2027-01-11",
       "official": "https://www.tobikan.jp/exhibition/2026_archives.html",
-      "source_key": "tobikan"
+      "source_key": "tobikan",
+      "image": "https://tobikan.jp/media/img/poster/2026_archives_l.jpg",
+      "imageSource": "https://www.tobikan.jp/exhibition/2026_archives.html",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-a39b6482bd",
@@ -148,7 +169,10 @@
       "start": "2026-12-17",
       "end": "2027-01-11",
       "official": "https://kyotocity-kyocera.museum/exhibition/20261217-20270111",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/3d9a2b34aa67f4c11ca1cde145580e1e.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20261217-20270111",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-kyocera-68a7d0983e",
@@ -158,7 +182,10 @@
       "start": "2026-12-19",
       "end": "2027-01-16",
       "official": "https://kyotocity-kyocera.museum/exhibition/20261219-20270116",
-      "source_key": "kyocera"
+      "source_key": "kyocera",
+      "image": "https://kyotocity-kyocera.museum/wp-content/uploads/b693d11ce687b36f630bce2c6d424675-2-scaled.jpg",
+      "imageSource": "https://kyotocity-kyocera.museum/exhibition/20261219-20270116",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-nakka-8d9adf2eb0",
@@ -168,7 +195,10 @@
       "start": "2026-12-19",
       "end": "2027-01-17",
       "official": "https://nakka-art.jp/exhibition-post/osaka-directory-dir14",
-      "source_key": "nakka"
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD14_MV_0827-scaled.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/osaka-directory-dir14",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-aham-d1abb0eb8d",

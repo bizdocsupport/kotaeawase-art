@@ -4,27 +4,20 @@
 
 | 種別 | 展覧会 | 結果 | 取得画像 |
 |---|---|---|---|
-| auto | 生誕130年 東郷青児展 | ok | https://www.sompo-museum.org/wp-content/uploads/2025/10/togoseiji-130th-anniversary_thumbnail_pc_750.jpg |
-| auto | 藤野裕美子 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/fujinoyumiko.jpg |
-| auto | ［2026冬期］コレクションルーム 特集「時を塗る－京都のうるしが映した近代」 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/kamisakasekka_jinbutsusairei.jpg |
-| auto | 「源氏物語 王朝のかがやき」 | ok | https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg |
-| auto | 乾 真裕子 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD15_MV_0904-scaled.jpg |
-| auto | 思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称） | ok | https://kyotocity-kyocera.museum/wp-content/uploads/ZARKA_HERMES.jpg |
-| auto | 円山応挙 リアルの先へ 空間革命 | ok | https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg |
+| auto | 瀧口修造 書くことと描くこと | no verified official visual | - |
+| auto | 生誕140年記念 染織家 山鹿清華─宙翔ぶイマジネーション | ok | https://kyotocity-kyocera.museum/wp-content/uploads/1_yamaga_A4_260609_ol_omote.jpg |
+| auto | ［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/KCKM-CR2026_fall_A4_web.jpg |
+| auto | 開創700年記念 特別展「大徳寺 本朝無双之禅苑」 | ok | https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg |
+| auto | エトランゼたち —洋画家たちのヨーロッパ体験 | no verified official visual | - |
+| auto | 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展 | no verified official visual | - |
+| auto | 大英博物館日本美術コレクション 百花繚乱〜海を越えた江戸絵画 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/06/920_552.jpg |
+| auto | Osaka Directory 13 Supported by RICHARD MILLE 橘 葉月 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD13_MV_0824.jpg |
+| auto | 東京都美術館開館100周年記念 あなたが世界を読むために | ok | https://tobikan.jp/media/img/poster/2026_waysofreading_l.jpg?r1 |
+| auto | 東京都美術館開館100周年記念 はじまりをひらく 東京都美術館の100年 | ok | https://tobikan.jp/media/img/poster/2026_archives_l.jpg |
+| auto | スタジオジブリ企画制作『白隠さんの禅』京都展 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/3d9a2b34aa67f4c11ca1cde145580e1e.jpg |
+| auto | 第119回⽇展京都展 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/b693d11ce687b36f630bce2c6d424675-2-scaled.jpg |
+| auto | Osaka Directory 14 Supported by RICHARD MILLE 迫 鉄平 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/09/OD14_MV_0827-scaled.jpg |
+| auto | ルーシー・リー展 －東西をつなぐ優美のうつわ－ | no verified official visual | - |
 | auto | FACE展2027 | no verified official visual | - |
 | auto | エリック・カール展 はじまりは、はらぺこあおむし | no verified official visual | - |
-| auto | デュフィ展 | ok | https://tobikan.jp/media/img/poster/2027_dufy_l.jpg |
 | auto | HOKUSAI ―北斎が「北斎」だった時代― | no verified official visual | - |
-| auto | ギルバート＆ジョージ展 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/GG_KV_kansai_1s.jpg |
-| auto | レンブラントからモネ、ゴッホ ハマー美術館展 | ok | https://tobikan.jp/media/img/poster/2027_dufy_l.jpg |
-| auto | ⽣誕150年 ⽊島櫻⾕ | ok | https://kyotocity-kyocera.museum/wp-content/uploads/oukoku_pre_B2_2026.4.15-2_kyoto_nyuko_B2.jpg |
-| manual | 弘法大師生誕1250年記念　特別展「空海と真言の名宝」 | ok | https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg |
-| manual | 開館50周年記念 山口華楊展 | ok | https://www.sompo-museum.org/wp-content/uploads/2026/04/img_ex_past_kayo_yamaguchi_mainvisual_sp-scaled.jpg |
-| manual | エットレ・ソットサス —魔法がはじまるとき、デザインは生まれる | ok | https://www.artizon.museum/exhibition_sp/sottsass2026/assets/images/og/shere_ja.png |
-| manual | 開館50周年記念 アルベール・マルケ展 | ok | https://www.sompo-museum.org/wp-content/uploads/2026/06/img_ex_index_marquet_mainvisual_pc.jpg |
-| manual | 特別展　内山晋コレクション受贈記念「歌川広重　江戸のベストアングル」 | ok | https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg |
-| manual | ＮＨＫ日曜美術館５０年展 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/07/日曜美術館展_WEBバナー_白背景_920_552.jpg |
-| auto | 瀧口修造 書くことと描くこと | no verified official visual | - |
-| auto | スイス絵画の異才 カール・ヴァルザー | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/04/banner_960・80px.jpg |
-| auto | 東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス | ok | https://tobikan.jp/media/img/poster/2026_viewsofthisplace_l.jpg |
-| auto | 松延総司：壁 | ok | https://kyotocity-kyocera.museum/wp-content/uploads/matsunobesoshi_thumb.jpg |
