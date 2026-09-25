@@ -165,8 +165,10 @@ def site_item(item: dict) -> dict:
         "start": str(item["start"]).strip(),
         "end": str(item["end"]).strip(),
         "image": str(item.get("image") or ""),
-        "imageAlt": f"{title} 公式サイト掲載画像" if item.get("image") else "",
+        "imageAlt": str(item.get("imageAlt") or f"{title} 公式サイト掲載画像") if item.get("image") else "",
         "imageSource": str(item.get("imageSource") or item["official"]) if item.get("image") else "",
+        # 個別補完で設定した画像の表示位置を公開JSまで渡す。
+        "imagePosition": str(item.get("imagePosition") or ""),
         "guide": "",
         "official": str(item["official"]).strip(),
         "note": "公式サイトから自動取得した開催情報です。",
@@ -301,22 +303,20 @@ def merge_curated_images(items: list[dict], auto_overrides: dict, manual_overrid
             official = canonical_url(row.get('official',''))
             instruction = next((entry for entry in manual_overrides.values()
                                 if entry.get('official') and official == canonical_url(entry['official'])), None)
-        # Some museums expose the same exhibition through slightly different URLs
-        # between the listing page and the detail page.  Use exact normalized title
-        # + exact venue as a stable fallback, so a changed auto ID or URL variant
-        # does not drop a manually curated official image.
-        if not instruction:
-            title_norm = normalize_text(str(row.get('title','')))
-            venue = str(row.get('venue','')).strip()
-            instruction = next((entry for entry in manual_overrides.values()
-                                if normalize_text(str(entry.get('title',''))) == title_norm
-                                and str(entry.get('venue','') or '').strip() in ('', venue)), None)
-        if instruction and (not row.get('image') or '/exhibition-card/' in row.get('image','')):
-            official_match = selected_official_image(instruction.get('officialPage',''), instruction.get('matchText',''), fetch=fetch) if instruction.get('officialPage') else ''
+        # 通常は有効な既存画像を保護。ただし force=true の館別補完は
+        # 汎用OGPや別展覧会の画像が先に設定されていても正しい画像に直す。
+        current_image = str(row.get('image') or '')
+        is_placeholder = not current_image or '/exhibition-card/' in current_image
+        if instruction and (is_placeholder or instruction.get('force') is True):
+            official_match = selected_official_image(
+                instruction.get('officialPage',''), instruction.get('matchText',''), fetch=fetch
+            ) if instruction.get('officialPage') else ''
             image = official_match or instruction.get('image','')
             if image:
                 row['image'] = image
-                row['imageSource'] = (instruction.get('officialPage') if official_match else instruction.get('sourcePage')) or row.get('official','')
+                row['imageSource'] = (
+                    instruction.get('officialPage') if official_match else instruction.get('sourcePage')
+                ) or row.get('official','')
                 row['imageAlt'] = instruction.get('imageAlt') or row['title']+'（公式掲載画像）'
                 row['imagePosition'] = instruction.get('imagePosition','center')
         result.append(row)
