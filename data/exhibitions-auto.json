@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T17:12:19+09:00",
+  "updatedAt": "2026-09-25T10:46:53+09:00",
   "items": [
     {
       "id": "auto-artizon-c2cb08142a",
@@ -302,6 +302,16 @@
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
+      "id": "auto-artizon-622ed69faa",
+      "title": "ARTIZON NOW ひろがる、つながる、コレクション",
+      "venue": "アーティゾン美術館",
+      "area": "東京",
+      "start": "2027-02-23",
+      "end": "2027-05-30",
+      "official": "https://www.artizon.museum/exhibition/detail/615",
+      "source_key": "artizon"
+    },
+    {
       "id": "auto-sompo-e7ac3a8a46",
       "title": "FACE展2027",
       "venue": "SOMPO美術館",
@@ -358,6 +368,26 @@
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
+      "id": "auto-artizon-5cb44a4219",
+      "title": "第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように",
+      "venue": "アーティゾン美術館",
+      "area": "東京",
+      "start": "2027-06-19",
+      "end": "2027-09-20",
+      "official": "https://www.artizon.museum/exhibition/detail/616",
+      "source_key": "artizon"
+    },
+    {
+      "id": "auto-artizon-d2f5c86168",
+      "title": "藤島武二 —創造の軌跡",
+      "venue": "アーティゾン美術館",
+      "area": "東京",
+      "start": "2027-06-19",
+      "end": "2027-09-20",
+      "official": "https://www.artizon.museum/exhibition/detail/617",
+      "source_key": "artizon"
+    },
+    {
       "id": "auto-tobikan-d75d78fe8c",
       "title": "レンブラントからモネ、ゴッホ ハマー美術館展",
       "venue": "東京都美術館",
@@ -382,6 +412,26 @@
       "image": "https://kyotocity-kyocera.museum/wp-content/uploads/oukoku_pre_B2_2026.4.15-2_kyoto_nyuko_B2.jpg",
       "imageSource": "https://kyotocity-kyocera.museum/exhibition/20271002-20271212",
       "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-artizon-9a16ceed2e",
+      "title": "New Objectivity —1960–70年代のアートシーン",
+      "venue": "アーティゾン美術館",
+      "area": "東京",
+      "start": "2027-10-16",
+      "end": "2028-01-30",
+      "official": "https://www.artizon.museum/exhibition/detail/618",
+      "source_key": "artizon"
+    },
+    {
+      "id": "auto-artizon-e4cbe3270a",
+      "title": "石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ",
+      "venue": "アーティゾン美術館",
+      "area": "東京",
+      "start": "2027-10-16",
+      "end": "2028-01-30",
+      "official": "https://www.artizon.museum/exhibition/detail/619",
+      "source_key": "artizon"
     }
   ]
 }

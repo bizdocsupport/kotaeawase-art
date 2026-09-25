@@ -2,8 +2,8 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **31件**
-- 今回の新規候補: **0件**
+- 自動候補: **36件**
+- 今回の新規候補: **5件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -15,22 +15,52 @@
 | 国立新美術館 | OK | HTTP | 2 |
 | 東京国立博物館 | OK | HTTP | 3 |
 | 東京都現代美術館 | ERROR | - | 0 |
-| SOMPO美術館 | OK | HTTP | 3 |
+| SOMPO美術館 | ERROR | - | 0 |
 | 三菱一号館美術館 | ERROR | - | 0 |
-| アーティゾン美術館 | OK | HTTP | 4 |
-| 大阪中之島美術館 | OK | HTTP | 7 |
+| アーティゾン美術館 | OK | HTTP+BROWSER | 9 |
+| 大阪中之島美術館 | ERROR | - | 0 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 2 |
 | あべのハルカス美術館 | OK | HTTP | 4 |
 
+### 取得警告（フォールバック等）
+
+- **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
+
 ### 取得エラー
 
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
+- **SOMPO美術館**: `https://www.sompo-museum.org/exhibitions/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7f3af3b47b60>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)')) | https://www.sompo-museum.org/exhibitions/schedule/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/schedule/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7f3af39942f0>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)'))`
 - **三菱一号館美術館**: `https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403 | https://mimt.jp/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 403`
+- **大阪中之島美術館**: `https://nakka-art.jp/exhibition/held/: ConnectTimeout: HTTPSConnectionPool(host='nakka-art.jp', port=443): Max retries exceeded with url: /exhibition/held/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='nakka-art.jp', port=443) at 0x7f3af4c84440>, 'Connection to nakka-art.jp timed out. (connect timeout=30)'))`
 
 ## 今回の新規候補
 
-新規候補はありません。
+### ARTIZON NOW ひろがる、つながる、コレクション
+- 会場: アーティゾン美術館
+- 会期: 2027-02-23 ～ 2027-05-30
+- 公式: https://www.artizon.museum/exhibition/detail/615
+
+### 第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように
+- 会場: アーティゾン美術館
+- 会期: 2027-06-19 ～ 2027-09-20
+- 公式: https://www.artizon.museum/exhibition/detail/616
+
+### 藤島武二 —創造の軌跡
+- 会場: アーティゾン美術館
+- 会期: 2027-06-19 ～ 2027-09-20
+- 公式: https://www.artizon.museum/exhibition/detail/617
+
+### New Objectivity —1960–70年代のアートシーン
+- 会場: アーティゾン美術館
+- 会期: 2027-10-16 ～ 2028-01-30
+- 公式: https://www.artizon.museum/exhibition/detail/618
+
+### 石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ
+- 会場: アーティゾン美術館
+- 会期: 2027-10-16 ～ 2028-01-30
+- 公式: https://www.artizon.museum/exhibition/detail/619
+
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
@@ -59,13 +89,18 @@
 | 2027-01-23 | 2027-02-21 | 大阪中之島美術館 | [乾 真裕子](https://nakka-art.jp/exhibition-post/osaka-directory-dir15) |
 | 2027-02-06 | 2027-05-05 | 京都市京セラ美術館 | [思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称）](https://kyotocity-kyocera.museum/exhibition/20270206-20270505) |
 | 2027-02-06 | 2027-04-04 | 大阪市立美術館 | [円山応挙 リアルの先へ 空間革命](https://www.osaka-art-museum.jp/special_exhibition/10344) |
+| 2027-02-23 | 2027-05-30 | アーティゾン美術館 | [ARTIZON NOW ひろがる、つながる、コレクション](https://www.artizon.museum/exhibition/detail/615) |
 | 2027-03-06 | 2027-03-28 | SOMPO美術館 | [FACE展2027](https://www.sompo-museum.org/exhibitions/2025/face2027) |
 | 2027-03-20 | 2027-05-09 | あべのハルカス美術館 | [エリック・カール展 はじまりは、はらぺこあおむし](https://www.aham.jp/exhibition/future/ericcarle) |
 | 2027-04-24 | 2027-08-22 | 東京都美術館 | [デュフィ展](https://www.tobikan.jp/exhibition/2027_dufy.html) |
 | 2027-05-22 | 2027-07-19 | あべのハルカス美術館 | [HOKUSAI ―北斎が「北斎」だった時代―](https://www.aham.jp/exhibition/future/hokusai2027) |
 | 2027-05-26 | 2027-08-29 | 京都市京セラ美術館 | [ギルバート＆ジョージ展](https://kyotocity-kyocera.museum/exhibition/20270526-20270829) |
+| 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように](https://www.artizon.museum/exhibition/detail/616) |
+| 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [藤島武二 —創造の軌跡](https://www.artizon.museum/exhibition/detail/617) |
 | 2027-09-11 | 2027-12-12 | 東京都美術館 | [レンブラントからモネ、ゴッホ ハマー美術館展](https://www.tobikan.jp/exhibition/2027_hammer.html) |
 | 2027-10-02 | 2027-12-12 | 京都市京セラ美術館 | [⽣誕150年 ⽊島櫻⾕](https://kyotocity-kyocera.museum/exhibition/20271002-20271212) |
+| 2027-10-16 | 2028-01-30 | アーティゾン美術館 | [New Objectivity —1960–70年代のアートシーン](https://www.artizon.museum/exhibition/detail/618) |
+| 2027-10-16 | 2028-01-30 | アーティゾン美術館 | [石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ](https://www.artizon.museum/exhibition/detail/619) |
 
 ---
 Phase 2A.4では文字コード誤判定を補正し、東博・あべのハルカスは詳細ページの「会期／開催期間」近傍からタイトル・会期を確定します。403の館は前回候補を保持し、`docs/` は変更しません。
