@@ -6,7 +6,9 @@
     "imageAlt": "瀧口修造 書くことと描くこと 展覧会ポスター（東京観光公式サイト掲載）",
     "imagePosition": "center 18%",
     "official": "https://www.artizon.museum/exhibition/detail/604",
-    "venue": "アーティゾン美術館"
+    "force": true,
+    "officialPage": "https://www.artizon.museum/exhibition/detail/604",
+    "matchText": "瀧口修造"
   },
   "auto-tobikan-4eb1af0a22": {
     "title": "東京都美術館開館100周年記念 この場所の風景",
@@ -35,7 +37,7 @@
     "imageAlt": "エトランゼたち 美術館公式サイト掲載ビジュアル（黒田清輝《針仕事》ほか）",
     "imagePosition": "center 30%",
     "official": "https://www.artizon.museum/exhibition/detail/610",
-    "venue": "アーティゾン美術館"
+    "force": true
   },
   "auto-nact-4d6186b191": {
     "title": "少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展",
@@ -44,6 +46,6 @@
     "imageAlt": "少女漫画・インフィニティ 国立新美術館公式ビジュアル ©萩尾望都／小学館 ©山岸凉子 ©大和和紀／講談社",
     "imagePosition": "center 30%",
     "official": "https://www.nact.jp/exhibition_special/2026/shojomanga",
-    "venue": "国立新美術館"
+    "force": true
   }
 }
