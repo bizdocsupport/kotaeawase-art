@@ -586,11 +586,15 @@ def scrape_source(
     )
     status["httpStatus"] = http_statuses[-1] if http_statuses else None
     status["candidateCount"] = len(items)
-    status["ok"] = ok_pages > 0 and not (not items and hard_errors)
+    # HTTP 200で一覧DOMが変わり0件になった場合も成功扱いしない。
+    # updater.py の失敗館データ保持が働くよう、0件は警告として扱う。
+    status["ok"] = ok_pages > 0 and bool(items)
+    if ok_pages and not items:
+        warnings.append("一覧取得は成功したが候補0件：一覧構造や公式サイトの掲載状況を要確認")
     status["fetchMethod"] = "+".join(dict.fromkeys(methods)) or "-"
     status["warning"] = " | ".join(warnings)
-    if hard_errors and not status["ok"]:
-        status["error"] = " | ".join(hard_errors)
+    if not status["ok"]:
+        status["error"] = " | ".join(hard_errors) if hard_errors else "候補0件（詳細ページのリンク・会期抽出を要確認）"
     elif hard_errors:
         status["warning"] = " | ".join([x for x in [status["warning"], *hard_errors] if x])
     return items, status
