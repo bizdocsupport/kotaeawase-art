@@ -3,7 +3,7 @@
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
 - 自動候補: **36件**
-- 今回の新規候補: **5件**
+- 今回の新規候補: **0件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -15,10 +15,10 @@
 | 国立新美術館 | OK | HTTP | 2 |
 | 東京国立博物館 | OK | HTTP | 3 |
 | 東京都現代美術館 | ERROR | - | 0 |
-| SOMPO美術館 | ERROR | - | 0 |
+| SOMPO美術館 | OK | HTTP | 3 |
 | 三菱一号館美術館 | ERROR | - | 0 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 9 |
-| 大阪中之島美術館 | ERROR | - | 0 |
+| 大阪中之島美術館 | OK | HTTP | 7 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 2 |
 | あべのハルカス美術館 | OK | HTTP | 4 |
@@ -30,37 +30,11 @@
 ### 取得エラー
 
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-- **SOMPO美術館**: `https://www.sompo-museum.org/exhibitions/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7f3af3b47b60>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)')) | https://www.sompo-museum.org/exhibitions/schedule/: ConnectTimeout: HTTPSConnectionPool(host='www.sompo-museum.org', port=443): Max retries exceeded with url: /exhibitions/schedule/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sompo-museum.org', port=443) at 0x7f3af39942f0>, 'Connection to www.sompo-museum.org timed out. (connect timeout=30)'))`
 - **三菱一号館美術館**: `https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403 | https://mimt.jp/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 403`
-- **大阪中之島美術館**: `https://nakka-art.jp/exhibition/held/: ConnectTimeout: HTTPSConnectionPool(host='nakka-art.jp', port=443): Max retries exceeded with url: /exhibition/held/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='nakka-art.jp', port=443) at 0x7f3af4c84440>, 'Connection to nakka-art.jp timed out. (connect timeout=30)'))`
 
 ## 今回の新規候補
 
-### ARTIZON NOW ひろがる、つながる、コレクション
-- 会場: アーティゾン美術館
-- 会期: 2027-02-23 ～ 2027-05-30
-- 公式: https://www.artizon.museum/exhibition/detail/615
-
-### 第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように
-- 会場: アーティゾン美術館
-- 会期: 2027-06-19 ～ 2027-09-20
-- 公式: https://www.artizon.museum/exhibition/detail/616
-
-### 藤島武二 —創造の軌跡
-- 会場: アーティゾン美術館
-- 会期: 2027-06-19 ～ 2027-09-20
-- 公式: https://www.artizon.museum/exhibition/detail/617
-
-### New Objectivity —1960–70年代のアートシーン
-- 会場: アーティゾン美術館
-- 会期: 2027-10-16 ～ 2028-01-30
-- 公式: https://www.artizon.museum/exhibition/detail/618
-
-### 石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ
-- 会場: アーティゾン美術館
-- 会期: 2027-10-16 ～ 2028-01-30
-- 公式: https://www.artizon.museum/exhibition/detail/619
-
+新規候補はありません。
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
