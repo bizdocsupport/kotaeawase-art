@@ -72,6 +72,7 @@
       if (!items.length) throw new Error('Empty feed');
       targets.forEach(target => {
         const limit = Math.min(12, Math.max(1, Number(target.dataset.noteLimit) || 3));
+        // Source JSON on each page determines the feed; no title-based exclusions.
         target.replaceChildren(...items.slice(0, limit).map(card));
         target.setAttribute('aria-busy', 'false');
       });
