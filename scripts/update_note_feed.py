@@ -26,6 +26,21 @@ MAX_FEED_BYTES = 2_000_000
 MAX_ARTICLE_HTML_BYTES = 750_000
 
 
+def normalize_magazine_rss_url(value: str) -> str:
+    """Accept this creator's public magazine URL or its /rss endpoint only.
+
+    RSS provides magazine membership; never infer it from article titles.
+    """
+    s = urlsplit((value or '').strip())
+    path = s.path.rstrip('/')
+    if (s.scheme != 'https' or s.hostname != 'note.com' or s.username or s.password
+            or s.port is not None or not re.fullmatch(r'/kotaeawase_art/m/m[a-zA-Z0-9]+(?:/rss)?', path)):
+        raise ValueError('NOTE_ART_MAGAZINE_URL must be the public 絵を見る、答え合わせ。 magazine URL on note.com')
+    if not path.endswith('/rss'):
+        path += '/rss'
+    return urlunsplit(('https', 'note.com', path, '', ''))
+
+
 class PlainText(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -230,12 +245,15 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, default=None)
     parser.add_argument("--rss-file", type=Path, default=None, help="local XML test fixture")
+    parser.add_argument("--art-magazine-url", default=None,
+                        help="public 絵を見る、答え合わせ。 magazine URL; appends /rss automatically")
     args = parser.parse_args()
     dest = args.out or output_path()
+    source_url = normalize_magazine_rss_url(args.art_magazine_url) if args.art_magazine_url else FEED_URL
     if args.rss_file:
         raw = args.rss_file.read_bytes()
     else:
-        req = Request(FEED_URL, headers={"User-Agent": "KotaeawaseArtClubRSS/1.0 (+https://hillslife.tokyo/art/)", "Accept": "application/rss+xml, application/xml, text/xml"})
+        req = Request(source_url, headers={"User-Agent": "KotaeawaseArtClubRSS/1.0 (+https://hillslife.tokyo/art/)", "Accept": "application/rss+xml, application/xml, text/xml"})
         with urlopen(req, timeout=25) as response:
             raw = response.read(MAX_FEED_BYTES + 1)
     items = parse_rss(raw)
@@ -251,12 +269,20 @@ def main():
     # manually configured header image. Reuse previously retrieved images,
     # then check the missing articles' public Open Graph metadata.
     previous_items = current.get("articles", []) if isinstance(current, dict) else []
+    if args.art_magazine_url:
+        # On the first magazine run, reuse images from the already cached creator RSS.
+        general_cache = output_path()
+        if general_cache != dest and general_cache.exists():
+            try:
+                previous_items += json.loads(general_cache.read_text('utf-8')).get('articles', [])
+            except (ValueError, OSError, AttributeError):
+                pass
     items = fill_missing_images(items, previous_items)
     if current and current.get("articles") == items and current.get("updatedAt"):
         print(f"Unchanged ({len(items)} articles): {dest}")
         return
     payload = {
-        "source": FEED_URL,
+        "source": source_url,
         "updatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "articles": items,
     }
