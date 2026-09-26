@@ -33,15 +33,28 @@ jobs:
       - name: Test note RSS parser
         run: python -m unittest discover -s tests -p test_note_feed.py -v
 
-      - name: Fetch note RSS
+      - name: Fetch creator RSS for other pages
         run: python scripts/update_note_feed.py
+
+      - name: Fetch only 絵を見る、答え合わせ。 magazine RSS for homepage
+        shell: bash
+        env:
+          NOTE_ART_MAGAZINE_URL: ${{ vars.NOTE_ART_MAGAZINE_URL }}
+        run: |
+          set -euo pipefail
+          if [ -z "$NOTE_ART_MAGAZINE_URL" ]; then
+            echo "Repository variable NOTE_ART_MAGAZINE_URL is required. Do not publish an unfiltered home feed." >&2
+            exit 1
+          fi
+          python scripts/update_note_feed.py \
+            --art-magazine-url "$NOTE_ART_MAGAZINE_URL" \
+            --out docs/assets/data/note-art-latest.json
 
       - name: Commit updated JSON to this repository (if changed)
         shell: bash
         run: |
           set -euo pipefail
-          json="docs/assets/data/note-latest.json"
-          git add -- "$json"
+          git add -- docs/assets/data/note-latest.json docs/assets/data/note-art-latest.json
           if git diff --cached --quiet; then
             echo "Same article list; repository cache unchanged."
           else
@@ -117,6 +130,7 @@ jobs:
             cd "$FTP_REMOTE_DIR";
             cd assets/data;
             put docs/assets/data/note-latest.json -o note-latest.json;
+            put docs/assets/data/note-art-latest.json -o note-art-latest.json;
             bye
           "
-          echo "Published: /art/assets/data/note-latest.json"
+          echo "Published: /art/assets/data/note-latest.json and note-art-latest.json"
