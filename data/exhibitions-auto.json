@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T10:46:53+09:00",
+  "updatedAt": "2026-09-28T08:51:25+09:00",
   "items": [
     {
       "id": "auto-artizon-c2cb08142a",
@@ -10,19 +10,6 @@
       "end": "2026-10-04",
       "official": "https://www.artizon.museum/exhibition/detail/604",
       "source_key": "artizon"
-    },
-    {
-      "id": "auto-nakka-5830e5188a",
-      "title": "スイス絵画の異才 カール・ヴァルザー",
-      "venue": "大阪中之島美術館",
-      "area": "大阪",
-      "start": "2026-07-04",
-      "end": "2026-09-27",
-      "official": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
-      "source_key": "nakka",
-      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/04/banner_960・80px.jpg",
-      "imageSource": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
-      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-tobikan-4eb1af0a22",

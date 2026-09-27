@@ -91,31 +91,6 @@ window.KA_EXHIBITIONS.push(...[
     "ticketEvents": []
   },
   {
-    "id": "auto-nakka-5830e5188a",
-    "kind": "exhibition",
-    "title": "スイス絵画の異才 カール・ヴァルザー",
-    "shortTitle": "スイス絵画の異才 カール・ヴァルザー",
-    "aliases": [
-      "スイス絵画の異才 カール・ヴァルザー"
-    ],
-    "venue": "大阪中之島美術館",
-    "area": "大阪",
-    "start": "2026-07-04",
-    "end": "2026-09-27",
-    "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/04/banner_960・80px.jpg",
-    "imageAlt": "スイス絵画の異才 カール・ヴァルザー 公式サイト掲載画像",
-    "imageSource": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
-    "imagePosition": "",
-    "guide": "",
-    "official": "https://nakka-art.jp/exhibition-post/karlwalser-2026",
-    "note": "公式サイトから自動取得した開催情報です。",
-    "homePriority": -1000,
-    "large": false,
-    "bigPick": false,
-    "auto": true,
-    "ticketEvents": []
-  },
-  {
     "id": "auto-tobikan-4eb1af0a22",
     "kind": "exhibition",
     "title": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
