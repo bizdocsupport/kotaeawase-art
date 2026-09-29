@@ -343,17 +343,17 @@ window.KA_EXHIBITIONS.push(...[
   {
     "id": "auto-kyocera-a39b6482bd",
     "kind": "exhibition",
-    "title": "スタジオジブリ企画制作『白隠さんの禅』京都展",
-    "shortTitle": "スタジオジブリ企画制作『白隠さんの禅』京都展",
+    "title": "「スタジオジブリ企画制作 白隠さんの禅」京都展",
+    "shortTitle": "「スタジオジブリ企画制作 白隠さんの禅」京都展",
     "aliases": [
-      "スタジオジブリ企画制作『白隠さんの禅』京都展"
+      "「スタジオジブリ企画制作 白隠さんの禅」京都展"
     ],
     "venue": "京都市京セラ美術館",
     "area": "京都",
     "start": "2026-12-17",
     "end": "2027-01-11",
     "image": "https://kyotocity-kyocera.museum/wp-content/uploads/3d9a2b34aa67f4c11ca1cde145580e1e.jpg",
-    "imageAlt": "スタジオジブリ企画制作『白隠さんの禅』京都展 公式サイト掲載画像",
+    "imageAlt": "「スタジオジブリ企画制作 白隠さんの禅」京都展 公式サイト掲載画像",
     "imageSource": "https://kyotocity-kyocera.museum/exhibition/20261217-20270111",
     "imagePosition": "",
     "guide": "",

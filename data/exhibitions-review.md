@@ -51,7 +51,7 @@
 | 2026-11-14 | 2026-12-13 | 大阪中之島美術館 | [Osaka Directory 13 Supported by RICHARD MILLE 橘 葉月](https://nakka-art.jp/exhibition-post/osaka-directory-dir13) |
 | 2026-11-19 | 2027-01-11 | 東京都美術館 | [東京都美術館開館100周年記念 あなたが世界を読むために](https://www.tobikan.jp/exhibition/2026_waysofreading.html) |
 | 2026-11-19 | 2027-01-11 | 東京都美術館 | [東京都美術館開館100周年記念 はじまりをひらく 東京都美術館の100年](https://www.tobikan.jp/exhibition/2026_archives.html) |
-| 2026-12-17 | 2027-01-11 | 京都市京セラ美術館 | [スタジオジブリ企画制作『白隠さんの禅』京都展](https://kyotocity-kyocera.museum/exhibition/20261217-20270111) |
+| 2026-12-17 | 2027-01-11 | 京都市京セラ美術館 | [「スタジオジブリ企画制作 白隠さんの禅」京都展](https://kyotocity-kyocera.museum/exhibition/20261217-20270111) |
 | 2026-12-19 | 2027-01-16 | 京都市京セラ美術館 | [第119回⽇展京都展](https://kyotocity-kyocera.museum/exhibition/20261219-20270116) |
 | 2026-12-19 | 2027-01-17 | 大阪中之島美術館 | [Osaka Directory 14 Supported by RICHARD MILLE 迫 鉄平](https://nakka-art.jp/exhibition-post/osaka-directory-dir14) |
 | 2026-12-26 | 2027-03-07 | あべのハルカス美術館 | [ルーシー・リー展 －東西をつなぐ優美のうつわ－](https://www.aham.jp/exhibition/future/lucie_rie) |
