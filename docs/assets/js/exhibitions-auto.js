@@ -191,6 +191,31 @@ window.KA_EXHIBITIONS.push(...[
     "ticketEvents": []
   },
   {
+    "id": "auto-nmwa-ef150c547d",
+    "kind": "exhibition",
+    "title": "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで",
+    "shortTitle": "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで",
+    "aliases": [
+      "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで"
+    ],
+    "venue": "国立西洋美術館",
+    "area": "東京",
+    "start": "2026-10-20",
+    "end": "2027-01-11",
+    "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/09/ポスター-scaled.jpg",
+    "imageAlt": "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで 公式サイト掲載画像",
+    "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2026theater.html",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.nmwa.go.jp/jp/exhibitions/2026theater.html",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
     "id": "auto-artizon-3538cc4973",
     "kind": "exhibition",
     "title": "エトランゼたち —洋画家たちのヨーロッパ体験",

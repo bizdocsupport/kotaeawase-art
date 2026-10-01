@@ -6,7 +6,7 @@
       "url": "https://www.nmwa.go.jp/jp/exhibitions/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 1,
+      "candidateCount": 3,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 10,
     "errorCount": 2,
-    "candidateCountBeforeManualFilter": 47,
-    "candidateCountAfterManualFilter": 35
+    "candidateCountBeforeManualFilter": 49,
+    "candidateCountAfterManualFilter": 37
   }
 }

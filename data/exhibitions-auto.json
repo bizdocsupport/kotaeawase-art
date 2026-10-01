@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T10:02:36+09:00",
+  "updatedAt": "2026-10-01T09:35:55+09:00",
   "items": [
     {
       "id": "auto-artizon-c2cb08142a",
@@ -75,6 +75,19 @@
       "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
       "imageSource": "https://www.tnm.jp/modules/r_free_page/index.php?id=2770",
       "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-nmwa-ef150c547d",
+      "title": "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで",
+      "venue": "国立西洋美術館",
+      "area": "東京",
+      "start": "2026-10-20",
+      "end": "2027-01-11",
+      "official": "https://www.nmwa.go.jp/jp/exhibitions/2026theater.html",
+      "source_key": "nmwa",
+      "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/09/ポスター-scaled.jpg",
+      "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2026theater.html",
+      "imageEvidence": "poster/hero"
     },
     {
       "id": "auto-artizon-3538cc4973",
@@ -386,6 +399,19 @@
       "image": "https://tobikan.jp/media/img/poster/2027_dufy_l.jpg",
       "imageSource": "https://www.tobikan.jp/exhibition/2027_hammer.html",
       "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-nmwa-29ef4e1463",
+      "title": "画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ ――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ",
+      "venue": "国立西洋美術館",
+      "area": "東京",
+      "start": "2027-09-18",
+      "end": "2028-01-16",
+      "official": "https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html",
+      "source_key": "nmwa",
+      "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/09/2026gachuga_01.jpg",
+      "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html",
+      "imageEvidence": "poster/hero"
     },
     {
       "id": "auto-kyocera-2252cce9e4",
