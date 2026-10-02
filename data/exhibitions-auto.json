@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T09:35:55+09:00",
+  "updatedAt": "2026-10-02T09:51:03+09:00",
   "items": [
     {
       "id": "auto-artizon-c2cb08142a",
@@ -74,6 +74,19 @@
       "source_key": "tnm",
       "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
       "imageSource": "https://www.tnm.jp/modules/r_free_page/index.php?id=2770",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mimt-68fddf63a5",
+      "title": "特設サイトへ",
+      "venue": "三菱一号館美術館",
+      "area": "東京",
+      "start": "2026-10-17",
+      "end": "2027-01-24",
+      "official": "https://mimt.jp/ex_sp/fontanesi",
+      "source_key": "mimt",
+      "image": "https://mimt.jp/wp-content/themes/mimt/assets/img/common/mimt_OGP.png",
+      "imageSource": "https://mimt.jp/ex_sp/fontanesi",
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
@@ -224,6 +237,16 @@
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
+      "id": "auto-nakka-663cba56d9",
+      "title": "つくる女性の100年",
+      "venue": "大阪中之島美術館",
+      "area": "大阪",
+      "start": "2027-01-09",
+      "end": "2027-03-22",
+      "official": "https://nakka-art.jp/exhibition-post/paving-the-way100",
+      "source_key": "nakka"
+    },
+    {
       "id": "auto-kyocera-3631924a1d",
       "title": "藤野裕美子",
       "venue": "京都市京セラ美術館",
@@ -330,6 +353,19 @@
       "end": "2027-05-09",
       "official": "https://www.aham.jp/exhibition/future/ericcarle",
       "source_key": "aham"
+    },
+    {
+      "id": "auto-osaka-art-235da4f322",
+      "title": "生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」",
+      "venue": "大阪市立美術館",
+      "area": "大阪",
+      "start": "2027-04-24",
+      "end": "2027-06-20",
+      "official": "https://www.osaka-art-museum.jp/special_exhibition/muto",
+      "source_key": "osaka-art",
+      "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
+      "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/muto",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-tobikan-13731f99dc",

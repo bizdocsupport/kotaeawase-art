@@ -2,8 +2,8 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **37件**
-- 今回の新規候補: **2件**
+- 自動候補: **40件**
+- 今回の新規候補: **3件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -16,33 +16,38 @@
 | 東京国立博物館 | OK | HTTP | 3 |
 | 東京都現代美術館 | ERROR | - | 0 |
 | SOMPO美術館 | OK | HTTP | 3 |
-| 三菱一号館美術館 | ERROR | - | 0 |
+| 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 9 |
-| 大阪中之島美術館 | OK | HTTP | 5 |
+| 大阪中之島美術館 | OK | HTTP | 6 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
-| 大阪市立美術館 | OK | HTTP | 2 |
+| 大阪市立美術館 | OK | HTTP | 3 |
 | あべのハルカス美術館 | OK | HTTP | 4 |
 
 ### 取得警告（フォールバック等）
 
+- **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
 - **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
 
 ### 取得エラー
 
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-- **三菱一号館美術館**: `https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403 | https://mimt.jp/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 403`
 
 ## 今回の新規候補
 
-### 小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで
-- 会場: 国立西洋美術館
-- 会期: 2026-10-20 ～ 2027-01-11
-- 公式: https://www.nmwa.go.jp/jp/exhibitions/2026theater.html
+### 特設サイトへ
+- 会場: 三菱一号館美術館
+- 会期: 2026-10-17 ～ 2027-01-24
+- 公式: https://mimt.jp/ex_sp/fontanesi
 
-### 画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ ――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ
-- 会場: 国立西洋美術館
-- 会期: 2027-09-18 ～ 2028-01-16
-- 公式: https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html
+### つくる女性の100年
+- 会場: 大阪中之島美術館
+- 会期: 2027-01-09 ～ 2027-03-22
+- 公式: https://nakka-art.jp/exhibition-post/paving-the-way100
+
+### 生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」
+- 会場: 大阪市立美術館
+- 会期: 2027-04-24 ～ 2027-06-20
+- 公式: https://www.osaka-art-museum.jp/special_exhibition/muto
 
 ## 自動候補一覧
 
@@ -54,6 +59,7 @@
 | 2026-09-19 | 2026-12-20 | 京都市京セラ美術館 | [生誕140年記念 染織家 山鹿清華─宙翔ぶイマジネーション](https://kyotocity-kyocera.museum/exhibition/20260919-20261220) |
 | 2026-10-09 | 2026-12-13 | 京都市京セラ美術館 | [［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」](https://kyotocity-kyocera.museum/exhibition/20261009-20261213) |
 | 2026-10-14 | 2026-12-06 | 東京国立博物館 | [開創700年記念 特別展「大徳寺 本朝無双之禅苑」](https://www.tnm.jp/modules/r_free_page/index.php?id=2770) |
+| 2026-10-17 | 2027-01-24 | 三菱一号館美術館 | [特設サイトへ](https://mimt.jp/ex_sp/fontanesi) |
 | 2026-10-20 | 2027-01-11 | 国立西洋美術館 | [小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで](https://www.nmwa.go.jp/jp/exhibitions/2026theater.html) |
 | 2026-10-24 | 2027-01-31 | アーティゾン美術館 | [エトランゼたち —洋画家たちのヨーロッパ体験](https://www.artizon.museum/exhibition/detail/610) |
 | 2026-10-28 | 2027-02-08 | 国立新美術館 | [少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展](https://www.nact.jp/exhibition_special/2026/shojomanga) |
@@ -66,6 +72,7 @@
 | 2026-12-19 | 2027-01-17 | 大阪中之島美術館 | [Osaka Directory 14 Supported by RICHARD MILLE 迫 鉄平](https://nakka-art.jp/exhibition-post/osaka-directory-dir14) |
 | 2026-12-26 | 2027-03-07 | あべのハルカス美術館 | [ルーシー・リー展 －東西をつなぐ優美のうつわ－](https://www.aham.jp/exhibition/future/lucie_rie) |
 | 2027-01-09 | 2027-02-21 | SOMPO美術館 | [生誕130年 東郷青児展](https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary) |
+| 2027-01-09 | 2027-03-22 | 大阪中之島美術館 | [つくる女性の100年](https://nakka-art.jp/exhibition-post/paving-the-way100) |
 | 2027-01-15 | 2027-04-18 | 京都市京セラ美術館 | [藤野裕美子](https://kyotocity-kyocera.museum/exhibition/20270115-20270418) |
 | 2027-01-15 | 2027-03-14 | 京都市京セラ美術館 | [［2026冬期］コレクションルーム 特集「時を塗る－京都のうるしが映した近代」](https://kyotocity-kyocera.museum/exhibition/20270115-20270314) |
 | 2027-01-19 | 2027-03-14 | 東京国立博物館 | [「源氏物語 王朝のかがやき」](https://www.tnm.jp/modules/r_free_page/index.php?id=2763) |
@@ -75,6 +82,7 @@
 | 2027-02-23 | 2027-05-30 | アーティゾン美術館 | [ARTIZON NOW ひろがる、つながる、コレクション](https://www.artizon.museum/exhibition/detail/615) |
 | 2027-03-06 | 2027-03-28 | SOMPO美術館 | [FACE展2027](https://www.sompo-museum.org/exhibitions/2025/face2027) |
 | 2027-03-20 | 2027-05-09 | あべのハルカス美術館 | [エリック・カール展 はじまりは、はらぺこあおむし](https://www.aham.jp/exhibition/future/ericcarle) |
+| 2027-04-24 | 2027-06-20 | 大阪市立美術館 | [生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」](https://www.osaka-art-museum.jp/special_exhibition/muto) |
 | 2027-04-24 | 2027-08-22 | 東京都美術館 | [デュフィ展](https://www.tobikan.jp/exhibition/2027_dufy.html) |
 | 2027-05-22 | 2027-07-19 | あべのハルカス美術館 | [HOKUSAI ―北斎が「北斎」だった時代―](https://www.aham.jp/exhibition/future/hokusai2027) |
 | 2027-05-26 | 2027-08-29 | 京都市京セラ美術館 | [ギルバート＆ジョージ展](https://kyotocity-kyocera.museum/exhibition/20270526-20270829) |

@@ -70,12 +70,12 @@
       "key": "mimt",
       "venue": "三菱一号館美術館",
       "url": "https://mimt.jp/exhibition/",
-      "ok": false,
-      "httpStatus": null,
-      "candidateCount": 0,
-      "fetchMethod": "-",
-      "warning": "",
-      "error": "https://mimt.jp/exhibition/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 403 | https://mimt.jp/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 403"
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 1,
+      "fetchMethod": "HTTP+BROWSER",
+      "warning": "ブラウザ取得も候補0件: https://mimt.jp/",
+      "error": ""
     },
     {
       "key": "artizon",
@@ -94,7 +94,7 @@
       "url": "https://nakka-art.jp/exhibition/held/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 5,
+      "candidateCount": 6,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -116,7 +116,7 @@
       "url": "https://www.osaka-art-museum.jp/special_exhibition",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 2,
+      "candidateCount": 3,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -135,9 +135,9 @@
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 10,
-    "errorCount": 2,
-    "candidateCountBeforeManualFilter": 49,
-    "candidateCountAfterManualFilter": 37
+    "okCount": 11,
+    "errorCount": 1,
+    "candidateCountBeforeManualFilter": 52,
+    "candidateCountAfterManualFilter": 40
   }
 }

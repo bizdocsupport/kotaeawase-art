@@ -191,6 +191,31 @@ window.KA_EXHIBITIONS.push(...[
     "ticketEvents": []
   },
   {
+    "id": "auto-mimt-68fddf63a5",
+    "kind": "exhibition",
+    "title": "特設サイトへ",
+    "shortTitle": "特設サイトへ",
+    "aliases": [
+      "特設サイトへ"
+    ],
+    "venue": "三菱一号館美術館",
+    "area": "東京",
+    "start": "2026-10-17",
+    "end": "2027-01-24",
+    "image": "https://mimt.jp/wp-content/themes/mimt/assets/img/common/mimt_OGP.png",
+    "imageAlt": "特設サイトへ 公式サイト掲載画像",
+    "imageSource": "https://mimt.jp/ex_sp/fontanesi",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://mimt.jp/ex_sp/fontanesi",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
     "id": "auto-nmwa-ef150c547d",
     "kind": "exhibition",
     "title": "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで",
@@ -483,6 +508,31 @@ window.KA_EXHIBITIONS.push(...[
     "imagePosition": "",
     "guide": "",
     "official": "https://www.sompo-museum.org/exhibitions/2025/togoseiji-130th-anniversary",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
+    "id": "auto-nakka-663cba56d9",
+    "kind": "exhibition",
+    "title": "つくる女性の100年",
+    "shortTitle": "つくる女性の100年",
+    "aliases": [
+      "つくる女性の100年"
+    ],
+    "venue": "大阪中之島美術館",
+    "area": "大阪",
+    "start": "2027-01-09",
+    "end": "2027-03-22",
+    "image": "",
+    "imageAlt": "",
+    "imageSource": "",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://nakka-art.jp/exhibition-post/paving-the-way100",
     "note": "公式サイトから自動取得した開催情報です。",
     "homePriority": -1000,
     "large": false,
