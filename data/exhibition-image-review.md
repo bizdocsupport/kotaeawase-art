@@ -5,15 +5,13 @@
 | 種別 | 展覧会 | 結果 | 取得画像 |
 |---|---|---|---|
 | auto | 瀧口修造 書くことと描くこと | no verified official visual | - |
-| auto | 特設サイトへ | ok | https://mimt.jp/wp-content/themes/mimt/assets/img/common/mimt_OGP.png |
 | auto | エトランゼたち —洋画家たちのヨーロッパ体験 | no verified official visual | - |
 | auto | 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展 | no verified official visual | - |
 | auto | ルーシー・リー展 －東西をつなぐ優美のうつわ－ | no verified official visual | - |
-| auto | つくる女性の100年 | no verified official visual | - |
+| auto | つくる女性の100年 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/09/women100years_banner_260914_MV.jpg |
 | auto | ARTIZON NOW ひろがる、つながる、コレクション | no verified official visual | - |
 | auto | FACE展2027 | no verified official visual | - |
 | auto | エリック・カール展 はじまりは、はらぺこあおむし | no verified official visual | - |
-| auto | 生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」 | ok | https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg |
 | auto | HOKUSAI ―北斎が「北斎」だった時代― | no verified official visual | - |
 | auto | 第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように | no verified official visual | - |
 | auto | 藤島武二 —創造の軌跡 | no verified official visual | - |

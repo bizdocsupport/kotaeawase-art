@@ -244,7 +244,10 @@
       "start": "2027-01-09",
       "end": "2027-03-22",
       "official": "https://nakka-art.jp/exhibition-post/paving-the-way100",
-      "source_key": "nakka"
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/women100years_banner_260914_MV.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/paving-the-way100",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-kyocera-3631924a1d",
