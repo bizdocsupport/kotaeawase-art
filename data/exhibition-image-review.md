@@ -8,7 +8,6 @@
 | auto | エトランゼたち —洋画家たちのヨーロッパ体験 | no verified official visual | - |
 | auto | 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展 | no verified official visual | - |
 | auto | ルーシー・リー展 －東西をつなぐ優美のうつわ－ | no verified official visual | - |
-| auto | つくる女性の100年 | ok | https://nakka-art.jp/wp10/wp-content/uploads/2026/09/women100years_banner_260914_MV.jpg |
 | auto | ARTIZON NOW ひろがる、つながる、コレクション | no verified official visual | - |
 | auto | FACE展2027 | no verified official visual | - |
 | auto | エリック・カール展 はじまりは、はらぺこあおむし | no verified official visual | - |

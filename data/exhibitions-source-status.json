@@ -127,7 +127,7 @@
       "url": "https://www.aham.jp/exhibition/future/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 4,
+      "candidateCount": 3,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 52,
+    "candidateCountBeforeManualFilter": 51,
     "candidateCountAfterManualFilter": 40
   }
 }
