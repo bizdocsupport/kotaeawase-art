@@ -83,7 +83,7 @@
       "url": "https://www.artizon.museum/exhibition/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 9,
+      "candidateCount": 7,
       "fetchMethod": "HTTP+BROWSER",
       "warning": "ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 51,
-    "candidateCountAfterManualFilter": 40
+    "candidateCountBeforeManualFilter": 49,
+    "candidateCountAfterManualFilter": 39
   }
 }

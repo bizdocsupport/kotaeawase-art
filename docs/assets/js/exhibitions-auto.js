@@ -66,31 +66,6 @@ window.KA_EXHIBITIONS.forEach(item => {
 });
 window.KA_EXHIBITIONS.push(...[
   {
-    "id": "auto-artizon-c2cb08142a",
-    "kind": "exhibition",
-    "title": "瀧口修造 書くことと描くこと",
-    "shortTitle": "瀧口修造 書くことと描くこと",
-    "aliases": [
-      "瀧口修造 書くことと描くこと"
-    ],
-    "venue": "アーティゾン美術館",
-    "area": "東京",
-    "start": "2026-06-23",
-    "end": "2026-10-04",
-    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/37425192868d362e55c4ea0.15160420.jpg",
-    "imageAlt": "瀧口修造 書くことと描くこと 展覧会ポスター（東京観光公式サイト掲載）",
-    "imageSource": "https://www.artizon.museum/exhibition/detail/604",
-    "imagePosition": "center 18%",
-    "guide": "",
-    "official": "https://www.artizon.museum/exhibition/detail/604",
-    "note": "公式サイトから自動取得した開催情報です。",
-    "homePriority": -1000,
-    "large": false,
-    "bigPick": false,
-    "auto": true,
-    "ticketEvents": []
-  },
-  {
     "id": "auto-tobikan-4eb1af0a22",
     "kind": "exhibition",
     "title": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
