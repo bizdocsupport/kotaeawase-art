@@ -17,7 +17,7 @@
       "url": "https://www.tobikan.jp/exhibition/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 7,
+      "candidateCount": 6,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 49,
-    "candidateCountAfterManualFilter": 39
+    "candidateCountBeforeManualFilter": 48,
+    "candidateCountAfterManualFilter": 38
   }
 }

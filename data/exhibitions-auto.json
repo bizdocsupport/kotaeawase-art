@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-10-05T08:59:35+09:00",
+  "updatedAt": "2026-10-08T10:03:22+09:00",
   "items": [
-    {
-      "id": "auto-tobikan-4eb1af0a22",
-      "title": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
-      "venue": "東京都美術館",
-      "area": "東京",
-      "start": "2026-07-23",
-      "end": "2026-10-07",
-      "official": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
-      "source_key": "tobikan",
-      "image": "https://tobikan.jp/media/img/poster/2026_viewsofthisplace_l.jpg",
-      "imageSource": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
-      "imageEvidence": "meta [property=\"og:image\"]"
-    },
     {
       "id": "auto-kyocera-5e5119c49b",
       "title": "松延総司：壁",

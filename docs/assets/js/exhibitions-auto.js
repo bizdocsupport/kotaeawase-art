@@ -66,31 +66,6 @@ window.KA_EXHIBITIONS.forEach(item => {
 });
 window.KA_EXHIBITIONS.push(...[
   {
-    "id": "auto-tobikan-4eb1af0a22",
-    "kind": "exhibition",
-    "title": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
-    "shortTitle": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
-    "aliases": [
-      "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス"
-    ],
-    "venue": "東京都美術館",
-    "area": "東京",
-    "start": "2026-07-23",
-    "end": "2026-10-07",
-    "image": "https://tobikan.jp/media/img/poster/2026_viewsofthisplace_l.jpg",
-    "imageAlt": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス 公式サイト掲載画像",
-    "imageSource": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
-    "imagePosition": "",
-    "guide": "",
-    "official": "https://www.tobikan.jp/exhibition/2026_viewsofthisplace.html",
-    "note": "公式サイトから自動取得した開催情報です。",
-    "homePriority": -1000,
-    "large": false,
-    "bigPick": false,
-    "auto": true,
-    "ticketEvents": []
-  },
-  {
     "id": "auto-kyocera-5e5119c49b",
     "kind": "exhibition",
     "title": "松延総司：壁",
