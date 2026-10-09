@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T10:03:22+09:00",
+  "updatedAt": "2026-10-09T10:15:48+09:00",
   "items": [
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -402,6 +402,19 @@
       "end": "2027-09-20",
       "official": "https://www.artizon.museum/exhibition/detail/617",
       "source_key": "artizon"
+    },
+    {
+      "id": "auto-osaka-art-b78b728d91",
+      "title": "シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～",
+      "venue": "大阪市立美術館",
+      "area": "大阪",
+      "start": "2027-07-17",
+      "end": "2027-09-26",
+      "official": "https://www.osaka-art-museum.jp/special_exhibition/cincinnati",
+      "source_key": "osaka-art",
+      "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
+      "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/cincinnati",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-tobikan-d75d78fe8c",

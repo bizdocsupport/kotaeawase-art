@@ -13,5 +13,6 @@
 | auto | HOKUSAI ―北斎が「北斎」だった時代― | no verified official visual | - |
 | auto | 第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように | no verified official visual | - |
 | auto | 藤島武二 —創造の軌跡 | no verified official visual | - |
+| auto | シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～ | ok | https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg |
 | auto | New Objectivity —1960–70年代のアートシーン | no verified official visual | - |
 | auto | 石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ | no verified official visual | - |

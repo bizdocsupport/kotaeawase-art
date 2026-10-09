@@ -116,7 +116,7 @@
       "url": "https://www.osaka-art-museum.jp/special_exhibition",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 3,
+      "candidateCount": 4,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 48,
-    "candidateCountAfterManualFilter": 38
+    "candidateCountBeforeManualFilter": 49,
+    "candidateCountAfterManualFilter": 39
   }
 }
