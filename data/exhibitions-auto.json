@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T10:15:48+09:00",
+  "updatedAt": "2026-10-10T09:56:58+09:00",
   "items": [
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -39,6 +39,19 @@
       "image": "https://kyotocity-kyocera.museum/wp-content/uploads/KCKM-CR2026_fall_A4_web.jpg",
       "imageSource": "https://kyotocity-kyocera.museum/exhibition/20261009-20261213",
       "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-nakka-61cf23d91e",
+      "title": "NMAOサテライト",
+      "venue": "大阪中之島美術館",
+      "area": "大阪",
+      "start": "2026-10-10",
+      "end": "2026-11-07",
+      "official": "https://nakka-art.jp/exhibition-post/colle-naka-2026",
+      "source_key": "nakka",
+      "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/NMAOSatellite_920_552_thum.jpg",
+      "imageSource": "https://nakka-art.jp/exhibition-post/colle-naka-2026",
+      "imageEvidence": "meta [property=\"og:image:secure_url\"]"
     },
     {
       "id": "auto-tnm-57fdc4d7a9",
@@ -431,7 +444,7 @@
     },
     {
       "id": "auto-nmwa-29ef4e1463",
-      "title": "画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ ――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ",
+      "title": "画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ",
       "venue": "国立西洋美術館",
       "area": "東京",
       "start": "2027-09-18",

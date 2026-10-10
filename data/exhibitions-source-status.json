@@ -94,7 +94,7 @@
       "url": "https://nakka-art.jp/exhibition/held/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 6,
+      "candidateCount": 7,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 49,
-    "candidateCountAfterManualFilter": 39
+    "candidateCountBeforeManualFilter": 50,
+    "candidateCountAfterManualFilter": 40
   }
 }

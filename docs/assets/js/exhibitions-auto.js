@@ -141,6 +141,31 @@ window.KA_EXHIBITIONS.push(...[
     "ticketEvents": []
   },
   {
+    "id": "auto-nakka-61cf23d91e",
+    "kind": "exhibition",
+    "title": "NMAOサテライト",
+    "shortTitle": "NMAOサテライト",
+    "aliases": [
+      "NMAOサテライト"
+    ],
+    "venue": "大阪中之島美術館",
+    "area": "大阪",
+    "start": "2026-10-10",
+    "end": "2026-11-07",
+    "image": "https://nakka-art.jp/wp10/wp-content/uploads/2026/09/NMAOSatellite_920_552_thum.jpg",
+    "imageAlt": "NMAOサテライト 公式サイト掲載画像",
+    "imageSource": "https://nakka-art.jp/exhibition-post/colle-naka-2026",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://nakka-art.jp/exhibition-post/colle-naka-2026",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
     "id": "auto-mimt-68fddf63a5",
     "kind": "exhibition",
     "title": "特設サイトへ",

@@ -2,8 +2,8 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **39件**
-- 今回の新規候補: **1件**
+- 自動候補: **40件**
+- 今回の新規候補: **2件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -18,7 +18,7 @@
 | SOMPO美術館 | OK | HTTP | 3 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
-| 大阪中之島美術館 | OK | HTTP | 6 |
+| 大阪中之島美術館 | OK | HTTP | 7 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 4 |
 | あべのハルカス美術館 | OK | HTTP | 3 |
@@ -34,10 +34,15 @@
 
 ## 今回の新規候補
 
-### シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～
-- 会場: 大阪市立美術館
-- 会期: 2027-07-17 ～ 2027-09-26
-- 公式: https://www.osaka-art-museum.jp/special_exhibition/cincinnati
+### NMAOサテライト
+- 会場: 大阪中之島美術館
+- 会期: 2026-10-10 ～ 2026-11-07
+- 公式: https://nakka-art.jp/exhibition-post/colle-naka-2026
+
+### 画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ
+- 会場: 国立西洋美術館
+- 会期: 2027-09-18 ～ 2028-01-16
+- 公式: https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html
 
 ## 自動候補一覧
 
@@ -46,6 +51,7 @@
 | 2026-09-12 | 2026-12-20 | 京都市京セラ美術館 | [松延総司：壁](https://kyotocity-kyocera.museum/exhibition/20260912-20261220) |
 | 2026-09-19 | 2026-12-20 | 京都市京セラ美術館 | [生誕140年記念 染織家 山鹿清華─宙翔ぶイマジネーション](https://kyotocity-kyocera.museum/exhibition/20260919-20261220) |
 | 2026-10-09 | 2026-12-13 | 京都市京セラ美術館 | [［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」](https://kyotocity-kyocera.museum/exhibition/20261009-20261213) |
+| 2026-10-10 | 2026-11-07 | 大阪中之島美術館 | [NMAOサテライト](https://nakka-art.jp/exhibition-post/colle-naka-2026) |
 | 2026-10-14 | 2026-12-06 | 東京国立博物館 | [開創700年記念 特別展「大徳寺 本朝無双之禅苑」](https://www.tnm.jp/modules/r_free_page/index.php?id=2770) |
 | 2026-10-17 | 2027-01-24 | 三菱一号館美術館 | [特設サイトへ](https://mimt.jp/ex_sp/fontanesi) |
 | 2026-10-20 | 2027-01-11 | 国立西洋美術館 | [小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで](https://www.nmwa.go.jp/jp/exhibitions/2026theater.html) |
@@ -78,7 +84,7 @@
 | 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [藤島武二 —創造の軌跡](https://www.artizon.museum/exhibition/detail/617) |
 | 2027-07-17 | 2027-09-26 | 大阪市立美術館 | [シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～](https://www.osaka-art-museum.jp/special_exhibition/cincinnati) |
 | 2027-09-11 | 2027-12-12 | 東京都美術館 | [レンブラントからモネ、ゴッホ ハマー美術館展](https://www.tobikan.jp/exhibition/2027_hammer.html) |
-| 2027-09-18 | 2028-01-16 | 国立西洋美術館 | [画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ ――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ](https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html) |
+| 2027-09-18 | 2028-01-16 | 国立西洋美術館 | [画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ](https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html) |
 | 2027-10-02 | 2027-12-12 | 京都市京セラ美術館 | [⽣誕150年 ⽊島櫻⾕](https://kyotocity-kyocera.museum/exhibition/20271002-20271212) |
 | 2027-10-16 | 2028-01-30 | アーティゾン美術館 | [New Objectivity —1960–70年代のアートシーン](https://www.artizon.museum/exhibition/detail/618) |
 | 2027-10-16 | 2028-01-30 | アーティゾン美術館 | [石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ](https://www.artizon.museum/exhibition/detail/619) |
