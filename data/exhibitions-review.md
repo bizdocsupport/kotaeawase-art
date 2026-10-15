@@ -37,7 +37,7 @@
 ### 「銀河鉄道９９９」５０周年プロジェクト 松本零士展 創作の旅路
 - 会場: あべのハルカス美術館
 - 会期: 2027-07-31 ～ 2027-09-26
-- 公式: https://www.aham.jp/exhibition/future/reji-m-999
+- 公式: https://www.aham.jp/exhibition/future/leiji-m-999
 
 ## 自動候補一覧
 
@@ -78,7 +78,7 @@
 | 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように](https://www.artizon.museum/exhibition/detail/616) |
 | 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [藤島武二 —創造の軌跡](https://www.artizon.museum/exhibition/detail/617) |
 | 2027-07-17 | 2027-09-26 | 大阪市立美術館 | [シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～](https://www.osaka-art-museum.jp/special_exhibition/cincinnati) |
-| 2027-07-31 | 2027-09-26 | あべのハルカス美術館 | [「銀河鉄道９９９」５０周年プロジェクト 松本零士展 創作の旅路](https://www.aham.jp/exhibition/future/reji-m-999) |
+| 2027-07-31 | 2027-09-26 | あべのハルカス美術館 | [「銀河鉄道９９９」５０周年プロジェクト 松本零士展 創作の旅路](https://www.aham.jp/exhibition/future/leiji-m-999) |
 | 2027-09-11 | 2027-12-12 | 東京都美術館 | [レンブラントからモネ、ゴッホ ハマー美術館展](https://www.tobikan.jp/exhibition/2027_hammer.html) |
 | 2027-09-18 | 2028-01-16 | 国立西洋美術館 | [画中画――絵をめぐる絵の冒険。ルネサンスから現代、そのさきへ](https://www.nmwa.go.jp/jp/exhibitions/2027gachuga.html) |
 | 2027-10-02 | 2027-12-12 | 京都市京セラ美術館 | [⽣誕150年 ⽊島櫻⾕](https://kyotocity-kyocera.museum/exhibition/20271002-20271212) |
