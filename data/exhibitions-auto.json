@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T08:43:14+09:00",
+  "updatedAt": "2026-10-17T08:39:25+09:00",
   "items": [
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -293,7 +293,7 @@
     },
     {
       "id": "auto-kyocera-3fe4990d0d",
-      "title": "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称）",
+      "title": "ラファエル・ザルカ：幾何学、時間、スケートボード",
       "venue": "京都市京セラ美術館",
       "area": "京都",
       "start": "2027-02-06",
@@ -346,6 +346,32 @@
       "end": "2027-05-09",
       "official": "https://www.aham.jp/exhibition/future/ericcarle",
       "source_key": "aham"
+    },
+    {
+      "id": "auto-tnm-8c56215908",
+      "title": "智証大師諡号1100年記念 特別展「国宝 三井寺のすべて」",
+      "venue": "東京国立博物館",
+      "area": "東京",
+      "start": "2027-04-20",
+      "end": "2027-06-13",
+      "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=2777",
+      "source_key": "tnm",
+      "image": "https://www.tnm.jp/jp/exhibition/images/tmp/ogp/TNM_ogp.jpg",
+      "imageSource": "https://www.tnm.jp/modules/r_free_page/index.php?id=2777",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-sompo-f19800121f",
+      "title": "描かれたモード ―フランス女性の新時代（仮称）",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2027-04-24",
+      "end": "2027-06-27",
+      "official": "https://www.sompo-museum.org/exhibitions/2026/mode_francaise",
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/wp-content/uploads/2026/10/mode_francaise-750.jpg",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2026/mode_francaise",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-osaka-art-235da4f322",
@@ -417,6 +443,19 @@
       "source_key": "artizon"
     },
     {
+      "id": "auto-sompo-ccfc032224",
+      "title": "テクノロジー×アートの扉",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2027-07-17",
+      "end": "2027-08-29",
+      "official": "https://www.sompo-museum.org/exhibitions/2026/gateway_to_tech_art",
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/wp-content/uploads/2026/10/gateway_to_tech_art-750.jpg",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2026/gateway_to_tech_art",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
       "id": "auto-osaka-art-b78b728d91",
       "title": "シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～",
       "venue": "大阪市立美術館",
@@ -450,6 +489,19 @@
       "source_key": "tobikan",
       "image": "https://tobikan.jp/media/img/poster/2027_dufy_l.jpg",
       "imageSource": "https://www.tobikan.jp/exhibition/2027_hammer.html",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-sompo-22e1e8c8c4",
+      "title": "画家たちのバルビゾンー海を越えた風景のダイアローグ",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2027-09-18",
+      "end": "2027-12-12",
+      "official": "https://www.sompo-museum.org/exhibitions/2026/barbizon_school",
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/wp-content/uploads/2026/10/barbizon_school-750.jpg",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2026/barbizon_school",
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
@@ -497,6 +549,32 @@
       "end": "2028-01-30",
       "official": "https://www.artizon.museum/exhibition/detail/619",
       "source_key": "artizon"
+    },
+    {
+      "id": "auto-sompo-9e4e54aa46",
+      "title": "写真と建築（仮称）",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2028-01-08",
+      "end": "2028-02-20",
+      "official": "https://www.sompo-museum.org/exhibitions/2026/photography_and_architecture",
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/wp-content/uploads/2026/10/photography_and_architecture-750.jpg",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2026/photography_and_architecture",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-sompo-36718381ec",
+      "title": "FACE展2028／絵画のゆくえ2028",
+      "venue": "SOMPO美術館",
+      "area": "東京",
+      "start": "2028-03-04",
+      "end": "2028-03-26",
+      "official": "https://www.sompo-museum.org/exhibitions/2026/face2028-paintings2028",
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/assets/image/common/og.png",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2026/face2028-paintings2028",
+      "imageEvidence": "meta [property=\"og:image\"]"
     }
   ]
 }

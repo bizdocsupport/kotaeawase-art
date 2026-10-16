@@ -39,7 +39,7 @@
       "url": "https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 3,
+      "candidateCount": 4,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -61,7 +61,7 @@
       "url": "https://www.sompo-museum.org/exhibitions/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 3,
+      "candidateCount": 8,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 51,
-    "candidateCountAfterManualFilter": 41
+    "candidateCountBeforeManualFilter": 57,
+    "candidateCountAfterManualFilter": 47
   }
 }

@@ -618,17 +618,17 @@ window.KA_EXHIBITIONS.push(...[
   {
     "id": "auto-kyocera-3fe4990d0d",
     "kind": "exhibition",
-    "title": "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称）",
-    "shortTitle": "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称）",
+    "title": "ラファエル・ザルカ：幾何学、時間、スケートボード",
+    "shortTitle": "ラファエル・ザルカ：幾何学、時間、スケートボード",
     "aliases": [
-      "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称）"
+      "ラファエル・ザルカ：幾何学、時間、スケートボード"
     ],
     "venue": "京都市京セラ美術館",
     "area": "京都",
     "start": "2027-02-06",
     "end": "2027-05-05",
     "image": "https://kyotocity-kyocera.museum/wp-content/uploads/ZARKA_HERMES.jpg",
-    "imageAlt": "思考する彫刻家 ラファエル・ザルカと堀内正和 ―幾何学とモダニティをめぐる対話（仮称） 公式サイト掲載画像",
+    "imageAlt": "ラファエル・ザルカ：幾何学、時間、スケートボード 公式サイト掲載画像",
     "imageSource": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
     "imagePosition": "",
     "guide": "",
