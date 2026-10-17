@@ -3,7 +3,7 @@
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
 - 自動候補: **47件**
-- 今回の新規候補: **7件**
+- 今回の新規候補: **0件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -34,41 +34,7 @@
 
 ## 今回の新規候補
 
-### ラファエル・ザルカ：幾何学、時間、スケートボード
-- 会場: 京都市京セラ美術館
-- 会期: 2027-02-06 ～ 2027-05-05
-- 公式: https://kyotocity-kyocera.museum/exhibition/20270206-20270505
-
-### 智証大師諡号1100年記念 特別展「国宝 三井寺のすべて」
-- 会場: 東京国立博物館
-- 会期: 2027-04-20 ～ 2027-06-13
-- 公式: https://www.tnm.jp/modules/r_free_page/index.php?id=2777
-
-### 描かれたモード ―フランス女性の新時代（仮称）
-- 会場: SOMPO美術館
-- 会期: 2027-04-24 ～ 2027-06-27
-- 公式: https://www.sompo-museum.org/exhibitions/2026/mode_francaise
-
-### テクノロジー×アートの扉
-- 会場: SOMPO美術館
-- 会期: 2027-07-17 ～ 2027-08-29
-- 公式: https://www.sompo-museum.org/exhibitions/2026/gateway_to_tech_art
-
-### 画家たちのバルビゾンー海を越えた風景のダイアローグ
-- 会場: SOMPO美術館
-- 会期: 2027-09-18 ～ 2027-12-12
-- 公式: https://www.sompo-museum.org/exhibitions/2026/barbizon_school
-
-### 写真と建築（仮称）
-- 会場: SOMPO美術館
-- 会期: 2028-01-08 ～ 2028-02-20
-- 公式: https://www.sompo-museum.org/exhibitions/2026/photography_and_architecture
-
-### FACE展2028／絵画のゆくえ2028
-- 会場: SOMPO美術館
-- 会期: 2028-03-04 ～ 2028-03-26
-- 公式: https://www.sompo-museum.org/exhibitions/2026/face2028-paintings2028
-
+新規候補はありません。
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
