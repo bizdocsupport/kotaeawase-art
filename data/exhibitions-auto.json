@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T08:39:25+09:00",
+  "updatedAt": "2026-10-20T09:25:30+09:00",
   "items": [
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -78,19 +78,6 @@
       "image": "https://mimt.jp/wp-content/themes/mimt/assets/img/common/mimt_OGP.png",
       "imageSource": "https://mimt.jp/ex_sp/fontanesi",
       "imageEvidence": "meta [property=\"og:image\"]"
-    },
-    {
-      "id": "auto-nmwa-ef150c547d",
-      "title": "小企画展 劇場をめぐるイメージ―ドラクロワ、ドーミエからトゥールーズ=ロートレック、クリンガーまで",
-      "venue": "国立西洋美術館",
-      "area": "東京",
-      "start": "2026-10-20",
-      "end": "2027-01-11",
-      "official": "https://www.nmwa.go.jp/jp/exhibitions/2026theater.html",
-      "source_key": "nmwa",
-      "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/09/ポスター-scaled.jpg",
-      "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2026theater.html",
-      "imageEvidence": "poster/hero"
     },
     {
       "id": "auto-artizon-3538cc4973",
