@@ -70,23 +70,23 @@
       "key": "mimt",
       "venue": "三菱一号館美術館",
       "url": "https://mimt.jp/exhibition/",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 1,
-      "fetchMethod": "HTTP+BROWSER",
-      "warning": "ブラウザ取得も候補0件: https://mimt.jp/",
-      "error": ""
+      "ok": false,
+      "httpStatus": null,
+      "candidateCount": 0,
+      "fetchMethod": "-",
+      "warning": "",
+      "error": "https://mimt.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503 | https://mimt.jp/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 503"
     },
     {
       "key": "artizon",
       "venue": "アーティゾン美術館",
       "url": "https://www.artizon.museum/exhibition/",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 7,
+      "ok": false,
+      "httpStatus": 302,
+      "candidateCount": 0,
       "fetchMethod": "HTTP+BROWSER",
-      "warning": "ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule",
-      "error": ""
+      "warning": "ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/ | ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule | 一覧取得は成功したが候補0件：一覧構造や公式サイトの掲載状況を要確認",
+      "error": "候補0件（詳細ページのリンク・会期抽出を要確認）"
     },
     {
       "key": "nakka",
@@ -125,19 +125,19 @@
       "key": "aham",
       "venue": "あべのハルカス美術館",
       "url": "https://www.aham.jp/exhibition/future/",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 4,
-      "fetchMethod": "HTTP",
+      "ok": false,
+      "httpStatus": null,
+      "candidateCount": 0,
+      "fetchMethod": "-",
       "warning": "",
-      "error": ""
+      "error": "https://www.aham.jp/exhibition/future/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.aham.jp/exhibition/future/; BROWSER=RuntimeError: browser HTTP 403"
     }
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 11,
-    "errorCount": 1,
-    "candidateCountBeforeManualFilter": 55,
+    "okCount": 8,
+    "errorCount": 4,
+    "candidateCountBeforeManualFilter": 54,
     "candidateCountAfterManualFilter": 46
   }
 }

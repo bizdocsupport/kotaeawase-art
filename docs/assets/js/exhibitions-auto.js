@@ -202,7 +202,7 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2026-10-24",
     "end": "2027-01-31",
-    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/122943516068d366433d8758.09223433.jpg",
+    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/13778802196a28c6a8597cc5.91497464.jpg",
     "imageAlt": "エトランゼたち 美術館公式サイト掲載ビジュアル（黒田清輝《針仕事》ほか）",
     "imageSource": "https://www.artizon.museum/exhibition/detail/610",
     "imagePosition": "center 30%",
