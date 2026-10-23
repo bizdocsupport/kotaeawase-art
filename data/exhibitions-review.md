@@ -11,13 +11,13 @@
 | 美術館 | 状態 | 取得方式 | 候補数 |
 |---|---:|---:|---:|
 | 国立西洋美術館 | OK | HTTP | 2 |
-| 東京都美術館 | OK | HTTP | 5 |
+| 東京都美術館 | ERROR | - | 0 |
 | 国立新美術館 | OK | HTTP | 2 |
 | 東京国立博物館 | OK | HTTP | 4 |
 | 東京都現代美術館 | ERROR | - | 0 |
 | SOMPO美術館 | OK | HTTP | 8 |
-| 三菱一号館美術館 | ERROR | - | 0 |
-| アーティゾン美術館 | ERROR | HTTP+BROWSER | 0 |
+| 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
+| アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
 | 大阪中之島美術館 | OK | HTTP | 7 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 4 |
@@ -25,13 +25,13 @@
 
 ### 取得警告（フォールバック等）
 
-- **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/ | ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule | 一覧取得は成功したが候補0件：一覧構造や公式サイトの掲載状況を要確認`
+- **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
+- **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
 
 ### 取得エラー
 
+- **東京都美術館**: `https://www.tobikan.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://www.tobikan.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503`
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-- **三菱一号館美術館**: `https://mimt.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503 | https://mimt.jp/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 503`
-- **アーティゾン美術館**: `候補0件（詳細ページのリンク・会期抽出を要確認）`
 - **あべのハルカス美術館**: `https://www.aham.jp/exhibition/future/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.aham.jp/exhibition/future/; BROWSER=RuntimeError: browser HTTP 403`
 
 ## 今回の新規候補

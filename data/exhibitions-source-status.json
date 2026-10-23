@@ -15,12 +15,12 @@
       "key": "tobikan",
       "venue": "東京都美術館",
       "url": "https://www.tobikan.jp/exhibition/",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 5,
-      "fetchMethod": "HTTP",
+      "ok": false,
+      "httpStatus": null,
+      "candidateCount": 0,
+      "fetchMethod": "-",
       "warning": "",
-      "error": ""
+      "error": "https://www.tobikan.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://www.tobikan.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503"
     },
     {
       "key": "nact",
@@ -70,23 +70,23 @@
       "key": "mimt",
       "venue": "三菱一号館美術館",
       "url": "https://mimt.jp/exhibition/",
-      "ok": false,
-      "httpStatus": null,
-      "candidateCount": 0,
-      "fetchMethod": "-",
-      "warning": "",
-      "error": "https://mimt.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://mimt.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503 | https://mimt.jp/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://mimt.jp/; BROWSER=RuntimeError: browser HTTP 503"
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 1,
+      "fetchMethod": "HTTP+BROWSER",
+      "warning": "ブラウザ取得も候補0件: https://mimt.jp/",
+      "error": ""
     },
     {
       "key": "artizon",
       "venue": "アーティゾン美術館",
       "url": "https://www.artizon.museum/exhibition/",
-      "ok": false,
-      "httpStatus": 302,
-      "candidateCount": 0,
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 7,
       "fetchMethod": "HTTP+BROWSER",
-      "warning": "ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/ | ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule | 一覧取得は成功したが候補0件：一覧構造や公式サイトの掲載状況を要確認",
-      "error": "候補0件（詳細ページのリンク・会期抽出を要確認）"
+      "warning": "ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule",
+      "error": ""
     },
     {
       "key": "nakka",
@@ -135,8 +135,8 @@
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 8,
-    "errorCount": 4,
+    "okCount": 9,
+    "errorCount": 3,
     "candidateCountBeforeManualFilter": 54,
     "candidateCountAfterManualFilter": 46
   }
