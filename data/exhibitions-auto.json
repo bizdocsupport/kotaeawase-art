@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T09:25:30+09:00",
+  "updatedAt": "2026-10-24T08:53:38+09:00",
   "items": [
     {
       "id": "auto-kyocera-5e5119c49b",
@@ -333,6 +333,19 @@
       "end": "2027-05-09",
       "official": "https://www.aham.jp/exhibition/future/ericcarle",
       "source_key": "aham"
+    },
+    {
+      "id": "auto-nmwa-58f399bc7e",
+      "title": "マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に",
+      "venue": "国立西洋美術館",
+      "area": "東京",
+      "start": "2027-03-20",
+      "end": "2027-07-19",
+      "official": "https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html",
+      "source_key": "nmwa",
+      "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/10/2026matisse_01.jpg",
+      "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html",
+      "imageEvidence": "poster/hero"
     },
     {
       "id": "auto-tnm-8c56215908",

@@ -2,8 +2,8 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **46件**
-- 今回の新規候補: **0件**
+- 自動候補: **47件**
+- 今回の新規候補: **1件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -36,7 +36,11 @@
 
 ## 今回の新規候補
 
-新規候補はありません。
+### マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に
+- 会場: 国立西洋美術館
+- 会期: 2027-03-20 ～ 2027-07-19
+- 公式: https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html
+
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
@@ -68,6 +72,7 @@
 | 2027-02-23 | 2027-05-30 | アーティゾン美術館 | [ARTIZON NOW ひろがる、つながる、コレクション](https://www.artizon.museum/exhibition/detail/615) |
 | 2027-03-06 | 2027-03-28 | SOMPO美術館 | [FACE展2027](https://www.sompo-museum.org/exhibitions/2025/face2027) |
 | 2027-03-20 | 2027-05-09 | あべのハルカス美術館 | [エリック・カール展 はじまりは、はらぺこあおむし](https://www.aham.jp/exhibition/future/ericcarle) |
+| 2027-03-20 | 2027-07-19 | 国立西洋美術館 | [マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に](https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html) |
 | 2027-04-20 | 2027-06-13 | 東京国立博物館 | [智証大師諡号1100年記念 特別展「国宝 三井寺のすべて」](https://www.tnm.jp/modules/r_free_page/index.php?id=2777) |
 | 2027-04-24 | 2027-06-27 | SOMPO美術館 | [描かれたモード ―フランス女性の新時代（仮称）](https://www.sompo-museum.org/exhibitions/2026/mode_francaise) |
 | 2027-04-24 | 2027-06-20 | 大阪市立美術館 | [生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」](https://www.osaka-art-museum.jp/special_exhibition/muto) |

@@ -689,5 +689,30 @@ window.KA_EXHIBITIONS.push(...[
     "bigPick": false,
     "auto": true,
     "ticketEvents": []
+  },
+  {
+    "id": "auto-nmwa-58f399bc7e",
+    "kind": "exhibition",
+    "title": "マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に",
+    "shortTitle": "マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に",
+    "aliases": [
+      "マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に"
+    ],
+    "venue": "国立西洋美術館",
+    "area": "東京",
+    "start": "2027-03-20",
+    "end": "2027-07-19",
+    "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/10/2026matisse_01.jpg",
+    "imageAlt": "マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に 公式サイト掲載画像",
+    "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
   }
 ]);
