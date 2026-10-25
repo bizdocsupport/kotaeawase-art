@@ -714,5 +714,80 @@ window.KA_EXHIBITIONS.push(...[
     "bigPick": false,
     "auto": true,
     "ticketEvents": []
+  },
+  {
+    "id": "auto-osaka-art-235da4f322",
+    "kind": "exhibition",
+    "title": "生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」",
+    "shortTitle": "生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」",
+    "aliases": [
+      "生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」"
+    ],
+    "venue": "大阪市立美術館",
+    "area": "大阪",
+    "start": "2027-04-24",
+    "end": "2027-06-20",
+    "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
+    "imageAlt": "生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」 公式サイト掲載画像",
+    "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/muto",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.osaka-art-museum.jp/special_exhibition/muto",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
+    "id": "auto-sompo-f19800121f",
+    "kind": "exhibition",
+    "title": "描かれたモード ―フランス女性の新時代（仮称）",
+    "shortTitle": "描かれたモード ―フランス女性の新時代（仮称）",
+    "aliases": [
+      "描かれたモード ―フランス女性の新時代（仮称）"
+    ],
+    "venue": "SOMPO美術館",
+    "area": "東京",
+    "start": "2027-04-24",
+    "end": "2027-06-27",
+    "image": "https://www.sompo-museum.org/wp-content/uploads/2026/10/mode_francaise-750.jpg",
+    "imageAlt": "描かれたモード ―フランス女性の新時代（仮称） 公式サイト掲載画像",
+    "imageSource": "https://www.sompo-museum.org/exhibitions/2026/mode_francaise",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.sompo-museum.org/exhibitions/2026/mode_francaise",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
+    "id": "auto-tobikan-13731f99dc",
+    "kind": "exhibition",
+    "title": "デュフィ展",
+    "shortTitle": "デュフィ展",
+    "aliases": [
+      "デュフィ展"
+    ],
+    "venue": "東京都美術館",
+    "area": "東京",
+    "start": "2027-04-24",
+    "end": "2027-08-22",
+    "image": "https://tobikan.jp/media/img/poster/2027_dufy_l.jpg",
+    "imageAlt": "デュフィ展 公式サイト掲載画像",
+    "imageSource": "https://www.tobikan.jp/exhibition/2027_dufy.html",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.tobikan.jp/exhibition/2027_dufy.html",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
   }
 ]);
