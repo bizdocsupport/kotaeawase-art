@@ -11,7 +11,7 @@
 | 美術館 | 状態 | 取得方式 | 候補数 |
 |---|---:|---:|---:|
 | 国立西洋美術館 | OK | HTTP | 2 |
-| 東京都美術館 | ERROR | - | 0 |
+| 東京都美術館 | OK | HTTP | 5 |
 | 国立新美術館 | OK | HTTP | 2 |
 | 東京国立博物館 | OK | HTTP | 4 |
 | 東京都現代美術館 | ERROR | - | 0 |
@@ -30,7 +30,6 @@
 
 ### 取得エラー
 
-- **東京都美術館**: `https://www.tobikan.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://www.tobikan.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503`
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
 - **あべのハルカス美術館**: `https://www.aham.jp/exhibition/future/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.aham.jp/exhibition/future/; BROWSER=RuntimeError: browser HTTP 403`
 

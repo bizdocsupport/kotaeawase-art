@@ -15,12 +15,12 @@
       "key": "tobikan",
       "venue": "東京都美術館",
       "url": "https://www.tobikan.jp/exhibition/",
-      "ok": false,
-      "httpStatus": null,
-      "candidateCount": 0,
-      "fetchMethod": "-",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 5,
+      "fetchMethod": "HTTP",
       "warning": "",
-      "error": "https://www.tobikan.jp/exhibition/: HTTP=HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://www.tobikan.jp/exhibition/; BROWSER=RuntimeError: browser HTTP 503"
+      "error": ""
     },
     {
       "key": "nact",
@@ -135,9 +135,9 @@
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 9,
-    "errorCount": 3,
-    "candidateCountBeforeManualFilter": 54,
+    "okCount": 10,
+    "errorCount": 2,
+    "candidateCountBeforeManualFilter": 55,
     "candidateCountAfterManualFilter": 47
   }
 }
