@@ -21,7 +21,7 @@
 | 大阪中之島美術館 | OK | HTTP | 7 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 4 |
-| あべのハルカス美術館 | ERROR | - | 0 |
+| あべのハルカス美術館 | OK | HTTP | 4 |
 
 ### 取得警告（フォールバック等）
 
@@ -31,7 +31,6 @@
 ### 取得エラー
 
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-- **あべのハルカス美術館**: `https://www.aham.jp/exhibition/future/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.aham.jp/exhibition/future/; BROWSER=RuntimeError: browser HTTP 403`
 
 ## 今回の新規候補
 

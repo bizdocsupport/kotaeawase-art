@@ -125,18 +125,18 @@
       "key": "aham",
       "venue": "あべのハルカス美術館",
       "url": "https://www.aham.jp/exhibition/future/",
-      "ok": false,
-      "httpStatus": null,
-      "candidateCount": 0,
-      "fetchMethod": "-",
+      "ok": true,
+      "httpStatus": 200,
+      "candidateCount": 4,
+      "fetchMethod": "HTTP",
       "warning": "",
-      "error": "https://www.aham.jp/exhibition/future/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.aham.jp/exhibition/future/; BROWSER=RuntimeError: browser HTTP 403"
+      "error": ""
     }
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 10,
-    "errorCount": 2,
+    "okCount": 11,
+    "errorCount": 1,
     "candidateCountBeforeManualFilter": 55,
     "candidateCountAfterManualFilter": 47
   }
