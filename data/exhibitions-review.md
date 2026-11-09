@@ -2,7 +2,7 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **47件**
+- 自動候補: **46件**
 - 今回の新規候補: **0件**
 - 監視館: **12館**
 
@@ -18,7 +18,7 @@
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
-| 大阪中之島美術館 | OK | HTTP | 7 |
+| 大阪中之島美術館 | OK | HTTP | 6 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 4 |
 | あべのハルカス美術館 | OK | HTTP | 4 |
@@ -42,7 +42,6 @@
 | 2026-09-12 | 2026-12-20 | 京都市京セラ美術館 | [松延総司：壁](https://kyotocity-kyocera.museum/exhibition/20260912-20261220) |
 | 2026-09-19 | 2026-12-20 | 京都市京セラ美術館 | [生誕140年記念 染織家 山鹿清華─宙翔ぶイマジネーション](https://kyotocity-kyocera.museum/exhibition/20260919-20261220) |
 | 2026-10-09 | 2026-12-13 | 京都市京セラ美術館 | [［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」](https://kyotocity-kyocera.museum/exhibition/20261009-20261213) |
-| 2026-10-10 | 2026-11-07 | 大阪中之島美術館 | [NMAOサテライト](https://nakka-art.jp/exhibition-post/colle-naka-2026) |
 | 2026-10-14 | 2026-12-06 | 東京国立博物館 | [開創700年記念 特別展「大徳寺 本朝無双之禅苑」](https://www.tnm.jp/modules/r_free_page/index.php?id=2770) |
 | 2026-10-17 | 2027-01-24 | 三菱一号館美術館 | [特設サイトへ](https://mimt.jp/ex_sp/fontanesi) |
 | 2026-10-24 | 2027-01-31 | アーティゾン美術館 | [エトランゼたち —洋画家たちのヨーロッパ体験](https://www.artizon.museum/exhibition/detail/610) |
