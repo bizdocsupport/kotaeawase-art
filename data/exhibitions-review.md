@@ -13,7 +13,7 @@
 | 国立西洋美術館 | OK | HTTP | 2 |
 | 東京都美術館 | OK | HTTP | 5 |
 | 国立新美術館 | OK | HTTP | 2 |
-| 東京国立博物館 | OK | HTTP | 4 |
+| 東京国立博物館 | ERROR | - | 0 |
 | 東京都現代美術館 | ERROR | - | 0 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
@@ -30,6 +30,7 @@
 
 ### 取得エラー
 
+- **東京国立博物館**: `https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja: HTTPError: 500 Server Error: Internal Server Error for url: https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja`
 - **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
 
 ## 今回の新規候補

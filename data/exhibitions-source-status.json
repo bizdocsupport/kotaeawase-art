@@ -37,12 +37,12 @@
       "key": "tnm",
       "venue": "東京国立博物館",
       "url": "https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja",
-      "ok": true,
-      "httpStatus": 200,
-      "candidateCount": 4,
-      "fetchMethod": "HTTP",
+      "ok": false,
+      "httpStatus": null,
+      "candidateCount": 0,
+      "fetchMethod": "-",
       "warning": "",
-      "error": ""
+      "error": "https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja: HTTPError: 500 Server Error: Internal Server Error for url: https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja"
     },
     {
       "key": "mot",
@@ -135,9 +135,9 @@
   ],
   "summary": {
     "sourceCount": 12,
-    "okCount": 11,
-    "errorCount": 1,
-    "candidateCountBeforeManualFilter": 54,
+    "okCount": 10,
+    "errorCount": 2,
+    "candidateCountBeforeManualFilter": 53,
     "candidateCountAfterManualFilter": 46
   }
 }
