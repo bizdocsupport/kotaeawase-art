@@ -4,15 +4,24 @@
 
 | 種別 | 展覧会 | 結果 | 取得画像 |
 |---|---|---|---|
+| auto | 共時的星叢──時を共にした星たち 越境する芸術のまなざし | ok | https://www.mot-art-museum.jp/exhibitions/images/d158ed6cd8b78d6375813bd98237d90d5e764fc4.jpg |
+| auto | いつかの光を今みている | ok | https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png |
 | auto | エトランゼたち —洋画家たちのヨーロッパ体験 | no verified official visual | - |
 | auto | 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展 | no verified official visual | - |
 | auto | ルーシー・リー展 －東西をつなぐ優美のうつわ－ | no verified official visual | - |
+| auto | TOKYO ART BOOK FAIR 2026 | ok | https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png |
+| auto | ならば、発明せよ | ok | https://www.mot-art-museum.jp/exhibitions/images/OGimage_sunpride.jpg |
+| auto | ハンス・ハーケ：インフォメーション・フロー | ok | https://www.mot-art-museum.jp/exhibitions/images/20261104_haacke_web_og.jpg |
+| auto | MOTアニュアル2027 身を通す | ok | https://www.mot-art-museum.jp/exhibitions/images/OGimage_annual2027.jpg |
+| auto | MOTコレクション | ok | https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png |
 | auto | ARTIZON NOW ひろがる、つながる、コレクション | no verified official visual | - |
 | auto | FACE展2027 | no verified official visual | - |
 | auto | エリック・カール展 はじまりは、はらぺこあおむし | no verified official visual | - |
 | auto | HOKUSAI ―北斎が「北斎」だった時代― | no verified official visual | - |
 | auto | 第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように | no verified official visual | - |
 | auto | 藤島武二 —創造の軌跡 | no verified official visual | - |
+| auto | ソ・ドホ展（仮称） | ok | https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png |
 | auto | 「銀河鉄道９９９」５０周年プロジェクト 松本零士展 創作の旅路 | no verified official visual | - |
 | auto | New Objectivity —1960–70年代のアートシーン | no verified official visual | - |
 | auto | 石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ | no verified official visual | - |
+| auto | ブライアン・イーノ展（仮称） | ok | https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png |

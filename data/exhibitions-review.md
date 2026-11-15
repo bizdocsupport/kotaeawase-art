@@ -2,8 +2,8 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **46件**
-- 今回の新規候補: **0件**
+- 自動候補: **55件**
+- 今回の新規候補: **9件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -13,8 +13,8 @@
 | 国立西洋美術館 | OK | HTTP | 2 |
 | 東京都美術館 | OK | HTTP | 5 |
 | 国立新美術館 | OK | HTTP | 2 |
-| 東京国立博物館 | ERROR | - | 0 |
-| 東京都現代美術館 | ERROR | - | 0 |
+| 東京国立博物館 | OK | HTTP | 4 |
+| 東京都現代美術館 | OK | HTTP+BROWSER | 10 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
@@ -28,20 +28,61 @@
 - **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
 - **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
 
-### 取得エラー
-
-- **東京国立博物館**: `https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja: HTTPError: 500 Server Error: Internal Server Error for url: https://www.tnm.jp/modules/r_exhibition/index.php?cid=1&controller=ctg&lang=ja`
-- **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-
 ## 今回の新規候補
 
-新規候補はありません。
+### 共時的星叢──時を共にした星たち 越境する芸術のまなざし
+- 会場: 東京都現代美術館
+- 会期: 2026-09-05 ～ 2026-12-13
+- 公式: https://www.mot-art-museum.jp/exhibitions/Constellation
+
+### いつかの光を今みている
+- 会場: 東京都現代美術館
+- 会期: 2026-09-19 ～ 2027-01-06
+- 公式: https://www.mot-art-museum.jp/exhibitions/mot-collection-260919
+
+### TOKYO ART BOOK FAIR 2026
+- 会場: 東京都現代美術館
+- 会期: 2027-01-21 ～ 2027-01-29
+- 公式: https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026
+
+### ならば、発明せよ
+- 会場: 東京都現代美術館
+- 会期: 2027-02-06 ～ 2027-05-16
+- 公式: https://www.mot-art-museum.jp/exhibitions/SUNPRIDE
+
+### ハンス・ハーケ：インフォメーション・フロー
+- 会場: 東京都現代美術館
+- 会期: 2027-02-06 ～ 2027-05-16
+- 公式: https://www.mot-art-museum.jp/exhibitions/Haacke
+
+### MOTアニュアル2027 身を通す
+- 会場: 東京都現代美術館
+- 会期: 2027-02-20 ～ 2027-05-30
+- 公式: https://www.mot-art-museum.jp/exhibitions/mot-annual-2026
+
+### MOTコレクション
+- 会場: 東京都現代美術館
+- 会期: 2027-02-20 ～ 2027-05-30
+- 公式: https://www.mot-art-museum.jp/exhibitions/mot-collection-270220
+
+### ソ・ドホ展（仮称）
+- 会場: 東京都現代美術館
+- 会期: 2027-06-19 ～ 2027-09-26
+- 公式: https://www.mot-art-museum.jp/exhibitions/dohosuh
+
+### ブライアン・イーノ展（仮称）
+- 会場: 東京都現代美術館
+- 会期: 2027-11-03 ～ 2028-03-05
+- 公式: https://www.mot-art-museum.jp/exhibitions/ENO
+
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
 |---|---|---|---|
+| 2026-09-05 | 2026-12-13 | 東京都現代美術館 | [共時的星叢──時を共にした星たち 越境する芸術のまなざし](https://www.mot-art-museum.jp/exhibitions/Constellation) |
 | 2026-09-12 | 2026-12-20 | 京都市京セラ美術館 | [松延総司：壁](https://kyotocity-kyocera.museum/exhibition/20260912-20261220) |
 | 2026-09-19 | 2026-12-20 | 京都市京セラ美術館 | [生誕140年記念 染織家 山鹿清華─宙翔ぶイマジネーション](https://kyotocity-kyocera.museum/exhibition/20260919-20261220) |
+| 2026-09-19 | 2027-01-06 | 東京都現代美術館 | [いつかの光を今みている](https://www.mot-art-museum.jp/exhibitions/mot-collection-260919) |
 | 2026-10-09 | 2026-12-13 | 京都市京セラ美術館 | [［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」](https://kyotocity-kyocera.museum/exhibition/20261009-20261213) |
 | 2026-10-14 | 2026-12-06 | 東京国立博物館 | [開創700年記念 特別展「大徳寺 本朝無双之禅苑」](https://www.tnm.jp/modules/r_free_page/index.php?id=2770) |
 | 2026-10-17 | 2027-01-24 | 三菱一号館美術館 | [特設サイトへ](https://mimt.jp/ex_sp/fontanesi) |
@@ -60,9 +101,14 @@
 | 2027-01-15 | 2027-04-18 | 京都市京セラ美術館 | [藤野裕美子](https://kyotocity-kyocera.museum/exhibition/20270115-20270418) |
 | 2027-01-15 | 2027-03-14 | 京都市京セラ美術館 | [［2026冬期］コレクションルーム 特集「時を塗る－京都のうるしが映した近代」](https://kyotocity-kyocera.museum/exhibition/20270115-20270314) |
 | 2027-01-19 | 2027-03-14 | 東京国立博物館 | [「源氏物語 王朝のかがやき」](https://www.tnm.jp/modules/r_free_page/index.php?id=2763) |
+| 2027-01-21 | 2027-01-29 | 東京都現代美術館 | [TOKYO ART BOOK FAIR 2026](https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026) |
 | 2027-01-23 | 2027-02-21 | 大阪中之島美術館 | [乾 真裕子](https://nakka-art.jp/exhibition-post/osaka-directory-dir15) |
 | 2027-02-06 | 2027-05-05 | 京都市京セラ美術館 | [ラファエル・ザルカ：幾何学、時間、スケートボード](https://kyotocity-kyocera.museum/exhibition/20270206-20270505) |
 | 2027-02-06 | 2027-04-04 | 大阪市立美術館 | [円山応挙 リアルの先へ 空間革命](https://www.osaka-art-museum.jp/special_exhibition/10344) |
+| 2027-02-06 | 2027-05-16 | 東京都現代美術館 | [ならば、発明せよ](https://www.mot-art-museum.jp/exhibitions/SUNPRIDE) |
+| 2027-02-06 | 2027-05-16 | 東京都現代美術館 | [ハンス・ハーケ：インフォメーション・フロー](https://www.mot-art-museum.jp/exhibitions/Haacke) |
+| 2027-02-20 | 2027-05-30 | 東京都現代美術館 | [MOTアニュアル2027 身を通す](https://www.mot-art-museum.jp/exhibitions/mot-annual-2026) |
+| 2027-02-20 | 2027-05-30 | 東京都現代美術館 | [MOTコレクション](https://www.mot-art-museum.jp/exhibitions/mot-collection-270220) |
 | 2027-02-23 | 2027-05-30 | アーティゾン美術館 | [ARTIZON NOW ひろがる、つながる、コレクション](https://www.artizon.museum/exhibition/detail/615) |
 | 2027-03-06 | 2027-03-28 | SOMPO美術館 | [FACE展2027](https://www.sompo-museum.org/exhibitions/2025/face2027) |
 | 2027-03-20 | 2027-05-09 | あべのハルカス美術館 | [エリック・カール展 はじまりは、はらぺこあおむし](https://www.aham.jp/exhibition/future/ericcarle) |
@@ -75,6 +121,7 @@
 | 2027-05-26 | 2027-08-29 | 京都市京セラ美術館 | [ギルバート＆ジョージ展](https://kyotocity-kyocera.museum/exhibition/20270526-20270829) |
 | 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように](https://www.artizon.museum/exhibition/detail/616) |
 | 2027-06-19 | 2027-09-20 | アーティゾン美術館 | [藤島武二 —創造の軌跡](https://www.artizon.museum/exhibition/detail/617) |
+| 2027-06-19 | 2027-09-26 | 東京都現代美術館 | [ソ・ドホ展（仮称）](https://www.mot-art-museum.jp/exhibitions/dohosuh) |
 | 2027-07-17 | 2027-08-29 | SOMPO美術館 | [テクノロジー×アートの扉](https://www.sompo-museum.org/exhibitions/2026/gateway_to_tech_art) |
 | 2027-07-17 | 2027-09-26 | 大阪市立美術館 | [シンシナティ美術館展 ～アメリカに渡ったヨーロッパの至宝～](https://www.osaka-art-museum.jp/special_exhibition/cincinnati) |
 | 2027-07-31 | 2027-09-26 | あべのハルカス美術館 | [「銀河鉄道９９９」５０周年プロジェクト 松本零士展 創作の旅路](https://www.aham.jp/exhibition/future/leiji-m-999) |
@@ -84,6 +131,7 @@
 | 2027-10-02 | 2027-12-12 | 京都市京セラ美術館 | [⽣誕150年 ⽊島櫻⾕](https://kyotocity-kyocera.museum/exhibition/20271002-20271212) |
 | 2027-10-16 | 2028-01-30 | アーティゾン美術館 | [New Objectivity —1960–70年代のアートシーン](https://www.artizon.museum/exhibition/detail/618) |
 | 2027-10-16 | 2028-01-30 | アーティゾン美術館 | [石橋財団コレクション選 特集コーナー展示 ロダンに捧ぐ](https://www.artizon.museum/exhibition/detail/619) |
+| 2027-11-03 | 2028-03-05 | 東京都現代美術館 | [ブライアン・イーノ展（仮称）](https://www.mot-art-museum.jp/exhibitions/ENO) |
 | 2028-01-08 | 2028-02-20 | SOMPO美術館 | [写真と建築（仮称）](https://www.sompo-museum.org/exhibitions/2026/photography_and_architecture) |
 | 2028-03-04 | 2028-03-26 | SOMPO美術館 | [FACE展2028／絵画のゆくえ2028](https://www.sompo-museum.org/exhibitions/2026/face2028-paintings2028) |
 

@@ -1,6 +1,19 @@
 {
-  "updatedAt": "2026-11-09T20:15:35+09:00",
+  "updatedAt": "2026-11-15T10:06:53+09:00",
   "items": [
+    {
+      "id": "auto-mot-3439ce13a1",
+      "title": "共時的星叢──時を共にした星たち 越境する芸術のまなざし",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2026-09-05",
+      "end": "2026-12-13",
+      "official": "https://www.mot-art-museum.jp/exhibitions/Constellation",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/exhibitions/images/d158ed6cd8b78d6375813bd98237d90d5e764fc4.jpg",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/Constellation",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
     {
       "id": "auto-kyocera-5e5119c49b",
       "title": "松延総司：壁",
@@ -25,6 +38,19 @@
       "source_key": "kyocera",
       "image": "https://kyotocity-kyocera.museum/wp-content/uploads/1_yamaga_A4_260609_ol_omote.jpg",
       "imageSource": "https://kyotocity-kyocera.museum/exhibition/20260919-20261220",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mot-7d7ba36f3a",
+      "title": "いつかの光を今みている",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2026-09-19",
+      "end": "2027-01-06",
+      "official": "https://www.mot-art-museum.jp/exhibitions/mot-collection-260919",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/mot-collection-260919",
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
@@ -253,6 +279,19 @@
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
+      "id": "auto-mot-4bb61f9cba",
+      "title": "TOKYO ART BOOK FAIR 2026",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-01-21",
+      "end": "2027-01-29",
+      "official": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
       "id": "auto-nakka-d3234d567d",
       "title": "乾 真裕子",
       "venue": "大阪中之島美術館",
@@ -289,6 +328,58 @@
       "source_key": "osaka-art",
       "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
       "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/10344",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mot-3396e1012f",
+      "title": "ならば、発明せよ",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-02-06",
+      "end": "2027-05-16",
+      "official": "https://www.mot-art-museum.jp/exhibitions/SUNPRIDE",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/exhibitions/images/OGimage_sunpride.jpg",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/SUNPRIDE",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mot-2dfe26f15d",
+      "title": "ハンス・ハーケ：インフォメーション・フロー",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-02-06",
+      "end": "2027-05-16",
+      "official": "https://www.mot-art-museum.jp/exhibitions/Haacke",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/exhibitions/images/20261104_haacke_web_og.jpg",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/Haacke",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mot-96c31ea20d",
+      "title": "MOTアニュアル2027 身を通す",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-02-20",
+      "end": "2027-05-30",
+      "official": "https://www.mot-art-museum.jp/exhibitions/mot-annual-2026",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/exhibitions/images/OGimage_annual2027.jpg",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/mot-annual-2026",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mot-3c910d6ab4",
+      "title": "MOTコレクション",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-02-20",
+      "end": "2027-05-30",
+      "official": "https://www.mot-art-museum.jp/exhibitions/mot-collection-270220",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/mot-collection-270220",
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
@@ -430,6 +521,19 @@
       "source_key": "artizon"
     },
     {
+      "id": "auto-mot-f85a78375f",
+      "title": "ソ・ドホ展（仮称）",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-06-19",
+      "end": "2027-09-26",
+      "official": "https://www.mot-art-museum.jp/exhibitions/dohosuh",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/dohosuh",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
       "id": "auto-sompo-ccfc032224",
       "title": "テクノロジー×アートの扉",
       "venue": "SOMPO美術館",
@@ -536,6 +640,19 @@
       "end": "2028-01-30",
       "official": "https://www.artizon.museum/exhibition/detail/619",
       "source_key": "artizon"
+    },
+    {
+      "id": "auto-mot-568fb41240",
+      "title": "ブライアン・イーノ展（仮称）",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-11-03",
+      "end": "2028-03-05",
+      "official": "https://www.mot-art-museum.jp/exhibitions/ENO",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/ENO",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-sompo-9e4e54aa46",
