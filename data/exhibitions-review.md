@@ -17,7 +17,7 @@
 | 東京都現代美術館 | OK | HTTP+BROWSER | 10 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
-| アーティゾン美術館 | ERROR | HTTP+BROWSER | 0 |
+| アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
 | 大阪中之島美術館 | OK | HTTP | 6 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 4 |
@@ -25,17 +25,12 @@
 
 ### 取得警告（フォールバック等）
 
-- **東京都現代美術館**: `ブラウザ取得も候補0件: https://www.mot-art-museum.jp/calendar/`
 - **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
-- **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/ | ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule | 一覧取得は成功したが候補0件：一覧構造や公式サイトの掲載状況を要確認`
-
-### 取得エラー
-
-- **アーティゾン美術館**: `候補0件（詳細ページのリンク・会期抽出を要確認）`
+- **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
 
 ## 今回の新規候補
 
-### コレクション展示 開催中 MOTコレクション いつかの光を今みている
+### いつかの光を今みている
 - 会場: 東京都現代美術館
 - 会期: 2026-09-19 ～ 2027-01-06
 - 公式: https://www.mot-art-museum.jp/exhibitions/mot-collection-260919
@@ -47,7 +42,7 @@
 | 2026-09-05 | 2026-12-13 | 東京都現代美術館 | [共時的星叢──時を共にした星たち 越境する芸術のまなざし](https://www.mot-art-museum.jp/exhibitions/Constellation) |
 | 2026-09-12 | 2026-12-20 | 京都市京セラ美術館 | [松延総司：壁](https://kyotocity-kyocera.museum/exhibition/20260912-20261220) |
 | 2026-09-19 | 2026-12-20 | 京都市京セラ美術館 | [生誕140年記念 染織家 山鹿清華─宙翔ぶイマジネーション](https://kyotocity-kyocera.museum/exhibition/20260919-20261220) |
-| 2026-09-19 | 2027-01-06 | 東京都現代美術館 | [コレクション展示 開催中 MOTコレクション いつかの光を今みている](https://www.mot-art-museum.jp/exhibitions/mot-collection-260919) |
+| 2026-09-19 | 2027-01-06 | 東京都現代美術館 | [いつかの光を今みている](https://www.mot-art-museum.jp/exhibitions/mot-collection-260919) |
 | 2026-10-09 | 2026-12-13 | 京都市京セラ美術館 | [［2026秋期］コレクションルーム 特集「美術館物語 市美の産声」](https://kyotocity-kyocera.museum/exhibition/20261009-20261213) |
 | 2026-10-14 | 2026-12-06 | 東京国立博物館 | [開創700年記念 特別展「大徳寺 本朝無双之禅苑」](https://www.tnm.jp/modules/r_free_page/index.php?id=2770) |
 | 2026-10-17 | 2027-01-24 | 三菱一号館美術館 | [特設サイトへ](https://mimt.jp/ex_sp/fontanesi) |

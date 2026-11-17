@@ -143,17 +143,17 @@ window.KA_EXHIBITIONS.push(...[
   {
     "id": "auto-mot-7d7ba36f3a",
     "kind": "exhibition",
-    "title": "コレクション展示 開催中 MOTコレクション いつかの光を今みている",
-    "shortTitle": "コレクション展示 開催中 MOTコレクション いつかの光を今みている",
+    "title": "いつかの光を今みている",
+    "shortTitle": "いつかの光を今みている",
     "aliases": [
-      "コレクション展示 開催中 MOTコレクション いつかの光を今みている"
+      "いつかの光を今みている"
     ],
     "venue": "東京都現代美術館",
     "area": "東京",
     "start": "2026-09-19",
     "end": "2027-01-06",
     "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
-    "imageAlt": "コレクション展示 開催中 MOTコレクション いつかの光を今みている 公式サイト掲載画像",
+    "imageAlt": "いつかの光を今みている 公式サイト掲載画像",
     "imageSource": "https://www.mot-art-museum.jp/exhibitions/mot-collection-260919",
     "imagePosition": "",
     "guide": "",
@@ -227,7 +227,7 @@ window.KA_EXHIBITIONS.push(...[
     "area": "東京",
     "start": "2026-10-24",
     "end": "2027-01-31",
-    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/13778802196a28c6a8597cc5.91497464.jpg",
+    "image": "https://atz-image.s3.ap-northeast-1.amazonaws.com/122943516068d366433d8758.09223433.jpg",
     "imageAlt": "エトランゼたち 美術館公式サイト掲載ビジュアル（黒田清輝《針仕事》ほか）",
     "imageSource": "https://www.artizon.museum/exhibition/detail/610",
     "imagePosition": "center 30%",
