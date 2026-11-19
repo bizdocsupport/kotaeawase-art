@@ -14,7 +14,7 @@
 | 東京都美術館 | OK | HTTP | 5 |
 | 国立新美術館 | OK | HTTP | 2 |
 | 東京国立博物館 | OK | HTTP | 4 |
-| 東京都現代美術館 | ERROR | - | 0 |
+| 東京都現代美術館 | OK | HTTP+BROWSER | 10 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
@@ -27,10 +27,6 @@
 
 - **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
 - **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
-
-### 取得エラー
-
-- **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
 
 ## 今回の新規候補
 
