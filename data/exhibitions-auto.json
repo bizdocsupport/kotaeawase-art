@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T12:57:48+09:00",
+  "updatedAt": "2026-11-22T10:23:53+09:00",
   "items": [
     {
       "id": "auto-mot-3439ce13a1",
@@ -279,19 +279,6 @@
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
-      "id": "auto-mot-4bb61f9cba",
-      "title": "TOKYO ART BOOK FAIR 2026",
-      "venue": "東京都現代美術館",
-      "area": "東京",
-      "start": "2027-01-21",
-      "end": "2027-01-29",
-      "official": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
-      "source_key": "mot",
-      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
-      "imageSource": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
-      "imageEvidence": "meta [property=\"og:image\"]"
-    },
-    {
       "id": "auto-nakka-d3234d567d",
       "title": "乾 真裕子",
       "venue": "大阪中之島美術館",
@@ -328,6 +315,19 @@
       "source_key": "osaka-art",
       "image": "https://www.osaka-art-museum.jp/themes/custom/osaka_museum/images/ogp.jpg",
       "imageSource": "https://www.osaka-art-museum.jp/special_exhibition/10344",
+      "imageEvidence": "meta [property=\"og:image\"]"
+    },
+    {
+      "id": "auto-mot-4bb61f9cba",
+      "title": "TOKYO ART BOOK FAIR",
+      "venue": "東京都現代美術館",
+      "area": "東京",
+      "start": "2027-02-06",
+      "end": "2027-05-16",
+      "official": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
+      "source_key": "mot",
+      "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+      "imageSource": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
       "imageEvidence": "meta [property=\"og:image\"]"
     },
     {

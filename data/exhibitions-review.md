@@ -3,7 +3,7 @@
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
 - 自動候補: **55件**
-- 今回の新規候補: **0件**
+- 今回の新規候補: **1件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -14,7 +14,7 @@
 | 東京都美術館 | OK | HTTP | 5 |
 | 国立新美術館 | OK | HTTP | 2 |
 | 東京国立博物館 | OK | HTTP | 4 |
-| 東京都現代美術館 | ERROR | - | 0 |
+| 東京都現代美術館 | OK | HTTP+BROWSER | 10 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
@@ -28,13 +28,13 @@
 - **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
 - **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
 
-### 取得エラー
-
-- **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-
 ## 今回の新規候補
 
-新規候補はありません。
+### TOKYO ART BOOK FAIR
+- 会場: 東京都現代美術館
+- 会期: 2027-02-06 ～ 2027-05-16
+- 公式: https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026
+
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
@@ -61,10 +61,10 @@
 | 2027-01-15 | 2027-04-18 | 京都市京セラ美術館 | [藤野裕美子](https://kyotocity-kyocera.museum/exhibition/20270115-20270418) |
 | 2027-01-15 | 2027-03-14 | 京都市京セラ美術館 | [［2026冬期］コレクションルーム 特集「時を塗る－京都のうるしが映した近代」](https://kyotocity-kyocera.museum/exhibition/20270115-20270314) |
 | 2027-01-19 | 2027-03-14 | 東京国立博物館 | [「源氏物語 王朝のかがやき」](https://www.tnm.jp/modules/r_free_page/index.php?id=2763) |
-| 2027-01-21 | 2027-01-29 | 東京都現代美術館 | [TOKYO ART BOOK FAIR 2026](https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026) |
 | 2027-01-23 | 2027-02-21 | 大阪中之島美術館 | [乾 真裕子](https://nakka-art.jp/exhibition-post/osaka-directory-dir15) |
 | 2027-02-06 | 2027-05-05 | 京都市京セラ美術館 | [ラファエル・ザルカ：幾何学、時間、スケートボード](https://kyotocity-kyocera.museum/exhibition/20270206-20270505) |
 | 2027-02-06 | 2027-04-04 | 大阪市立美術館 | [円山応挙 リアルの先へ 空間革命](https://www.osaka-art-museum.jp/special_exhibition/10344) |
+| 2027-02-06 | 2027-05-16 | 東京都現代美術館 | [TOKYO ART BOOK FAIR](https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026) |
 | 2027-02-06 | 2027-05-16 | 東京都現代美術館 | [ならば、発明せよ](https://www.mot-art-museum.jp/exhibitions/SUNPRIDE) |
 | 2027-02-06 | 2027-05-16 | 東京都現代美術館 | [ハンス・ハーケ：インフォメーション・フロー](https://www.mot-art-museum.jp/exhibitions/Haacke) |
 | 2027-02-20 | 2027-05-30 | 東京都現代美術館 | [MOTアニュアル2027 身を通す](https://www.mot-art-museum.jp/exhibitions/mot-annual-2026) |

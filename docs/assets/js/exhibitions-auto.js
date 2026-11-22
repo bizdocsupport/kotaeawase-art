@@ -566,31 +566,6 @@ window.KA_EXHIBITIONS.push(...[
     "ticketEvents": []
   },
   {
-    "id": "auto-mot-4bb61f9cba",
-    "kind": "exhibition",
-    "title": "TOKYO ART BOOK FAIR 2026",
-    "shortTitle": "TOKYO ART BOOK FAIR 2026",
-    "aliases": [
-      "TOKYO ART BOOK FAIR 2026"
-    ],
-    "venue": "東京都現代美術館",
-    "area": "東京",
-    "start": "2027-01-21",
-    "end": "2027-01-29",
-    "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
-    "imageAlt": "TOKYO ART BOOK FAIR 2026 公式サイト掲載画像",
-    "imageSource": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
-    "imagePosition": "",
-    "guide": "",
-    "official": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
-    "note": "公式サイトから自動取得した開催情報です。",
-    "homePriority": -1000,
-    "large": false,
-    "bigPick": false,
-    "auto": true,
-    "ticketEvents": []
-  },
-  {
     "id": "auto-nakka-d3234d567d",
     "kind": "exhibition",
     "title": "乾 真裕子",
@@ -658,6 +633,31 @@ window.KA_EXHIBITIONS.push(...[
     "imagePosition": "",
     "guide": "",
     "official": "https://kyotocity-kyocera.museum/exhibition/20270206-20270505",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
+    "id": "auto-mot-4bb61f9cba",
+    "kind": "exhibition",
+    "title": "TOKYO ART BOOK FAIR",
+    "shortTitle": "TOKYO ART BOOK FAIR",
+    "aliases": [
+      "TOKYO ART BOOK FAIR"
+    ],
+    "venue": "東京都現代美術館",
+    "area": "東京",
+    "start": "2027-02-06",
+    "end": "2027-05-16",
+    "image": "https://www.mot-art-museum.jp/_assets/images/head/og-image@2x.png",
+    "imageAlt": "TOKYO ART BOOK FAIR 公式サイト掲載画像",
+    "imageSource": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.mot-art-museum.jp/exhibitions/tokyo-art-book-fair-2026",
     "note": "公式サイトから自動取得した開催情報です。",
     "homePriority": -1000,
     "large": false,
