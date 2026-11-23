@@ -914,5 +914,30 @@ window.KA_EXHIBITIONS.push(...[
     "bigPick": false,
     "auto": true,
     "ticketEvents": []
+  },
+  {
+    "id": "auto-aham-b5f1855bbe",
+    "kind": "exhibition",
+    "title": "HOKUSAI ―北斎が「北斎」だった時代―",
+    "shortTitle": "HOKUSAI ―北斎が「北斎」だった時代―",
+    "aliases": [
+      "HOKUSAI ―北斎が「北斎」だった時代―"
+    ],
+    "venue": "あべのハルカス美術館",
+    "area": "大阪",
+    "start": "2027-05-22",
+    "end": "2027-07-19",
+    "image": "",
+    "imageAlt": "",
+    "imageSource": "",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.aham.jp/exhibition/future/hokusai2027",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
   }
 ]);
