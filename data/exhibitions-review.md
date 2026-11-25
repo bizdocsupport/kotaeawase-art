@@ -2,8 +2,8 @@
 
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
-- 自動候補: **55件**
-- 今回の新規候補: **0件**
+- 自動候補: **56件**
+- 今回の新規候補: **1件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -12,12 +12,12 @@
 |---|---:|---:|---:|
 | 国立西洋美術館 | OK | HTTP | 2 |
 | 東京都美術館 | OK | HTTP | 5 |
-| 国立新美術館 | OK | HTTP | 2 |
+| 国立新美術館 | OK | HTTP | 3 |
 | 東京国立博物館 | OK | HTTP | 4 |
 | 東京都現代美術館 | ERROR | - | 0 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
-| アーティゾン美術館 | OK | HTTP+BROWSER | 7 |
+| アーティゾン美術館 | OK | HTTP | 7 |
 | 大阪中之島美術館 | OK | HTTP | 6 |
 | 京都市京セラ美術館 | OK | HTTP | 11 |
 | 大阪市立美術館 | OK | HTTP | 4 |
@@ -26,7 +26,6 @@
 ### 取得警告（フォールバック等）
 
 - **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
-- **アーティゾン美術館**: `ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule`
 
 ### 取得エラー
 
@@ -34,7 +33,11 @@
 
 ## 今回の新規候補
 
-新規候補はありません。
+### ディーヴァ展
+- 会場: 国立新美術館
+- 会期: 2027-03-24 ～ 2027-07-19
+- 公式: https://www.nact.jp/exhibition_special/2027/diva2027
+
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
@@ -73,6 +76,7 @@
 | 2027-03-06 | 2027-03-28 | SOMPO美術館 | [FACE展2027](https://www.sompo-museum.org/exhibitions/2025/face2027) |
 | 2027-03-20 | 2027-05-09 | あべのハルカス美術館 | [エリック・カール展 はじまりは、はらぺこあおむし](https://www.aham.jp/exhibition/future/ericcarle) |
 | 2027-03-20 | 2027-07-19 | 国立西洋美術館 | [マティス 黒と白の詩学 —ピエール＆タナ・マティス財団の版画コレクションを中心に](https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html) |
+| 2027-03-24 | 2027-07-19 | 国立新美術館 | [ディーヴァ展](https://www.nact.jp/exhibition_special/2027/diva2027) |
 | 2027-04-20 | 2027-06-13 | 東京国立博物館 | [智証大師諡号1100年記念 特別展「国宝 三井寺のすべて」](https://www.tnm.jp/modules/r_free_page/index.php?id=2777) |
 | 2027-04-24 | 2027-06-27 | SOMPO美術館 | [描かれたモード ―フランス女性の新時代（仮称）](https://www.sompo-museum.org/exhibitions/2026/mode_francaise) |
 | 2027-04-24 | 2027-06-20 | 大阪市立美術館 | [生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」](https://www.osaka-art-museum.jp/special_exhibition/muto) |

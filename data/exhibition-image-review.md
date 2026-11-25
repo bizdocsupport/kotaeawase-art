@@ -10,6 +10,7 @@
 | auto | ARTIZON NOW ひろがる、つながる、コレクション | no verified official visual | - |
 | auto | FACE展2027 | no verified official visual | - |
 | auto | エリック・カール展 はじまりは、はらぺこあおむし | no verified official visual | - |
+| auto | ディーヴァ展 | no verified official visual | - |
 | auto | HOKUSAI ―北斎が「北斎」だった時代― | no verified official visual | - |
 | auto | 第61回ヴェネチア・ビエンナーレ国際美術展日本館展示帰国展 荒川ナッシュ医｜草の赤ちゃん、月の赤ちゃん/不連続統一体のように | no verified official visual | - |
 | auto | 藤島武二 —創造の軌跡 | no verified official visual | - |

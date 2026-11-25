@@ -28,7 +28,7 @@
       "url": "https://www.nact.jp/exhibition_special/",
       "ok": true,
       "httpStatus": 200,
-      "candidateCount": 2,
+      "candidateCount": 3,
       "fetchMethod": "HTTP",
       "warning": "",
       "error": ""
@@ -84,8 +84,8 @@
       "ok": true,
       "httpStatus": 200,
       "candidateCount": 7,
-      "fetchMethod": "HTTP+BROWSER",
-      "warning": "ブラウザ取得も候補0件: https://www.artizon.museum/exhibition/schedule",
+      "fetchMethod": "HTTP",
+      "warning": "",
       "error": ""
     },
     {
@@ -137,7 +137,7 @@
     "sourceCount": 12,
     "okCount": 11,
     "errorCount": 1,
-    "candidateCountBeforeManualFilter": 63,
-    "candidateCountAfterManualFilter": 55
+    "candidateCountBeforeManualFilter": 64,
+    "candidateCountAfterManualFilter": 56
   }
 }

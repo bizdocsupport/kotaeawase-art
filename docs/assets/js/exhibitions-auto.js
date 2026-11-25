@@ -841,6 +841,31 @@ window.KA_EXHIBITIONS.push(...[
     "ticketEvents": []
   },
   {
+    "id": "auto-nact-0db6d895ac",
+    "kind": "exhibition",
+    "title": "ディーヴァ展",
+    "shortTitle": "ディーヴァ展",
+    "aliases": [
+      "ディーヴァ展"
+    ],
+    "venue": "国立新美術館",
+    "area": "東京",
+    "start": "2027-03-24",
+    "end": "2027-07-19",
+    "image": "",
+    "imageAlt": "",
+    "imageSource": "",
+    "imagePosition": "",
+    "guide": "",
+    "official": "https://www.nact.jp/exhibition_special/2027/diva2027",
+    "note": "公式サイトから自動取得した開催情報です。",
+    "homePriority": -1000,
+    "large": false,
+    "bigPick": false,
+    "auto": true,
+    "ticketEvents": []
+  },
+  {
     "id": "auto-osaka-art-235da4f322",
     "kind": "exhibition",
     "title": "生誕160周年記念特別展「復活！武藤山治コレクション―国宝を見出した紡績王」",

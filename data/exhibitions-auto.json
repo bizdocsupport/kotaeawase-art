@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T10:23:53+09:00",
+  "updatedAt": "2026-11-25T13:16:44+09:00",
   "items": [
     {
       "id": "auto-mot-3439ce13a1",
@@ -424,6 +424,16 @@
       "image": "https://www.nmwa.go.jp/wp-content/uploads/2026/10/2026matisse_01.jpg",
       "imageSource": "https://www.nmwa.go.jp/jp/exhibitions/2027matisse.html",
       "imageEvidence": "poster/hero"
+    },
+    {
+      "id": "auto-nact-0db6d895ac",
+      "title": "ディーヴァ展",
+      "venue": "国立新美術館",
+      "area": "東京",
+      "start": "2027-03-24",
+      "end": "2027-07-19",
+      "official": "https://www.nact.jp/exhibition_special/2027/diva2027",
+      "source_key": "nact"
     },
     {
       "id": "auto-tnm-8c56215908",
