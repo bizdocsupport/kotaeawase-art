@@ -3,7 +3,7 @@
 > Phase 2A.4。ここに出た内容はまだ本番サイトには反映されません。
 
 - 自動候補: **56件**
-- 今回の新規候補: **1件**
+- 今回の新規候補: **0件**
 - 監視館: **12館**
 
 ## 取得状況
@@ -14,7 +14,7 @@
 | 東京都美術館 | OK | HTTP | 5 |
 | 国立新美術館 | OK | HTTP | 3 |
 | 東京国立博物館 | OK | HTTP | 4 |
-| 東京都現代美術館 | ERROR | - | 0 |
+| 東京都現代美術館 | OK | HTTP+BROWSER | 10 |
 | SOMPO美術館 | OK | HTTP | 8 |
 | 三菱一号館美術館 | OK | HTTP+BROWSER | 1 |
 | アーティゾン美術館 | OK | HTTP | 7 |
@@ -27,17 +27,9 @@
 
 - **三菱一号館美術館**: `ブラウザ取得も候補0件: https://mimt.jp/`
 
-### 取得エラー
-
-- **東京都現代美術館**: `https://www.mot-art-museum.jp/exhibitions/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/exhibitions/; BROWSER=RuntimeError: browser HTTP 403 | https://www.mot-art-museum.jp/calendar/: HTTP=HTTPError: 403 Client Error: Forbidden for url: https://www.mot-art-museum.jp/calendar/; BROWSER=RuntimeError: browser HTTP 403`
-
 ## 今回の新規候補
 
-### ディーヴァ展
-- 会場: 国立新美術館
-- 会期: 2027-03-24 ～ 2027-07-19
-- 公式: https://www.nact.jp/exhibition_special/2027/diva2027
-
+新規候補はありません。
 ## 自動候補一覧
 
 | 開始 | 終了 | 美術館 | 展覧会 |
