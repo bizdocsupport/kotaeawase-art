@@ -8,7 +8,7 @@
 | auto | 少女漫画・インフィニティ 萩尾望都×山岸凉子×大和和紀 三人展 | no verified official visual | - |
 | auto | ルーシー・リー展 －東西をつなぐ優美のうつわ－ | no verified official visual | - |
 | auto | ARTIZON NOW ひろがる、つながる、コレクション | no verified official visual | - |
-| auto | FACE展2027 | no verified official visual | - |
+| auto | FACE展2027 | ok | https://www.sompo-museum.org/wp-content/uploads/2025/10/face2027-mainvisual_750.jpg |
 | auto | エリック・カール展 はじまりは、はらぺこあおむし | no verified official visual | - |
 | auto | ディーヴァ展 | no verified official visual | - |
 | auto | HOKUSAI ―北斎が「北斎」だった時代― | no verified official visual | - |

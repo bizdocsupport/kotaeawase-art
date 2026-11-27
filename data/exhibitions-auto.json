@@ -400,7 +400,10 @@
       "start": "2027-03-06",
       "end": "2027-03-28",
       "official": "https://www.sompo-museum.org/exhibitions/2025/face2027",
-      "source_key": "sompo"
+      "source_key": "sompo",
+      "image": "https://www.sompo-museum.org/wp-content/uploads/2025/10/face2027-mainvisual_750.jpg",
+      "imageSource": "https://www.sompo-museum.org/exhibitions/2025/face2027",
+      "imageEvidence": "meta [property=\"og:image\"]"
     },
     {
       "id": "auto-aham-362536b9d9",
